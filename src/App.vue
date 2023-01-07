@@ -45,10 +45,17 @@
     margin-bottom: 48px;
   }
 
-  .name {
+  .logo_block {
     font-size: 24px;
     color: #222222;
     text-decoration: none;
+    display: flex;
+  }
+
+  @media (max-width: 760px) { 
+    .name {
+      display: none;
+    }
   }
 
   .columns {
@@ -183,7 +190,7 @@
     margin-bottom: 0px;
   }
 
-  @media (max-width: 500px) { 
+  @media (max-width: 680px) { 
     .header_menu {
       display: none;
     }

@@ -1,8 +1,9 @@
 <template>
     <div class="footer_and_header">
         <div class="header">
-            <a class="name" href="https://avetemp.ru" target="_blank" rel="noopener">
-                <img alt="AveTemp Main Screen" class="logo" src="../assets/logo.png"/>AveTemp
+            <a class="logo_block" href="https://avetemp.ru" target="_blank" rel="noopener">
+                <img alt="AveTemp Main Screen" class="logo" src="../assets/logo.png"/>
+                <div class="name">AveTemp</div>
             </a>
             <div class="header_menu">
                 <ul>
