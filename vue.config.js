@@ -7,7 +7,7 @@ module.exports = defineConfig({
       locale: 'en',
       fallbackLocale: 'en',
       localeDir: 'locales',
-      enableLegacy: true,
+      enableLegacy: false,
       runtimeOnly: false,
       compositionOnly: true,
       fullInstall: true

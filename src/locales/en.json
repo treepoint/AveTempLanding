@@ -1,4 +1,7 @@
 {
+    "title": "AveTemp —  monitoring CPU temperature, TDP and adjust Turbo mode",
+    "description": "Free to use tool for continuous monitoring CPU temperature and TDP, also auto adjust CPU performance state and CPU Turbo mode depends on current workload.",
+
     "download_button": "Download",
 
     "about_headline": "About",
