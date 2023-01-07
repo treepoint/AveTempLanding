@@ -7,27 +7,33 @@
             <div class="header_menu">
                 <ul>
                     <li>
-                        <a href="#about" rel="noopener">About</a>
+                        <a href="#about" rel="noopener">{{ $t('about_headline') }}</a>
                     </li>
                     <li>
-                        <a href="#features" rel="noopener">Features</a>
+                        <a href="#features" rel="noopener">{{ $t('features_headline') }}</a>
                     </li>
                     <li>
-                        <a href="#support" rel="noopener">Support</a>
+                        <a href="#support" rel="noopener">{{ $t('support_headline') }}</a>
                     </li>
                     <li>
-                        <a href="#changelog" rel="noopener">Changelog</a>
+                        <a href="#changelog" rel="noopener">{{ $t('changelog_headline') }}</a>
                     </li>
                 </ul>
             </div>
             <div class="spacer"></div>
-            <a class="btn btn-danger" :href="download_link" role="button">Download</a>
+            <LanguageSelect/>
+            <a class="btn btn-danger" :href="download_link" role="button">{{ $t('download_button') }}</a>
         </div>
     </div>
 </template>
 
 <script>
+  import LanguageSelect from './LanguageSelect.vue'
+
   export default {
-    name: "MainHeader"
+    name: "MainHeader",
+    components: {
+      LanguageSelect
+    }
   }
 </script>

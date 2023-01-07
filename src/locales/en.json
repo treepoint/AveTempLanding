@@ -1,0 +1,54 @@
+{
+    "download_button": "Download",
+
+    "about_headline": "About",
+    "discussions_headline": "Discussions",
+    "features_headline": "Features",
+    "support_headline": "Support",
+    "changelog_headline": "Changelog",
+    "issues_headline": "Issues",
+    "githab_page_headline": "Github main page",
+
+    "and": "and",
+
+    "about_text_1": "AveTemp is free to use and based on ", 
+    "about_text_2": "for continuous monitoring CPU temperature and TDP, also for auto adjust CPU performance state and CPU Turbo mode depends on current workload.",
+    "about_text_3": "Basically, it was developed for notebooks but may help with desktop CPUs too.",
+
+    "feature_continuous": "Continuous monitoring temperature and TDP of CPU",
+    "feature_collecting_states": "Collecting and showing min, max and current temps and TDP states",
+    "feature_collecting_times": "Collecting and showing average scores for 1, 5, 15, 60 minutes and 24 hours",
+    "feature_automatic_adjust": "Automatic adjust CPU performance state and CPU Turbo mode. Also, you can setup preferred CPU load threshold, Turbo modes and CPU states or disable it at all",
+    "feature_autostart": "Autostart on user logon",
+    "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
+    "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
+
+    "support_text": "I will be happy if you will send me money for a coffee cup",
+
+    "releases_location_text": "All releases are available there —",
+
+    "1_3_2_disclaimer": "IMPORTANT: new version of statistic file is incompatible with older ones. So now there is a check for version and if it's not the same with the old one statistics file, old one will be dropped and replaced with brand new.",
+    "1_3_2_issue_8": "Fixed: issue when saving settings from autostart changed file location therefor next autostart not working —",
+    "1_3_2_issue_10": "Fixed: issue when turbo management not working while statistics was off —",
+    "1_3_2_issue_12": "Fixed: issue that statistics won't delete when it was disabled —",
+    "1_3_2_optimization": "Optimizations: now the min, max and current temps and TDP saving like separated data, so now no need to calculate them all the time",
+    "1_3_2_added_check": "Added check statistics file version",
+    "1_3_2_refactoring": "Refactoring: workers were moved to separated file",
+
+    "1_3_1_tray_icon": "Fixed: issue when tray icon does not disappear when AveTemp is closed",
+    "1_3_1_data_collect": "Fixed: issue when sometimes the temp and TDP stats are showing not realistic data",
+
+    "1_3_0_turbo": "Feature: added settings for the CPU turbo mode",
+    "1_3_0_autostart": "Feature: added autostart settings",
+    "1_3_0_realy_appying": "Fixed: added «powercfg.exe -S SCHEME_CURRENT» command so CPU settings are actually applying and working",
+    "1_3_0_current_scheme": "Optimization: changed «SCHEME_BALANCED» for «SCHEME_CURRENT» so now it is working for any power plan scheme, that active now",
+    "1_3_0_refactoring": "Some refactoring",
+
+    "1_2_2_cpu_performance" : "Feature: added CPU performance management functionality",
+    "1_2_2_basic_intel_support" : "Feature: added basic Intel support",
+    "1_2_2_changed_icons_format" : "Optimization: change icons to SVG format",
+    "1_2_2_reduced_cpu_usage" : "Optimization: reduced background CPU usage",
+    "1_2_2_tested_on" : "Tested on Ryzen 4600h, 4800h and Intel Pentium 7505 Gold.",
+
+    "1_0_1_text": "First release with basic monitoring functions."
+}

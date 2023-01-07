@@ -8,7 +8,6 @@
   import MainHeader from './components/MainHeader.vue'
   import MainContent from './components/MainContent.vue'
   import MainFooter from './components/MainFooter.vue'
-
   export default {
     name: 'App',
     components: {
@@ -157,6 +156,7 @@
     padding-left: 32px;
     padding-right: 32px;
     width: 100%;
+    height: 44px;
   }
 
   @media (max-width: 576px) { 
@@ -200,7 +200,7 @@
   }
 
   li {
-    margin-top: 6px;
+    margin-top: 8px;
   }
 
   .icon_list {
@@ -245,6 +245,19 @@
   h3 {
     margin: 32px 0px 8px 0px;
     margin-right: auto;
+  }
+
+  .localization_picker {
+    padding-right: 16px;
+  }
+
+  .form-select:focus {
+    border-color: #8b1924;
+    box-shadow: none;
+  }
+
+  .option {
+    border-color: 1px solid #8b1924;
   }
 
 </style>
