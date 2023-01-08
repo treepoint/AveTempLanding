@@ -20,8 +20,16 @@ function loadLocaleMessages() {
   return messages
 }
 
+function getLocale() {
+  if (navigator.userAgent.toLowerCase().includes('yandex')) {
+    return 'ru'
+  } else {
+    return navigator.language.split('-')[0] || navigator.userLanguage || process.env.VUE_APP_I18N_LOCALE || 'en'
+  }
+}
+
 export default createI18n({
-  locale: navigator.language.split('-')[0] || navigator.userLanguage || process.env.VUE_APP_I18N_LOCALE || 'en',
+  locale: getLocale(),
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
   messages: loadLocaleMessages()
 })

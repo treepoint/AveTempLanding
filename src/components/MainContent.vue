@@ -33,7 +33,7 @@
 
     <div class="columns one">
       <h2 id="support">{{ $t('support_headline') }} AveTemp</h2>
-      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/heart_icon.svg"/>
+      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/heart_icon.png"/>
       <p>{{ $t('support_text') }}</p>
       <div class="icon_list">
         <div class="icon_item">

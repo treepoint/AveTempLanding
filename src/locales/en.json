@@ -49,7 +49,7 @@
 
     "1_2_2_cpu_performance" : "Feature: added CPU performance management functionality",
     "1_2_2_basic_intel_support" : "Feature: added basic Intel support",
-    "1_2_2_changed_icons_format" : "Optimization: change icons to SVG format",
+    "1_2_2_changed_icons_format" : "Optimization: changed icons to SVG format",
     "1_2_2_reduced_cpu_usage" : "Optimization: reduced background CPU usage",
     "1_2_2_tested_on" : "Tested on Ryzen 4600h, 4800h and Intel Pentium 7505 Gold.",
 

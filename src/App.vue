@@ -20,7 +20,7 @@
       var title = computed(() => t("title"))
       var description = computed(() => t("description"))
 
-      var metaData = { title: title.value, meta: [{ name: description.value }]}
+      var metaData = { title: title.value, meta: [{ name: "description", content: description.value }]}
 
       // Обязательно вызывать в setup()
       useMeta(metaData)
