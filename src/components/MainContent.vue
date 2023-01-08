@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    
     <div class="columns two">
       <div>
         <h2 id="about">{{ $t('about_headline') }}</h2>
@@ -9,10 +10,30 @@
         <p>
           {{ $t('about_text_3') }}
         </p>
+
         <a class="btn btn-outline-danger" :href="download_link" role="button">{{ $t('download_button') }}</a>
+
+        <h3>{{ $t('how_to_headline') }}</h3>
+
+        <div class="columns three">
+          <div class="promo_item">
+            <img class="promo_image" src="../assets/promo_setup.png"/>
+            <p class="promo_label">{{ $t('promo_install') }}</p>
+          </div>
+          <div class="promo_item">
+            <img class="promo_image" src="../assets/promo_temps.png"/>
+            <p class="promo_label">{{ $t('promo_reduce') }}</p>
+          </div>
+          <div class="promo_item">
+            <img class="promo_image" src="../assets/promo_performance.png"/>
+            <p class="promo_label">{{ $t('promo_turbo') }}</p>
+          </div>
+        </div>
+
       </div>
-      
-      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/main_window.png"/>
+      <div class="screenshot_column">
+        <img alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/main_window.png"/>
+      </div>
     </div>
     
     <div class="columns two reverse">
@@ -28,7 +49,9 @@
           <li>{{ $t('feature_low_cpu') }}</li>
         </ul>
       </div>
-      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/settings.png"/>
+      <div class="screenshot_column">
+        <img alt="AveTemp Settings Screen" class="screenshot" src="../assets/screenshots/settings.png"/>
+      </div>
     </div>
 
     <div class="columns one">

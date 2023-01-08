@@ -22,6 +22,10 @@
     align-items: center;
     margin-top: 24px;
     margin-bottom: 48px;
+    max-width: -moz-min-content;
+    max-width: fit-content;
+    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .logo_block {
@@ -38,7 +42,7 @@
 }
 
 .columns {
-    max-width: 1180px;
+    max-width: 1280px;
     margin-top: 24px;
     display: flex;
     flex-direction: column;
@@ -56,11 +60,59 @@
     row-gap: 16px; 
 }
 
+.columns.three {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    row-gap: 32px;
+}
+
+@media (max-width: 520px) { 
+    .columns.three {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.promo_item {
+    width: 96px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+}
+
+.promo_label {
+    width: 202px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .columns.two.reverse {
     flex-direction: row-reverse;
 }
 
+h3 {
+    margin: 16px 0px 8px 0px;
+    margin-right: auto;
+}
+
+@media (max-width: 576px) {
+    .container-sm, .container {
+        max-width: 751px;
+    }
+}
+
 @media (max-width: 992px) { 
+    .columns {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .columns.two {
         flex-direction: column-reverse;
     }
@@ -68,6 +120,16 @@
     .columns.two.reverse {
             flex-direction: column-reverse;
     }
+
+    h1, h2, h3 {
+        margin-left: auto !important;
+        width: max-content;
+        margin-right: auto !important;
+    }
+}
+
+.screenshot_column {
+    display: grid;
 }
 
 .screenshot {
@@ -77,6 +139,12 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    min-width: max-content;
+}
+
+.promo_image {
+    padding-bottom: 16px;
+    max-width: 96px;
 }
 
 .spacer {
@@ -94,11 +162,6 @@
 
 ul, ol, dl {
     width: 100%;   
-}
-
-h3 {
-    margin: 16px 0px 8px 0px;
-    margin-right: auto;
 }
 
 a {
