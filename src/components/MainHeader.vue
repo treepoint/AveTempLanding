@@ -1,7 +1,7 @@
 <template>
     <div class="footer_and_header">
         <div class="header">
-            <a class="logo_block" href="https://avetemp.ru" target="_blank" rel="noopener">
+            <a class="logo_block" href="https://avetemp.ru" rel="noopener">
                 <img alt="AveTemp Main Screen" class="logo" src="../assets/logo.png"/>
                 <div class="name">AveTemp</div>
             </a>

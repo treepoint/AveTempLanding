@@ -6,7 +6,7 @@
         <img alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/main_window.png"/>
       </div>
       <div>
-        <h2 id="about">{{ $t('about_headline') }}</h2>
+        <h1 id="about">{{ $t('h1') }}</h1>
         <div class="icon_list">
           <div class="icon_item">
             <img class="promo_image" src="../assets/promo_setup.png"/>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <p>
-          {{ $t('about_text_1') }} <a href="https://www.python.org/" rel="noopener">Python</a> {{ $t('and') }} <a href="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" rel="noopener">LibreHardwareMonitorLib</a> {{ $t('about_text_2') }}
+          {{ $t('about_text_1') }} <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a> {{ $t('and') }} <a href="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" target="_blank" rel="noopener">LibreHardwareMonitorLib</a> {{ $t('about_text_2') }}
         </p>
         <p>
           {{ $t('about_text_3') }}
