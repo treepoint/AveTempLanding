@@ -1,4 +1,6 @@
 {
+    "locale": "en",
+
     "title": "Monitoring CPU Temperature, TDP and Adjust Turbo Mode",
     "description": "Free to use Tool for Continuous Monitoring CPU Temperature and TDP, also auto Adjust CPU Performance State and CPU Turbo Mode.",
 

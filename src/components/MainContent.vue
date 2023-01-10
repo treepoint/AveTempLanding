@@ -3,7 +3,8 @@
     
     <div class="columns two reverse">
       <div class="screenshot_column">
-        <img alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/main_window.png"/>
+        <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/ru/main_window.png"  />
+        <img v-else alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/en/main_window.png"  />
       </div>
       <div>
         <h1 id="about">{{ $t('h1') }}</h1>
@@ -35,7 +36,8 @@
     
     <div class="columns two">
       <div class="screenshot_column">
-        <img alt="AveTemp Settings Screen" class="screenshot" src="../assets/screenshots/settings.png"/>
+        <img v-if="$t('locale') === 'ru'" alt="AveTemp Setting Screen" class="screenshot" src="../assets/screenshots/ru/settings.png"  />
+        <img v-else alt="AveTemp Setting Screen" class="screenshot" src="../assets/screenshots/en/settings.png"  />
       </div>
       <div>
         <h2 id="features">{{ $t('features_headline') }}</h2>
