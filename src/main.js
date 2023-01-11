@@ -8,6 +8,6 @@ import 'bootstrap/dist/js/bootstrap.js'
 const app = createApp(App).use(i18n).use(Quasar, { plugins: { Meta } })
 
 //Глобальные переменные
-app.config.globalProperties.download_link = "https://avetemp.ru/AveTemp.zip"
+app.config.globalProperties.download_link = "https://avetemp.ru/AveTemp.exe"
 
 app.mount('#app')

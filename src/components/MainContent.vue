@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    
+  <div class="container">  
     <div class="columns two reverse">
       <div class="screenshot_column">
         <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/ru/main_window.png"  />
