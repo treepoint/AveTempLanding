@@ -1,5 +1,5 @@
 <template>
-    <div class="footer_and_header">
+    <div class="footer_and_header fixed">
         <div class="header">
             <a class="logo_block" href="https://avetemp.ru" rel="noopener">
                 <img alt="AveTemp Main Screen" class="logo" src="../assets/logo.png"/>

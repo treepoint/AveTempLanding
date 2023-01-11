@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 80px;
     margin-bottom: 48px;
     max-width: -moz-min-content;
     max-width: fit-content;
@@ -186,6 +186,10 @@ h1 {
     min-height: 52px;
     border-bottom: 1px solid #c8c8c8;
     border-top: 1px solid #c8c8c8;
+}
+
+.footer_and_header.fixed {
+    position: fixed;
 }
 
 .footer_and_header .header ul,

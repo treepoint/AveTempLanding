@@ -38,6 +38,8 @@
 
     "releases_location_text": "All releases are available there —",
 
+    "1_4_0_localization": "Feature: added localization for English and Russian. At the first start, the language is determined by the language of the system",
+
     "1_3_2_disclaimer": "IMPORTANT: new version of statistic file is incompatible with older ones. So now there is a check for version and if it's not the same with the old one statistics file, old one will be dropped and replaced with brand new.",
     "1_3_2_issue_8": "Fixed: issue when saving settings from autostart changed file location therefor next autostart not working —",
     "1_3_2_issue_10": "Fixed: issue when turbo management not working while statistics was off —",

@@ -79,6 +79,11 @@
       <p>{{ $t('releases_location_text') }} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener">Github</a></p>
 
       <div class="release_description">
+        <h3>1.4.0</h3>
+        <ul>
+          <li>{{ $t('1_4_0_localization') }}</li>
+        </ul>
+
         <h3>1.3.2</h3>
         <p>{{ $t('1_3_2_disclaimer') }}</p>
         <ul>
