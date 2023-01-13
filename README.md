@@ -1,4 +1,10 @@
-# vue3-bootstrap5-landing
+# AveTempLanding
+
+Landing page for my project — [AveTemp](https://github.com/treepoint/AveTemp). Landing placed on url https://avetemp.ru and looks like this:
+
+![landing_screen](https://user-images.githubusercontent.com/25937222/212323319-25011533-4587-4423-8a65-a2542c45c2df.png)
+
+You can use it where were you want as a template, but not to copy entire site.
 
 ## Project setup
 ```
