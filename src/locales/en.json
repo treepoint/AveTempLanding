@@ -38,6 +38,13 @@
 
     "releases_location_text": "All releases are available there —",
 
+    "1_4_1_separated_cpu_method": "Feature: a separate method to get CPU load was made and now frequency switching and turbo depend on this method. The polling rate is 0.1 second, so turbo is activated MUCH faster. Also added a check for at least 2 turbo «ticks» — two consecutive loads above the threshold — and the second must be greater than the first to activate turbo. Also, the turbo will be activated if there are 3 consecutive «ticks» only above the threshold, regardless of the level of exceeding the threshold.",
+    "1_4_1_settings_translation": "Feature: added instant translation for the settings window when you change the language.",
+    "1_4_1_pause_before_autostart": "Feature: added a pause before autorun. This gives time for other programs from the autorun to load as quickly as possible without restrictions. The default pause is 3 seconds. If AveTemp was already in the autorun, to activate this feature you must disable and enable autorun from the settings with settings saved.",
+    "1_4_1_not_ovveriding_settings": "Feature: settings will now not be overridden if the settings file has been corrupted. Instead, as many settings from the file as possible will be restored, and all other settings will be defaulted.",
+    "1_4_1_decrease_backup_interval": "Optimization: еhe interval for backing up statistics was reduced from 15 to 60 seconds. This reduced the background load on the processor.",
+    "1_4_1_properly_closed": "Fixed: now AveTemp closes correctly - with all threads and tray icon removed.",
+
     "1_4_0_localization": "Feature: added localization for English and Russian. At the first start, the language is determined by the language of the system",
 
     "1_3_2_disclaimer": "IMPORTANT: new version of statistic file is incompatible with older ones. So now there is a check for version and if it's not the same with the old one statistics file, old one will be dropped and replaced with brand new.",
