@@ -188,6 +188,15 @@ h1 {
     border-top: 1px solid #c8c8c8;
 }
 
+.header-inner {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer_and_header.fixed {
     position: fixed;
 }
@@ -204,6 +213,18 @@ h1 {
     width: 100%;
     padding-left: 32px;
     padding-right: 32px;
+    height: 36px;
+}
+
+.header_menu a {
+    border-bottom: 1px dashed #bb2d3b;
+    height: 24px;
+    text-decoration: none;
+    display: block;
+}
+
+.header_menu a:hover {
+    border-bottom: 1px dashed #dc3545;
 }
 
 .footer {
