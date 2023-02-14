@@ -38,6 +38,12 @@
 
     "releases_location_text": "All releases are available there —",
 
+    "1_4_2_autostart_delay": "Feature: added setting for adjust autostart delay.",
+    "1_4_2_backup_interval": "Feature: added setting for adjust backup interval. So now there is option to set backup once in an hour so background consumption will be - about 0 all time except 1 second in hour.",
+    "1_4_2_intel_cpu_names": "Fixed: now very long intel CPU names show corretly.",
+    "1_4_2_not_closed_by_enter": "Fixed: settings window does not close by pressing Enter now.",
+    "1_4_2_minimum_value": "Fixed: were set minimum value for sensors update frequency — 0.3 second.",
+
     "1_4_1_separated_cpu_method": "Feature: a separate method to get CPU load was made and now frequency switching and turbo depend on this method. The polling rate is 0.1 second, so turbo is activated MUCH faster. Also added a check for at least 2 turbo «ticks» — two consecutive loads above the threshold — and the second must be greater than the first to activate turbo. Also, the turbo will be activated if there are 3 consecutive «ticks» only above the threshold, regardless of the level of exceeding the threshold.",
     "1_4_1_settings_translation": "Feature: added instant translation for the settings window when you change the language.",
     "1_4_1_pause_before_autostart": "Feature: added a pause before autorun. This gives time for other programs from the autorun to load as quickly as possible without restrictions. The default pause is 3 seconds. If AveTemp was already in the autorun, to activate this feature you must disable and enable autorun from the settings with settings saved.",

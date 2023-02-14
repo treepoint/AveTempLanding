@@ -79,6 +79,15 @@
       <p>{{ $t('releases_location_text') }} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener">Github</a></p>
 
       <div class="release_description">
+        <h3>1.4.2</h3>
+        <ul>
+          <li>{{ $t('1_4_2_autostart_delay') }}</li>
+          <li>{{ $t('1_4_2_backup_interval') }}</li>
+          <li>{{ $t('1_4_2_intel_cpu_names') }}</li>
+          <li>{{ $t('1_4_2_not_closed_by_enter') }}</li>
+          <li>{{ $t('1_4_2_minimum_value') }}</li>
+        </ul>
+
         <h3>1.4.1</h3>
         <ul>
           <li>{{ $t('1_4_1_separated_cpu_method') }}</li>
