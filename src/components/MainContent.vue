@@ -2,22 +2,22 @@
   <div class="container">  
     <div class="columns two reverse">
       <div class="screenshot_column">
-        <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/ru/main_window.png"  />
-        <img v-else alt="AveTemp Main Screen" class="screenshot" src="../assets/screenshots/en/main_window.png"  />
+        <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/images/screenshots/ru/main_window.png"  />
+        <img v-else alt="AveTemp Main Screen" class="screenshot" src="../assets/images/screenshots/en/main_window.png"  />
       </div>
       <div>
         <h1 id="about">{{ $t('h1') }}</h1>
         <div class="icon_list">
           <div class="icon_item">
-            <img class="promo_image" src="../assets/promo_setup.png"/>
+            <img class="promo_image" src="../assets/images/promo_setup.png"/>
             <p class="promo_label">{{ $t('promo_install') }}</p>
           </div>
           <div class="icon_item">
-            <img class="promo_image" src="../assets/promo_temps.png"/>
+            <img class="promo_image" src="../assets/images/promo_temps.png"/>
             <p class="promo_label">{{ $t('promo_reduce') }}</p>
           </div>
           <div class="icon_item">
-            <img class="promo_image" src="../assets/promo_performance.png"/>
+            <img class="promo_image" src="../assets/images/promo_performance.png"/>
             <p class="promo_label">{{ $t('promo_turbo') }}</p>
           </div>
         </div>
@@ -35,8 +35,8 @@
     
     <div class="columns two">
       <div class="screenshot_column">
-        <img v-if="$t('locale') === 'ru'" alt="AveTemp Setting Screen" class="screenshot" src="../assets/screenshots/ru/settings.png"  />
-        <img v-else alt="AveTemp Setting Screen" class="screenshot" src="../assets/screenshots/en/settings.png"  />
+        <img v-if="$t('locale') === 'ru'" alt="AveTemp Setting Screen" class="screenshot" src="../assets/images/screenshots/ru/settings.png"  />
+        <img v-else alt="AveTemp Setting Screen" class="screenshot" src="../assets/images/screenshots/en/settings.png"  />
       </div>
       <div>
         <h2 id="features">{{ $t('features_headline') }}</h2>
@@ -55,7 +55,7 @@
 
     <div class="columns one">
       <h2 id="support">{{ $t('support_headline') }} AveTemp</h2>
-      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/heart_icon.png"/>
+      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/images/heart_icon.png"/>
       <p>{{ $t('support_text') }}</p>
       <div class="icon_list">
         <div class="icon_item">
@@ -79,6 +79,17 @@
       <p>{{ $t('releases_location_text') }} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener">Github</a></p>
 
       <div class="release_description">
+        <h3>1.4.3</h3>
+        <ul>
+          <li>{{ $t('1_4_3_notifications') }}</li>
+          <li>{{ $t('1_4_3_admin_right_description') }}</li>
+          <li>{{ $t('1_4_3_clear_icons') }}</li>
+          <li>{{ $t('1_4_3_name_and_version_link') }}</li>
+          <li>{{ $t('1_4_3_tray_localization') }}</li>
+          <li>{{ $t('1_4_3_closing_correctly') }}</li>
+          <li>{{ $t('1_4_3_cpu_name') }}</li>
+        </ul>
+
         <h3>1.4.2</h3>
         <ul>
           <li>{{ $t('1_4_2_autostart_delay') }}</li>

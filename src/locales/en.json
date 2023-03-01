@@ -38,6 +38,14 @@
 
     "releases_location_text": "All releases are available there —",
 
+    "1_4_3_notifications": "Feature: added update notification.",
+    "1_4_3_admin_right_description": "Feature: added description to admin rights requirements.",
+    "1_4_3_clear_icons": "Interface: changed «Clear» label to icons on statistics clear buttons.",
+    "1_4_3_name_and_version_link": "Interface: changed name and version from plain text link to Github into settings windows.",
+    "1_4_3_tray_localization": "Fixed: tray's items now localized too. Before were only «Закрыть» in any case. ",
+    "1_4_3_closing_correctly": "Fixed: AveTemp closing correctly when main window is open.",
+    "1_4_3_cpu_name": "Fixed: now CPU names with any length are showing correctly.",
+
     "1_4_2_autostart_delay": "Feature: added setting for adjust autostart delay.",
     "1_4_2_backup_interval": "Feature: added setting for adjust backup interval. So now there is option to set backup once in an hour so background consumption will be - about 0 all time except 1 second in hour.",
     "1_4_2_intel_cpu_names": "Fixed: now very long intel CPU names show corretly.",
