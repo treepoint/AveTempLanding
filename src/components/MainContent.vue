@@ -79,6 +79,25 @@
       <p>{{ $t('releases_location_text') }} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener">Github</a></p>
 
       <div class="release_description">
+        <h3>1.4.5</h3>
+        <ul>
+          <li>{{ $t('1_4_5_debug') }}</li>
+          <li>{{ $t('1_4_5_settings_not_apply') }}</li>
+          <li>{{ $t('1_4_5_minimal_states') }}</li>
+          <li>{{ $t('1_4_5_doubled_run') }}</li>
+          <li>{{ $t('1_4_5_clear_buttons') }}</li>
+          <li>{{ $t('1_4_5_cpu_settings_not_resetings') }}</li>
+          <li>{{ $t('1_4_5_UI_updates') }}</li>
+          <li>{{ $t('1_4_5_change_defaults') }}</li>
+          <li>{{ $t('1_4_5_tray_icon_updates') }}</li>
+          <li>{{ $t('1_4_5_legacy') }}</li>
+        </ul>
+
+        <h3>1.4.4</h3>
+        <ul>
+          <li>{{ $t('1_4_4_crushes') }}</li>
+        </ul>
+
         <h3>1.4.3</h3>
         <ul>
           <li>{{ $t('1_4_3_notifications') }}</li>

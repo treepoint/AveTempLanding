@@ -38,6 +38,19 @@
 
     "releases_location_text": "All releases are available there —",
 
+    "1_4_5_debug" : "Feature: added logging to file «debug.txt» if app goes wrong. If you will encounter crushes, you can send me that file with short description of the problem and i will try to fix that ASAP.",
+    "1_4_5_settings_not_apply" : "Fixed: CPU settings not applied in some cases.",
+    "1_4_5_minimal_states" : "Fixed: minimal default CPU states in Windows — 5 and 80 percent on battery and on plug respectively — were higher than custom maximum state and it prevented decreasing CPU frequency.",
+    "1_4_5_doubled_run" : "Fixed: double run was possible. ",
+    "1_4_5_clear_buttons" : "Fixed: clear buttons for temp, TDP, and average values were broken during last vast refactoring and not working.",
+    "1_4_5_cpu_settings_not_resetings" : "Fixed: Windows default settings for CPU does not apply when program was closed from tray.",
+    "1_4_5_UI_updates" : "Fixed: on startup UI are updating though app was running as minimized to tray.",
+    "1_4_5_change_defaults" : "Optimization: changed default values for backup interval, temps, TDP collect interval and CPU threshold to 15 min, 0.7 sec and 80 percent respectively. Affect only start without settings file.",
+    "1_4_5_tray_icon_updates" : "Optimization: tray icon now updates only if current temp was change.",
+    "1_4_5_legacy" : "Optimization: removed collection and updating 2 legacy's lists: «general_temps» and «general_TDP».",
+
+    "1_4_4_crushes": "Fixed unexpected crushes when CPU mode was changed.",
+
     "1_4_3_notifications": "Feature: added update notification.",
     "1_4_3_admin_right_description": "Feature: added description to admin rights requirements.",
     "1_4_3_clear_icons": "Interface: changed «Clear» label to icons on statistics clear buttons.",
