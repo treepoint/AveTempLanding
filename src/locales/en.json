@@ -1,7 +1,7 @@
 {
     "locale": "en",
 
-    "title": "Monitoring CPU Temperature, TDP and Adjust Turbo Mode",
+    "title": "AveTemp — monitoring CPU Temperature, TDP and Adjust Turbo Mode",
     "description": "Free to use Tool for Continuous Monitoring CPU Temperature and TDP, also auto Adjust CPU Performance State and CPU Turbo Mode.",
 
     "promo_install": "1. Download and setup AveTemp",
@@ -34,9 +34,18 @@
     "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
     "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
 
-    "support_text": "I will be happy if you will send me money for a coffee cup",
+    "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
 
-    "releases_location_text": "All releases are available there —",
+    "releases_location_text": "All releases are available on ",
+
+    "show_more": "Show more",
+
+    "1_4_6_update_LHMLib" : "Updated LHMLib to latest nightly build",
+    "1_4_6_statistics_recording" : "Feature: added recording of statistics to the file immediately after enabling this setting",
+    "1_4_6_cpu_load_not_updates" : "Fixed: CPU load sometimes not updates after Windows sleep",
+    "1_4_6_autostart_crushing" : "Fixed: if shutdown was unexpected than next autostart might crush",
+    "1_4_6_min_max_reset" : "Fixed: min and max temps and TDP were not reset if stat collecting had been enabled",
+    "1_4_6_incorrect_max_values" : "Potentially fixed: sometimes max values were incorrect",
 
     "1_4_5_debug" : "Feature: added logging to file «debug.txt» if app goes wrong. If you will encounter crushes, you can send me that file with short description of the problem and i will try to fix that ASAP.",
     "1_4_5_settings_not_apply" : "Fixed: CPU settings not applied in some cases.",

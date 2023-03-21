@@ -32,6 +32,10 @@
     display: flex;
 }
 
+.logo_block:hover {
+    opacity: 0.7;
+}
+
 @media (max-width: 760px) { 
     .name {
         display: none;
@@ -43,7 +47,7 @@
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 36px;
+    margin-bottom: 56px;
 }
 
 .columns.one {
@@ -55,6 +59,7 @@
     flex-direction: row;
     column-gap: 48px;
     row-gap: 16px; 
+    justify-content: space-between;
 }
 
 .columns.three {
@@ -105,10 +110,18 @@ h3 {
     }
 }
 
+.half {
+    max-width: calc(50% - 16px);
+}
+
 @media (max-width: 992px) { 
     .columns {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .half {
+        max-width: 100%;
     }
 
     .columns.two {
@@ -216,6 +229,7 @@ h1 {
     height: 36px;
 }
 
+.anchor_link,
 .header_menu a {
     border-bottom: 1px dashed #bb2d3b;
     height: 24px;
@@ -223,6 +237,7 @@ h1 {
     display: block;
 }
 
+.anchor_link:hover,
 .header_menu a:hover {
     border-bottom: 1px dashed #dc3545;
 }
@@ -240,6 +255,17 @@ h1 {
     .footer {
         padding-left: 16px;
         padding-right: 16px;
+    }
+}
+
+.release {
+    width: calc(50% - 16px);
+    min-width: 400px;
+}
+
+@media (max-width: 727px) { 
+    .release {
+        width: 100%;
     }
 }
 
@@ -312,11 +338,15 @@ li {
 .currency {
     font-size: 24px;
     font-weight: 700;
-    color: #b9757c;
+    color: #dc3545;
 }
 
 .release_description {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
 }
 
 h2 {
@@ -339,4 +369,50 @@ h3 {
 
 .option {
     border-color: 1px solid #8b1924;
+}
+
+.icon {
+    margin-bottom: 16px;
+}
+
+.icon_56_link {
+    margin-bottom: 16px;
+    height: 56px;
+}
+
+.icon_56_link:hover {
+    opacity: 0.7;
+}
+
+.icon_22 {
+    height: 22px;
+    margin-bottom: 2px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    column-gap: 56px;
+    margin-bottom: 16px;
+}
+
+.support {
+    margin-top: 78px;
+    margin-bottom: 78px;
+    background: #fcfcfc;
+    padding: 16px 20px;
+    border-radius: 6px;
+    border: 1px solid #cac9c9;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.centered_elem {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spoiler {
+    display: none;
 }

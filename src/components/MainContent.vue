@@ -5,7 +5,7 @@
         <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/images/screenshots/ru/main_window.png"  />
         <img v-else alt="AveTemp Main Screen" class="screenshot" src="../assets/images/screenshots/en/main_window.png"  />
       </div>
-      <div>
+      <div class="half">
         <h1 id="about">{{ $t('h1') }}</h1>
         <div class="icon_list">
           <div class="icon_item">
@@ -38,7 +38,7 @@
         <img v-if="$t('locale') === 'ru'" alt="AveTemp Setting Screen" class="screenshot" src="../assets/images/screenshots/ru/settings.png"  />
         <img v-else alt="AveTemp Setting Screen" class="screenshot" src="../assets/images/screenshots/en/settings.png"  />
       </div>
-      <div>
+      <div class="half">
         <h2 id="features">{{ $t('features_headline') }}</h2>
         <ul>
           <li>{{ $t('feature_continuous') }}</li>
@@ -49,27 +49,33 @@
           <li>{{ $t('feature_autocolor') }}</li>
           <li>{{ $t('feature_low_cpu') }}</li>
         </ul>
+
+        <div class="support">
+          <h2 id="support" class="centered_elem">{{ $t('support_headline') }} <img alt="support_icon" class="icon_22" src="../assets/images/heart_icon.png"/> AveTemp</h2>
+          <p class="centered_elem">{{ $t('support_text') }}</p>
+          <div class="icon_list centered">
+            <a href="https://boosty.to/paul_khoziashev" target="_blank" rel="noopener">
+              <img alt="boosty" class="icon_56_link" src="../assets/images/boosty_128.png"/>
+            </a>
+            <a href="https://www.patreon.com/paul_khoziashev" target="_blank" rel="noopener">
+              <img alt="patreon" class="icon_56_link" src="../assets/images/patreon_128.png"/>
+            </a>
+          </div>
+          <div class="icon_list">
+            <div class="icon_item">
+              <div class="currency">USD</div>
+              4278 3100 2282 7059
+            </div>
+            <div class="icon_item">
+              <div class="currency">UZS</div>
+              8600 4904 8192 1298
+            </div>
+            <div class="icon_item">
+              <div class="currency">RUB</div>
+              2202 2023 3862 1422
+            </div>
+        </div>
       </div>
-
-    </div>
-
-    <div class="columns one">
-      <h2 id="support">{{ $t('support_headline') }} AveTemp</h2>
-      <img alt="AveTemp Main Screen" class="screenshot" src="../assets/images/heart_icon.png"/>
-      <p>{{ $t('support_text') }}</p>
-      <div class="icon_list">
-        <div class="icon_item">
-          <div class="currency">USD</div>
-           4278 3100 2282 7059
-        </div>
-        <div class="icon_item">
-          <div class="currency">UZS</div>
-           8600 4904 8192 1298
-        </div>
-        <div class="icon_item">
-          <div class="currency">RUB</div>
-           2202 2023 3862 1422
-        </div>
       </div>
     </div>
 
@@ -79,105 +85,145 @@
       <p>{{ $t('releases_location_text') }} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener">Github</a></p>
 
       <div class="release_description">
-        <h3>1.4.5</h3>
-        <ul>
-          <li>{{ $t('1_4_5_debug') }}</li>
-          <li>{{ $t('1_4_5_settings_not_apply') }}</li>
-          <li>{{ $t('1_4_5_minimal_states') }}</li>
-          <li>{{ $t('1_4_5_doubled_run') }}</li>
-          <li>{{ $t('1_4_5_clear_buttons') }}</li>
-          <li>{{ $t('1_4_5_cpu_settings_not_resetings') }}</li>
-          <li>{{ $t('1_4_5_UI_updates') }}</li>
-          <li>{{ $t('1_4_5_change_defaults') }}</li>
-          <li>{{ $t('1_4_5_tray_icon_updates') }}</li>
-          <li>{{ $t('1_4_5_legacy') }}</li>
-        </ul>
+        <div class="release">
+          <h3>1.4.6</h3>
+          <ul>
+            <li>{{ $t('1_4_6_update_LHMLib') }}</li>
+            <li>{{ $t('1_4_6_statistics_recording') }}</li>
+            <li>{{ $t('1_4_6_cpu_load_not_updates') }}</li>
+            <li>{{ $t('1_4_6_autostart_crushing') }}</li>
+            <li>{{ $t('1_4_6_min_max_reset') }}</li>
+            <li>{{ $t('1_4_6_incorrect_max_values') }}</li>
+          </ul>
+        </div>
 
-        <h3>1.4.4</h3>
-        <ul>
-          <li>{{ $t('1_4_4_crushes') }}</li>
-        </ul>
-
-        <h3>1.4.3</h3>
-        <ul>
-          <li>{{ $t('1_4_3_notifications') }}</li>
-          <li>{{ $t('1_4_3_admin_right_description') }}</li>
-          <li>{{ $t('1_4_3_clear_icons') }}</li>
-          <li>{{ $t('1_4_3_name_and_version_link') }}</li>
-          <li>{{ $t('1_4_3_tray_localization') }}</li>
-          <li>{{ $t('1_4_3_closing_correctly') }}</li>
-          <li>{{ $t('1_4_3_cpu_name') }}</li>
-        </ul>
-
-        <h3>1.4.2</h3>
-        <ul>
-          <li>{{ $t('1_4_2_autostart_delay') }}</li>
-          <li>{{ $t('1_4_2_backup_interval') }}</li>
-          <li>{{ $t('1_4_2_intel_cpu_names') }}</li>
-          <li>{{ $t('1_4_2_not_closed_by_enter') }}</li>
-          <li>{{ $t('1_4_2_minimum_value') }}</li>
-        </ul>
-
-        <h3>1.4.1</h3>
-        <ul>
-          <li>{{ $t('1_4_1_separated_cpu_method') }}</li>
-          <li>{{ $t('1_4_1_settings_translation') }}</li>
-          <li>{{ $t('1_4_1_pause_before_autostart') }}</li>
-          <li>{{ $t('1_4_1_not_ovveriding_settings') }}</li>
-          <li>{{ $t('1_4_1_decrease_backup_interval') }}</li>
-          <li>{{ $t('1_4_1_properly_closed') }}</li>
-        </ul>
-
-        <h3>1.4.0</h3>
-        <ul>
-          <li>{{ $t('1_4_0_localization') }}</li>
-        </ul>
-
-        <h3>1.3.2</h3>
-        <p>{{ $t('1_3_2_disclaimer') }}</p>
-        <ul>
-          <li>{{ $t('1_3_2_issue_8') }} <a href="https://github.com/treepoint/AveTemp/issues/8" target="_blank" rel="noopener">issue #8</a></li>
-          <li>{{ $t('1_3_2_issue_10') }} <a href="https://github.com/treepoint/AveTemp/issues/10" target="_blank" rel="noopener">issue #10</a></li>
-          <li>{{ $t('1_3_2_issue_12') }} <a href="https://github.com/treepoint/AveTemp/issues/12" target="_blank" rel="noopener">issue #12</a></li>
-          <li>{{ $t('1_3_2_optimization') }}</li>
-          <li>{{ $t('1_3_2_added_check') }}</li>
-          <li>{{ $t('1_3_2_refactoring') }}</li>
-        </ul>
-
-        <h3>1.3.1</h3>
-        <ul>
-          <li>{{ $t('1_3_1_tray_icon') }}</li>
-          <li>{{ $t('1_3_1_data_collect') }}</li>
-        </ul>
-
-        <h3>1.3.0</h3>
-        <ul>
-          <li>{{ $t('1_3_0_turbo') }}</li>
-          <li>{{ $t('1_3_0_autostart') }}</li>
-          <li>{{ $t('1_3_0_realy_appying') }}</li>
-          <li>{{ $t('1_3_0_current_scheme') }}</li>
-          <li>{{ $t('1_3_0_refactoring') }}</li>
-        </ul>
-
-        <h3>1.2.2</h3>
-        <ul>
-          <li>{{ $t('1_2_2_cpu_performance') }}</li>
-          <li>{{ $t('1_2_2_basic_intel_support') }}</li>
-          <li>{{ $t('1_2_2_changed_icons_format') }}</li>
-          <li>{{ $t('1_2_2_reduced_cpu_usage') }}</li>
-        </ul>
-        <p>{{ $t('1_2_2_tested_on') }}</p>
-
-        <h3>1.0.1</h3>
-        <p>{{ $t('1_0_1_text') }}</p>
+        <div class="release">
+          <h3>1.4.5</h3>
+          <ul>
+            <li>{{ $t('1_4_5_debug') }}</li>
+            <li>{{ $t('1_4_5_settings_not_apply') }}</li>
+            <li>{{ $t('1_4_5_minimal_states') }}</li>
+            <li>{{ $t('1_4_5_doubled_run') }}</li>
+            <li>{{ $t('1_4_5_clear_buttons') }}</li>
+            <li>{{ $t('1_4_5_cpu_settings_not_resetings') }}</li>
+            <li>{{ $t('1_4_5_UI_updates') }}</li>
+            <li>{{ $t('1_4_5_change_defaults') }}</li>
+            <li>{{ $t('1_4_5_tray_icon_updates') }}</li>
+            <li>{{ $t('1_4_5_legacy') }}</li>
+          </ul>
+        </div>
       </div>
-    </div>
+      
+      <a ref="show_more" href="#spoiler" class="anchor_link" rel="noopener" v-on:click="show_more">{{ $t('show_more') }}</a>
 
+      <div ref="spoiler" class="release_description spoiler">
+        <div class="release">
+          <h3>1.4.4</h3>
+          <ul>
+            <li>{{ $t('1_4_4_crushes') }}</li>
+          </ul>
+
+          <h3>1.4.3</h3>
+          <ul>
+            <li>{{ $t('1_4_3_notifications') }}</li>
+            <li>{{ $t('1_4_3_admin_right_description') }}</li>
+            <li>{{ $t('1_4_3_clear_icons') }}</li>
+            <li>{{ $t('1_4_3_name_and_version_link') }}</li>
+            <li>{{ $t('1_4_3_tray_localization') }}</li>
+            <li>{{ $t('1_4_3_closing_correctly') }}</li>
+            <li>{{ $t('1_4_3_cpu_name') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.4.2</h3>
+          <ul>
+            <li>{{ $t('1_4_2_autostart_delay') }}</li>
+            <li>{{ $t('1_4_2_backup_interval') }}</li>
+            <li>{{ $t('1_4_2_intel_cpu_names') }}</li>
+            <li>{{ $t('1_4_2_not_closed_by_enter') }}</li>
+            <li>{{ $t('1_4_2_minimum_value') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.4.1</h3>
+          <ul>
+            <li>{{ $t('1_4_1_separated_cpu_method') }}</li>
+            <li>{{ $t('1_4_1_settings_translation') }}</li>
+            <li>{{ $t('1_4_1_pause_before_autostart') }}</li>
+            <li>{{ $t('1_4_1_not_ovveriding_settings') }}</li>
+            <li>{{ $t('1_4_1_decrease_backup_interval') }}</li>
+            <li>{{ $t('1_4_1_properly_closed') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.4.0</h3>
+          <ul>
+            <li>{{ $t('1_4_0_localization') }}</li>
+          </ul>
+
+          <h3>1.3.2</h3>
+          <p>{{ $t('1_3_2_disclaimer') }}</p>
+          <ul>
+            <li>{{ $t('1_3_2_issue_8') }} <a href="https://github.com/treepoint/AveTemp/issues/8" target="_blank" rel="noopener">issue #8</a></li>
+            <li>{{ $t('1_3_2_issue_10') }} <a href="https://github.com/treepoint/AveTemp/issues/10" target="_blank" rel="noopener">issue #10</a></li>
+            <li>{{ $t('1_3_2_issue_12') }} <a href="https://github.com/treepoint/AveTemp/issues/12" target="_blank" rel="noopener">issue #12</a></li>
+            <li>{{ $t('1_3_2_optimization') }}</li>
+            <li>{{ $t('1_3_2_added_check') }}</li>
+            <li>{{ $t('1_3_2_refactoring') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.3.1</h3>
+          <ul>
+            <li>{{ $t('1_3_1_tray_icon') }}</li>
+            <li>{{ $t('1_3_1_data_collect') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.3.0</h3>
+          <ul>
+            <li>{{ $t('1_3_0_turbo') }}</li>
+            <li>{{ $t('1_3_0_autostart') }}</li>
+            <li>{{ $t('1_3_0_realy_appying') }}</li>
+            <li>{{ $t('1_3_0_current_scheme') }}</li>
+            <li>{{ $t('1_3_0_refactoring') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
+          <h3>1.2.2</h3>
+          <ul>
+            <li>{{ $t('1_2_2_cpu_performance') }}</li>
+            <li>{{ $t('1_2_2_basic_intel_support') }}</li>
+            <li>{{ $t('1_2_2_changed_icons_format') }}</li>
+            <li>{{ $t('1_2_2_reduced_cpu_usage') }}</li>
+          </ul>
+          <p>{{ $t('1_2_2_tested_on') }}</p>
+        </div>
+
+        <div class="release">
+          <h3>1.0.1</h3>
+          <p>{{ $t('1_0_1_text') }}</p>
+        </div>
+    </div>
   </div>
+  </div>
+
 </template>
 
 <script>
   export default {
-    name: "MainContent"
+    name: "MainContent",
+    methods: {
+      show_more() {
+        this.$refs.spoiler.style.display = "inherit";
+        this.$refs.show_more.style.display = "none";
+      }
+    }
   }
 </script>
