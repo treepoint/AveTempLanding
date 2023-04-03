@@ -28,6 +28,9 @@
             </div>
         </div>
     </div>
+    <div ref="update_message" class="update-message">
+        {{ $t('update_message_text') }} <a class="update-message-link" :href="download_link" target="_blank" rel="noopener">{{ $t('download_button') }} </a>
+    </div>
 </template>
 
 <script>
@@ -37,6 +40,14 @@
     name: "MainHeader",
     components: {
       LanguageSelect
-    }
+    },
+    mounted() {
+        const date = new Date(); 
+        let month = date.getMonth()
+
+        if (month == 3 ) {
+            this.$refs.update_message.style.display = "flex";
+        }
+    },
   }
 </script>

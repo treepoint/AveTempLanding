@@ -4,6 +4,8 @@
     "title": "AveTemp — monitoring CPU Temperature, TDP and Adjust Turbo Mode",
     "description": "Free to use Tool for Continuous Monitoring CPU Temperature and TDP, also auto Adjust CPU Performance State and CPU Turbo Mode.",
 
+    "update_message_text": "New version 1.4.7 is available!",
+
     "promo_install": "1. Download and setup AveTemp",
     "promo_reduce": "2. It will reduce temps and noise in idle",
     "promo_turbo": "3. And will set max performance when it needed",
@@ -39,6 +41,12 @@
     "releases_location_text": "All releases are available on ",
 
     "show_more": "Show more",
+
+    "1_4_7_cores_load" : "Fixed: cores load showing correctly on Intel CPU's now",
+    "1_4_7_max_values" : "Fixed: max values for TDP and temps now are not going over the top",
+    "1_4_7_version_number" : "Feature: added new version number to update message",
+    "1_4_7_debug_stack" : "Feature: added debug stack logging to file from LibreHardwareMonitorLib sensors if it needed. Be default it's off, can be runed by start with argument «--hardware-dump»",
+    "1_4_7_support" : "Support: added Boosty and Patreon buttons to settings window. I'll be very glad if you'll support me, subscription starts from 1$",
 
     "1_4_6_update_LHMLib" : "Updated LHMLib to latest nightly build",
     "1_4_6_statistics_recording" : "Feature: added recording of statistics to the file immediately after enabling this setting",

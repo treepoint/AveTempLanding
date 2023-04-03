@@ -221,6 +221,31 @@ h1 {
     margin-left: 16px;
 }
 
+.update-message {
+    position: fixed;
+    top: 54px;
+    padding-top: 4px;
+    background: #d6edd9;
+    width: 100%;
+    padding-bottom: 4px;
+    font-weight: 600;
+    color: #425d46;
+    display: none;
+    justify-content: center;
+    border-bottom: 1px solid #90c497;
+    border-top: 1px solid #90c497;
+    column-gap: 4px;
+}
+
+.update-message-link {
+    color: #425d46;
+}
+
+.update-message-link:hover,
+.update-message-link:active {
+    color: #587b5d;
+}
+
 .header {
     display: flex;
     width: 100%;

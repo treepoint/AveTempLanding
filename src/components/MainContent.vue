@@ -1,5 +1,5 @@
 <template>
-  <div class="container">  
+  <div ref="container" class="container">  
     <div class="columns two reverse">
       <div class="screenshot_column">
         <img v-if="$t('locale') === 'ru'" alt="AveTemp Main Screen" class="screenshot" src="../assets/images/screenshots/ru/main_window.png"  />
@@ -86,6 +86,17 @@
 
       <div class="release_description">
         <div class="release">
+          <h3>1.4.7</h3>
+          <ul>
+            <li>{{ $t('1_4_7_cores_load') }}</li>
+            <li>{{ $t('1_4_7_max_values') }}</li>
+            <li>{{ $t('1_4_7_version_number') }}</li>
+            <li>{{ $t('1_4_7_debug_stack') }}</li>
+            <li>{{ $t('1_4_7_support') }}</li>
+          </ul>
+        </div>
+
+        <div class="release">
           <h3>1.4.6</h3>
           <ul>
             <li>{{ $t('1_4_6_update_LHMLib') }}</li>
@@ -96,7 +107,11 @@
             <li>{{ $t('1_4_6_incorrect_max_values') }}</li>
           </ul>
         </div>
+      </div>
+      
+      <a ref="show_more" href="#spoiler" class="anchor_link" rel="noopener" v-on:click="show_more">{{ $t('show_more') }}</a>
 
+      <div ref="spoiler" class="release_description spoiler">
         <div class="release">
           <h3>1.4.5</h3>
           <ul>
@@ -112,11 +127,7 @@
             <li>{{ $t('1_4_5_legacy') }}</li>
           </ul>
         </div>
-      </div>
-      
-      <a ref="show_more" href="#spoiler" class="anchor_link" rel="noopener" v-on:click="show_more">{{ $t('show_more') }}</a>
 
-      <div ref="spoiler" class="release_description spoiler">
         <div class="release">
           <h3>1.4.4</h3>
           <ul>
@@ -224,6 +235,14 @@
         this.$refs.spoiler.style.display = "inherit";
         this.$refs.show_more.style.display = "none";
       }
-    }
+    },
+    mounted() {
+        const date = new Date(); 
+        let month = date.getMonth()
+
+        if (month == 3 ) {
+            this.$refs.container.style["margin-top"] = "108px";
+        }
+    },
   }
 </script>
