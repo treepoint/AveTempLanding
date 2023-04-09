@@ -1,30 +1,30 @@
-# AveTempLanding
+# Next.js internationalization with react-intl example
 
-Landing page for my project — [AveTemp](https://github.com/treepoint/AveTemp). Landing placed on url https://avetemp.ru and looks like this:
+![demo](./images/nextjs-i18n-example.gif)
 
-![landing_screen](https://user-images.githubusercontent.com/25937222/212323319-25011533-4587-4423-8a65-a2542c45c2df.png)
+This project is a tutorial on how to do internationalization (i18n) in Next.js projects with built-in support for internationalized routing and `react-intl` library.
 
-You can use it where were you want as a template, but not to copy entire site.
+It contains examples for:
 
-## Project setup
-```
-npm install
-```
+- The internationalized routing config
+- Automatic Locale Detection
+- Setting the `react-intl` library
+- Language switcher
+- Setting text direction (`ltr`, `rtl`)
+- Declarative usage of the `react-intl` library
+- Imperative usage of the `react-intl` library
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+For more details, please see the full post: [Next.js i18n tutorial](https://localizely.com/blog/nextjs-i18n-tutorial/)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Requirements
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Node
+- npm
+- git
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Steps to get the app running
+
+- `git clone`
+- `cd nextjs-i18n-example`
+- `npm install`
+- `npm run dev`

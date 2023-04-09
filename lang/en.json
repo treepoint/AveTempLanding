@@ -1,0 +1,122 @@
+{
+  "meta.title": "AveTemp — monitoring CPU Temperature, TDP and Adjust Turbo Mode",
+  "meta.description": "Free to use Tool for Continuous Monitoring CPU Temperature and TDP, also auto Adjust CPU Performance State and CPU Turbo Mode.",
+
+  "update_message_text": "New version 1.4.7 is available!",
+
+  "promo_install": "1. Download and setup AveTemp",
+  "promo_reduce": "2. It will reduce temps and noise in idle",
+  "promo_turbo": "3. And will set max performance when it needed",
+
+  "download_button": "Download",
+
+  "h1": "View and configure CPU modes",
+
+  "about_headline": "About",
+  "discussions_headline": "Discussions",
+  "features_headline": "Features",
+  "support_headline": "Support",
+  "changelog_headline": "Changelog",
+  "issues_headline": "Issues",
+  "githab_page_headline": "Github main page",
+
+  "and": "and",
+
+  "about_text_1": "AveTemp is free to use and based on ", 
+  "about_text_2": "for continuous monitoring CPU temperature and TDP, also for auto adjust CPU performance state and CPU Turbo mode depends on current workload.",
+  "about_text_3": "Basically, it was developed for notebooks but may help with desktop CPUs too.",
+
+  "feature_continuous": "Continuous monitoring temperature and TDP of CPU",
+  "feature_collecting_states": "Collecting and showing min, max and current temps and TDP states",
+  "feature_collecting_times": "Collecting and showing average scores for 1, 5, 15, 60 minutes and 24 hours",
+  "feature_automatic_adjust": "Automatic adjust CPU performance state and CPU Turbo mode. Also, you can setup preferred CPU load threshold, Turbo modes and CPU states or disable it at all",
+  "feature_autostart": "Autostart on user logon",
+  "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
+  "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
+
+  "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
+
+  "releases_location_text": "All releases are available on ",
+
+  "show_more": "Show more",
+
+  "1_4_7_cores_load" : "Fixed: cores load showing correctly on Intel CPU's now",
+  "1_4_7_max_values" : "Fixed: max values for TDP and temps now are not going over the top",
+  "1_4_7_version_number" : "Feature: added new version number to update message",
+  "1_4_7_debug_stack" : "Feature: added debug stack logging to file from LibreHardwareMonitorLib sensors if it needed. Be default it's off, can be runed by start with argument «--hardware-dump»",
+  "1_4_7_support" : "Support: added Boosty and Patreon buttons to settings window. I'll be very glad if you'll support me, subscription starts from 1$",
+
+  "1_4_6_update_LHMLib" : "Updated LHMLib to latest nightly build",
+  "1_4_6_statistics_recording" : "Feature: added recording of statistics to the file immediately after enabling this setting",
+  "1_4_6_cpu_load_not_updates" : "Fixed: CPU load sometimes not updates after Windows sleep",
+  "1_4_6_autostart_crushing" : "Fixed: if shutdown was unexpected than next autostart might crush",
+  "1_4_6_min_max_reset" : "Fixed: min and max temps and TDP were not reset if stat collecting had been enabled",
+  "1_4_6_incorrect_max_values" : "Potentially fixed: sometimes max values were incorrect",
+
+  "1_4_5_debug" : "Feature: added logging to file «debug.txt» if app goes wrong. If you will encounter crushes, you can send me that file with short description of the problem and i will try to fix that ASAP.",
+  "1_4_5_settings_not_apply" : "Fixed: CPU settings not applied in some cases.",
+  "1_4_5_minimal_states" : "Fixed: minimal default CPU states in Windows — 5 and 80 percent on battery and on plug respectively — were higher than custom maximum state and it prevented decreasing CPU frequency.",
+  "1_4_5_doubled_run" : "Fixed: double run was possible. ",
+  "1_4_5_clear_buttons" : "Fixed: clear buttons for temp, TDP, and average values were broken during last vast refactoring and not working.",
+  "1_4_5_cpu_settings_not_resetings" : "Fixed: Windows default settings for CPU does not apply when program was closed from tray.",
+  "1_4_5_UI_updates" : "Fixed: on startup UI are updating though app was running as minimized to tray.",
+  "1_4_5_change_defaults" : "Optimization: changed default values for backup interval, temps, TDP collect interval and CPU threshold to 15 min, 0.7 sec and 80 percent respectively. Affect only start without settings file.",
+  "1_4_5_tray_icon_updates" : "Optimization: tray icon now updates only if current temp was change.",
+  "1_4_5_legacy" : "Optimization: removed collection and updating 2 legacy's lists: «general_temps» and «general_TDP».",
+
+  "1_4_4_crushes": "Fixed unexpected crushes when CPU mode was changed.",
+
+  "1_4_3_notifications": "Feature: added update notification.",
+  "1_4_3_admin_right_description": "Feature: added description to admin rights requirements.",
+  "1_4_3_clear_icons": "Interface: changed «Clear» label to icons on statistics clear buttons.",
+  "1_4_3_name_and_version_link": "Interface: changed name and version from plain text link to Github into settings windows.",
+  "1_4_3_tray_localization": "Fixed: tray's items now localized too. Before were only «Закрыть» in any case. ",
+  "1_4_3_closing_correctly": "Fixed: AveTemp closing correctly when main window is open.",
+  "1_4_3_cpu_name": "Fixed: now CPU names with any length are showing correctly.",
+
+  "1_4_2_autostart_delay": "Feature: added setting for adjust autostart delay.",
+  "1_4_2_backup_interval": "Feature: added setting for adjust backup interval. So now there is option to set backup once in an hour so background consumption will be - about 0 all time except 1 second in hour.",
+  "1_4_2_intel_cpu_names": "Fixed: now very long intel CPU names show corretly.",
+  "1_4_2_not_closed_by_enter": "Fixed: settings window does not close by pressing Enter now.",
+  "1_4_2_minimum_value": "Fixed: were set minimum value for sensors update frequency — 0.3 second.",
+
+  "1_4_1_separated_cpu_method": "Feature: a separate method to get CPU load was made and now frequency switching and turbo depend on this method. The polling rate is 0.1 second, so turbo is activated MUCH faster. Also added a check for at least 2 turbo «ticks» — two consecutive loads above the threshold — and the second must be greater than the first to activate turbo. Also, the turbo will be activated if there are 3 consecutive «ticks» only above the threshold, regardless of the level of exceeding the threshold.",
+  "1_4_1_settings_translation": "Feature: added instant translation for the settings window when you change the language.",
+  "1_4_1_pause_before_autostart": "Feature: added a pause before autorun. This gives time for other programs from the autorun to load as quickly as possible without restrictions. The default pause is 3 seconds. If AveTemp was already in the autorun, to activate this feature you must disable and enable autorun from the settings with settings saved.",
+  "1_4_1_not_ovveriding_settings": "Feature: settings will now not be overridden if the settings file has been corrupted. Instead, as many settings from the file as possible will be restored, and all other settings will be defaulted.",
+  "1_4_1_decrease_backup_interval": "Optimization: еhe interval for backing up statistics was reduced from 15 to 60 seconds. This reduced the background load on the processor.",
+  "1_4_1_properly_closed": "Fixed: now AveTemp closes correctly - with all threads and tray icon removed.",
+
+  "1_4_0_localization": "Feature: added localization for English and Russian. At the first start, the language is determined by the language of the system",
+
+  "1_3_2_disclaimer": "IMPORTANT: new version of statistic file is incompatible with older ones. So now there is a check for version and if it's not the same with the old one statistics file, old one will be dropped and replaced with brand new.",
+  "1_3_2_issue_8": "Fixed: issue when saving settings from autostart changed file location therefor next autostart not working —",
+  "1_3_2_issue_10": "Fixed: issue when turbo management not working while statistics was off —",
+  "1_3_2_issue_12": "Fixed: issue that statistics won't delete when it was disabled —",
+  "1_3_2_optimization": "Optimizations: now the min, max and current temps and TDP saving like separated data, so now no need to calculate them all the time",
+  "1_3_2_added_check": "Added check statistics file version",
+  "1_3_2_refactoring": "Refactoring: workers were moved to separated file",
+
+  "1_3_1_tray_icon": "Fixed: issue when tray icon does not disappear when AveTemp is closed",
+  "1_3_1_data_collect": "Fixed: issue when sometimes the temp and TDP stats are showing not realistic data",
+
+  "1_3_0_turbo": "Feature: added settings for the CPU turbo mode",
+  "1_3_0_autostart": "Feature: added autostart settings",
+  "1_3_0_realy_appying": "Fixed: added «powercfg.exe -S SCHEME_CURRENT» command so CPU settings are actually applying and working",
+  "1_3_0_current_scheme": "Optimization: changed «SCHEME_BALANCED» for «SCHEME_CURRENT» so now it is working for any power plan scheme, that active now",
+  "1_3_0_refactoring": "Some refactoring",
+
+  "1_2_2_cpu_performance" : "Feature: added CPU performance management functionality",
+  "1_2_2_basic_intel_support" : "Feature: added basic Intel support",
+  "1_2_2_changed_icons_format" : "Optimization: changed icons to SVG format",
+  "1_2_2_reduced_cpu_usage" : "Optimization: reduced background CPU usage",
+  "1_2_2_tested_on" : "Tested on Ryzen 4600h, 4800h, Intel Pentium 7505 Gold, Intel Core i7-1165G7.",
+
+  "1_0_1_text": "First release with basic monitoring functions.",
+
+  "main_window_screenshot_url" : "../images/screenshots/en/main_window.png",
+  "settings_window_screenshot_url" : "../images/screenshots/en/settings.png",
+
+  "main_window_screenshot_alt" : "AveTemp main window",
+  "settings_window_screenshot_alt" : "AveTemp settings window"
+}
