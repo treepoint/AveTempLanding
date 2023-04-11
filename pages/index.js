@@ -6,6 +6,7 @@ import AboutScreen from "../components/AboutScreen/AboutScreen";
 import FeatureScreen from "../components/FeatureScreen/FeatureScreen";
 import Changelog from "../components/Changelog/Changelog";
 import Footer from "../components/Footer/Footer";
+import YandexMetrika from "../components/YandexMetrika/YandexMetrika";
 
 import { useRouter } from "next/router";
 import { useIntl } from "react-intl";
@@ -37,28 +38,11 @@ export default function Home({ dir }) {
 
   return (
     <div>
-       {/* Yandex Metrika */}
-       <Script id="yandex-metrika" strategy="beforeInteractive">
-            {`
-                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
-          
-                ym(91976312, "init", {
-                    defer: true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-              `}
-          </Script>
-
         {/* Google tag (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-1D8PFXBZ8V"/>
-        <Script id="google-analytics" strategy="beforeInteractive">
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-1D8PFXBZ8V" 
+          strategy="afterInteractive"/>
+        <Script id="google-analytics" strategy="afterInteractive">
             {`window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -75,11 +59,13 @@ export default function Home({ dir }) {
         <link rel="alternate" href={host} hrefLang="x-default" />
         <link rel="alternate" href={host+"/en"} hrefLang="en" />
 
-        <noscript>
-          <div>
-            <img src="https://mc.yandex.ru/watch/91976312" style={{ position:'absolute', left:'-9999px' }} alt="" />
-          </div>
-        </noscript>
+        <YandexMetrika 
+          yid={91976312}
+          clickmap={true}
+          trackLinks={true}
+          accurateTrackBounce={true}
+          webvisor={true}
+        />
       </Head>
 
       <Header styles={styles} locales = {[...locales]}/>
