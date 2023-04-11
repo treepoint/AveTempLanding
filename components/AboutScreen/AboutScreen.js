@@ -43,7 +43,9 @@ function AboutScreen(props) {
                     reverse={true} 
                     image={"main_window_screenshot_url"}
                     alt={"main_window_screenshot_alt"}
+                    image_style={{maxHeight: "472px", height: "472px", maxWidth: "100%", width: "100%"}}
                     content={getContent()}
+                    image_priority={100}
                     above_additinonal_block={<Promo styles={props.styles}/>}
                     below_additinonal_block={getDownloadButton()}
                     />

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from 'next/script'
 import Header from "../components/Header/Header";
 import Updating_message from "../components/Updating_message/Updating_message";
 import AboutScreen from "../components/AboutScreen/AboutScreen";
@@ -10,7 +11,7 @@ import { useRouter } from "next/router";
 import { useIntl } from "react-intl";
 import "../_globals.js";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Main.module.css";
 
 export default function Home({ dir }) {
   const { locales } = useRouter();
@@ -36,6 +37,35 @@ export default function Home({ dir }) {
 
   return (
     <div>
+       {/* Yandex Metrika */}
+       <Script id="yandex-metrika" strategy="beforeInteractive">
+            {`
+                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+          
+                ym(91976312, "init", {
+                    defer: true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+              `}
+          </Script>
+
+        {/* Google tag (gtag.js) */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-1D8PFXBZ8V"/>
+        <Script id="google-analytics" strategy="beforeInteractive">
+            {`window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+        
+              gtag('config', 'G-1D8PFXBZ8V');
+            `}
+        </Script>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -44,46 +74,12 @@ export default function Home({ dir }) {
         {/* Add hreflang links */}
         <link rel="alternate" href={host} hrefLang="x-default" />
         <link rel="alternate" href={host+"/en"} hrefLang="en" />
-        <link rel="alternate" href={host+"/ru"} hrefLang="ru" />
-        
-        {/* Yandex Metrika */}
-        <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
-          
-                ym(91976312, "init", {
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-              `,
-            }}
-          />
+
         <noscript>
           <div>
             <img src="https://mc.yandex.ru/watch/91976312" style={{ position:'absolute', left:'-9999px' }} alt="" />
           </div>
         </noscript>
-
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1D8PFXBZ8V"></script>
-        <script
-            dangerouslySetInnerHTML={{
-              __html: `window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-        
-              gtag('config', 'G-1D8PFXBZ8V');
-              `,
-            }}
-          />
-
       </Head>
 
       <Header styles={styles} locales = {[...locales]}/>

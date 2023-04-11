@@ -34,8 +34,8 @@ function Release(props) {
         <h3>{props.title}</h3>
         {getDescription()}
         <ul>
-            {changes.map((text) => (
-                <li key = {0} >{text}</li>
+            {changes.map((text, index) => (
+                <li key = {index} >{text}</li>
             ))}
         </ul>
         {getPS()}

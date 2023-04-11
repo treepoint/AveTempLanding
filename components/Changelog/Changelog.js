@@ -142,8 +142,8 @@ function Changelog(props) {
             <p>{releases_location_text} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener, noreferrer">Github</a></p>
         
             <div className={props.styles.release_description}>
-                {getReleasesArray().map((release) => (
-                    <Release key = {0}
+                {getReleasesArray().map((release, index) => (
+                    <Release key = {index}
                              styles={props.styles} 
                              title={release.title} 
                              description={release.description}

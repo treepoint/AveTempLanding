@@ -1,5 +1,6 @@
 'use client';
 import { useIntl } from "react-intl";
+import Image from "next/image.js";
 
 function Screen(props) {
 
@@ -42,7 +43,14 @@ function Screen(props) {
     return (
         <div className={getColumnsStyles()}>
             <div className={props.styles.screenshot_column}>
-                <img alt={props.alt} className={props.styles.screenshot} src={getImageUrl()}  />
+                <div className={props.styles.screenshot} style={props.image_style}>
+                    <Image alt={props.alt} 
+                           src={getImageUrl()} 
+                           layout="fill" 
+                           objectFit="contain"
+                           priority={props.image_priority}
+                           objectPosition={props.image_postition}></Image>
+                </div>
             </div>
             <div className={props.styles.half}>
                 {getHeadline()}

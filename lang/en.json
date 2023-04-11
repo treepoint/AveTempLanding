@@ -114,8 +114,8 @@
 
   "1_0_1_text": "First release with basic monitoring functions.",
 
-  "main_window_screenshot_url" : "../images/screenshots/en/main_window.png",
-  "settings_window_screenshot_url" : "../images/screenshots/en/settings.png",
+  "main_window_screenshot_url" : "/images/screenshots/en/main_window.png",
+  "settings_window_screenshot_url" : "/images/screenshots/en/settings.png",
 
   "main_window_screenshot_alt" : "AveTemp main window",
   "settings_window_screenshot_alt" : "AveTemp settings window"

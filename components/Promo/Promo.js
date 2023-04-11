@@ -1,4 +1,6 @@
 'use client';
+
+import Image from "next/image";
 import { useIntl } from "react-intl";
 
 function Promo(props) {
@@ -11,17 +13,17 @@ function Promo(props) {
     return (
         <div className={props.styles.icon_list}>
           <div className={props.styles.icon_item}>
-            <img className={props.styles.promo_image} src="../images/promo_setup.png"/>
+            <Image src="/images/promo_setup.png" width='96' height='96'></Image>
             <p className={props.styles.promo_label}>{promo_install}</p>
           </div>
           
           <div className={props.styles.icon_item}>
-            <img className={props.styles.promo_image} src="../images/promo_temps.png"/>
+            <Image src="/images/promo_temps.png" width='96' height='96'></Image>
             <p className={props.styles.promo_label}>{promo_reduce}</p>
           </div>
 
           <div className={props.styles.icon_item}>
-            <img className={props.styles.promo_image} src="../images/promo_performance.png"/>
+            <Image src="/images/promo_performance.png" width='96' height='96'></Image>
             <p className={props.styles.promo_label}>{promo_turbo}</p>
           </div>
         </div>

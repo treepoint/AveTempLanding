@@ -1,5 +1,6 @@
 'use client';
 import { useIntl } from "react-intl";
+import Image from "next/image";
 
 function Support(props) {
 
@@ -11,17 +12,17 @@ function Support(props) {
         <div className={props.styles.support}>
             <h2 id="support" className={props.styles.centered_elem}>
                 {support_headline} 
-                <img alt="support_icon" className={props.styles.icon_22} src="../images/heart_icon.png"/> 
+                <Image alt="support AveTemp icon" src="/images/heart_icon.png" width='32.5px' height='22px'></Image>
                 AveTemp
             </h2>
             <p className={props.styles.centered_elem}>{support_text}</p>
 
             <div className={[props.styles.icon_list, props.styles.centered].join(' ')}>
                 <a href="https://boosty.to/paul_khoziashev" target="_blank"rel="noopener, noreferrer">
-                    <img alt="boosty" className={props.styles.icon_56_link} src="../images/boosty_128.png"/>
+                    <Image alt="support AveTemp icon" src="/images/boosty_128.png" width='56' height='56'></Image>
                 </a>
                 <a href="https://www.patreon.com/paul_khoziashev" target="_blank" rel="noopener, noreferrer">
-                    <img alt="patreon" className={props.styles.icon_56_link} src="../images/patreon_128.png"/>
+                    <Image alt="support AveTemp icon" src="/images/patreon_128.png" width='56' height='56'></Image>
                 </a>
             </div>
 

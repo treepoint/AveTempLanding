@@ -26,7 +26,7 @@ function Header(props) {
                                 src="/images/logo.png"
                                 width="36px"
                                 height="36px"
-                                alt="AveTemp Main Screen"
+                                alt="AveTemp Logo"
                                 className={props.styles.logo}
                             />
                         </a>

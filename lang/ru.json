@@ -114,8 +114,8 @@
 
   "1_0_1_text": "Первый публичный релиз с базовой функциональностью мониторинга.",
 
-  "main_window_screenshot_url" : "../images/screenshots/ru/main_window.png",
-  "settings_window_screenshot_url" : "../images/screenshots/ru/settings.png",
+  "main_window_screenshot_url" : "/images/screenshots/ru/main_window.png",
+  "settings_window_screenshot_url" : "/images/screenshots/ru/settings.png",
 
   "main_window_screenshot_alt" : "Главное окно AveTemp",
   "settings_window_screenshot_alt" : "Окно настроек AveTemp"
