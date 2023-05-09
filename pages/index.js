@@ -2,8 +2,10 @@ import Head from "next/head";
 import Script from 'next/script'
 import Header from "../components/Header/Header";
 import Updating_message from "../components/Updating_message/Updating_message";
-import AboutScreen from "../components/AboutScreen/AboutScreen";
+import HowItWorksScreen from "../components/HowItWorksScreen/HowItWorksScreen";
+import WhyScreen from "../components/WhyScreen/WhyScreen";
 import FeatureScreen from "../components/FeatureScreen/FeatureScreen";
+import HowToUseScreen from "../components/HowToUseScreen/HowToUseScreen";
 import Changelog from "../components/Changelog/Changelog";
 import Footer from "../components/Footer/Footer";
 import YandexMetrika from "../components/YandexMetrika/YandexMetrika";
@@ -27,7 +29,9 @@ export default function Home({ dir }) {
 
       if (month == 3 ) {
           return true;
-      }        
+      } 
+
+      return true;
   }
 
   function extenedMainClass() {
@@ -53,7 +57,8 @@ export default function Home({ dir }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any"/>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 
         {/* Add hreflang links */}
         <link rel="alternate" href={host} hrefLang="x-default" />
@@ -72,8 +77,10 @@ export default function Home({ dir }) {
       <Updating_message styles={styles} visible={isThereNewUpdate()}/>
 
       <main dir={dir} className={[styles.main, extenedMainClass()].join(' ')}>
-        <AboutScreen styles={styles}/>
+        <HowItWorksScreen styles={styles}/>
+        <WhyScreen styles={styles}/>
         <FeatureScreen styles={styles}/>
+        <HowToUseScreen styles={styles}/>
         <Changelog styles={styles} locales = {[...locales]}/>
       </main>
 

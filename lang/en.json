@@ -1,20 +1,21 @@
 {
-  "meta.title": "AveTemp — monitoring CPU Temperature, TDP and Adjust Turbo Mode",
-  "meta.description": "Free to use Tool for Continuous Monitoring CPU Temperature and TDP, also auto Adjust CPU Performance State and CPU Turbo Mode.",
+  "meta.title": "AveTemp - reducing CPU temperature and notebook noise",
+  "meta.description": "Free tool to monitor CPU temperature and TDP, reduce CPU temperature and notebook noise based on current load",
 
   "update_message_text": "New version 1.4.7 is available!",
 
-  "promo_install": "1. Download and setup AveTemp",
-  "promo_reduce": "2. It will reduce temps and noise in idle",
-  "promo_turbo": "3. And will set max performance when it needed",
+  "promo_install": "Download and setup AveTemp",
+  "promo_reduce": "It will reduce temps and noise in idle",
+  "promo_turbo": "And will set max performance when it needed",
 
   "download_button": "Download",
 
-  "h1": "View and configure CPU modes",
+  "h1": "How it works",
 
-  "about_headline": "About",
+  "why_headline": "Why it's needed",
   "discussions_headline": "Discussions",
   "features_headline": "Features",
+  "HTU_headline": "How to use",
   "support_headline": "Support",
   "changelog_headline": "Changelog",
   "issues_headline": "Issues",
@@ -22,9 +23,22 @@
 
   "and": "and",
 
-  "about_text_1": "AveTemp is free to use and based on ", 
-  "about_text_2": "for continuous monitoring CPU temperature and TDP, also for auto adjust CPU performance state and CPU Turbo mode depends on current workload.",
-  "about_text_3": "Basically, it was developed for notebooks but may help with desktop CPUs too.",
+  "HIW_text_1": "AveTemp is a free program that uses the ", 
+  "HIW_text_2": "With library help, it:",
+  "HIW_ol_1": "Collects CPU temperature and TDP data.",
+  "HIW_ol_2": "It looks to see if there is an increased load or if the processor is idle.",
+  "HIW_ol_3": "If there is a load, it increases the CPU frequencies. If there is no load, it decreases it.",
+  "HIW_text_3": "Therefore, at idle time the temperature and noise from cooling the computer is lower, but in the presence of heavy tasks processor starts working at full power.",
+  "HIW_text_4": "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
+  "HIW_text_5": "The source code is available on ",
+  "HIW_text_6": "Github",
+  "HIW_text_7": ", so you can build the program yourself.",
+
+
+  "why_text_1": "Now manufacturers are putting processors in laptops with excessive performance: 4, 6 or more high-performance cores with high frequency.", 
+  "why_text_2": "This is good for heavy workloads such as games or video rendering, increased responsiveness of the laptop. However, it also causes the processor to heat up and turn on the cooler for any reason, even when opening a browser.",
+  "why_text_3": "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. For really time-consuming tasks, however, you have to manually raise them back up as well. This is inconvenient.",
+  "why_text_4": "AveTemp automates this routine and increases productivity when you need it.",
 
   "feature_continuous": "Continuous monitoring temperature and TDP of CPU",
   "feature_collecting_states": "Collecting and showing min, max and current temps and TDP states",
@@ -33,6 +47,16 @@
   "feature_autostart": "Autostart on user logon",
   "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
   "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
+
+  "HTU_text_1": "First, ", 
+  "HTU_text_2": "download",
+  "HTU_text_3": " AveTemp. After that, run it and the main window of the program will open. To configure, click on the gear icon in the lower left corner.",
+  "HTU_text_4": "There are basic settings such as language, autorun, minimize to tray and so on. If you're not interested in controlling CPU modes, that's enough.",
+  "HTU_text_5": "To configure the CPU operation modes, activate the «Automatically change processor state» checkbox. Next, set the load threshold. For example, for a 6-core Ryzen, the optimal value is 70%.",
+  "HTU_text_6": "This will mean that as long as the processor is loaded at less than 70% of its current, allowed frequency, it will run at a reduced frequency.",
+  "HTU_text_7": "Next, set the maximum target condition for the idle state. It is also counted from the base frequency. For Ryzen 4600H it is 3000 MHz. For example, 50% will mean that the maximum frequency the processor will use is 1500 MHz.",
+  "HTU_text_8": "And, finally, set the condition under load. This is the state the processor will switch to when the load threshold is exceeded.",
+  "HTU_text_9": "Usually it is enough, but on some laptops this kind of frequency control is disabled. Then you can activate the checkbox «Explicitly set the state of turbo mode» and select the desired modes, similar to the percentages above.",
 
   "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
 

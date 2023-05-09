@@ -11,8 +11,10 @@ function Header(props) {
 
     const intl = useIntl();
 
-    const about_headline = intl.formatMessage({ id: "about_headline" });
+    const h1 = intl.formatMessage({ id: "h1" });
+    const why_headline = intl.formatMessage({ id: "why_headline" });
     const features_headline = intl.formatMessage({ id: "features_headline" });
+    const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
     const support_headline = intl.formatMessage({ id: "support_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const download_button = intl.formatMessage({ id: "download_button" });
@@ -33,10 +35,16 @@ function Header(props) {
                         <div className={props.styles.header_menu}>
                             <ul>
                                 <li>
-                                    <a href="#about" rel="noopener">{about_headline}</a>
+                                    <a href="#how_it_works" rel="noopener">{h1}</a>
+                                </li>
+                                <li>
+                                    <a href="#why" rel="noopener">{why_headline}</a>
                                 </li>
                                 <li>
                                     <a href="#features" rel="noopener">{features_headline}</a>
+                                </li>
+                                <li>
+                                    <a href="#how_to_use" rel="noopener">{HTU_headline}</a>
                                 </li>
                                 <li>
                                     <a href="#support" rel="noopener">{support_headline}</a>

@@ -40,23 +40,36 @@ function Screen(props) {
         return image_url;
     }
 
-    return (
-        <div className={getColumnsStyles()}>
-            <div className={props.styles.screenshot_column}>
-                <div className={props.styles.screenshot} style={props.image_style}>
+    function getSecondColumnContent() {
+        if (props.image) {
+        return <div className={props.styles.screenshot} style={props.image_style}>
                     <Image alt={props.alt} 
-                           src={getImageUrl()} 
-                           layout="fill" 
-                           objectFit="contain"
-                           priority={props.image_priority}
-                           objectPosition={props.image_postition}></Image>
+                        src={getImageUrl()} 
+                        layout="fill" 
+                        objectFit="contain"
+                        priority={props.image_priority}
+                        objectPosition={props.image_postition}>
+                    </Image>
+               </div>
+        }
+
+        if (props.second_content) {
+            return props.second_content;
+        }
+    }
+
+    return (
+        <div className={props.styles.screen}>
+            {getHeadline()}
+            <div className={getColumnsStyles()}>
+                <div className={props.styles.screenshot_column}>
+                    {getSecondColumnContent()}
                 </div>
-            </div>
-            <div className={props.styles.half}>
-                {getHeadline()}
-                {props.above_additinonal_block}
-                {props.content}
-                {props.below_additinonal_block}
+                <div className={props.styles.half}>
+                    {props.above_additinonal_block}
+                    {props.main_content}
+                    {props.below_additinonal_block}
+                </div>
             </div>
         </div>
     );

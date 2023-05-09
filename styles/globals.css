@@ -24,7 +24,7 @@ h1, h2, h3 {
 h1 {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
   font-size: 38px;
   scroll-margin-top: 108px;
 }
@@ -68,8 +68,12 @@ a:hover, a:active {
   body {zoom: 0.8;}
 }
 
-li {
+ul li {
   margin-top: 16px;
+}
+
+ol li {
+  margin-top: 8px;
 }
 
 p {

@@ -137,22 +137,24 @@ function Changelog(props) {
     }
 
     return (
-        <div className={[props.styles.columns, props.styles.one].join(' ')}>
-            <h2 id="changelog">{changelog_headline}</h2>
-            <p>{releases_location_text} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener, noreferrer">Github</a></p>
-        
-            <div className={props.styles.release_description}>
-                {getReleasesArray().map((release, index) => (
-                    <Release key = {index}
-                             styles={props.styles} 
-                             title={release.title} 
-                             description={release.description}
-                             changes={release.changes}
-                             ps={release.ps}/>
-                ))}
-            </div>
+        <div className={props.styles.screen}>
+            <div className={[props.styles.columns, props.styles.one].join(' ')}>
+                <h2 id="changelog">{changelog_headline}</h2>
+                <p>{releases_location_text} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener, noreferrer">Github</a></p>
+            
+                <div className={props.styles.release_description}>
+                    {getReleasesArray().map((release, index) => (
+                        <Release key = {index}
+                                styles={props.styles} 
+                                title={release.title} 
+                                description={release.description}
+                                changes={release.changes}
+                                ps={release.ps}/>
+                    ))}
+                </div>
 
-            <a className={getShowMoreStyles()} onClick={setSpoilerOpened}>{show_more}</a>
+                <a className={getShowMoreStyles()} onClick={setSpoilerOpened}>{show_more}</a>
+            </div>
         </div>
     );
 }

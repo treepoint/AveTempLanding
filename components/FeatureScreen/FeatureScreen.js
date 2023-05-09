@@ -30,15 +30,12 @@ function AboutScreen(props) {
     }
 
     return ( <Screen name={"features"} 
-                     h2={'features_headline'} 
+                     h2={"features_headline"} 
                      styles={props.styles} 
                      columns={2} 
-                     image={"settings_window_screenshot_url"}
-                     alt={"settings_window_screenshot_alt"}
-                     image_style={{maxHeight: "902px", height: "902px", maxWidth: "100%", width: "100%"}}
-                     image_priority={100}
-                     content={getContent()}
-                     below_additinonal_block={<Support styles={props.styles}/>}/>
+                     main_content={getContent()}
+                     second_content={<Support styles={props.styles}/>}
+             />
     );
 }
 
