@@ -57,6 +57,7 @@ export default function Home({ dir }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width , initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
         <link rel="icon" href="/favicon.ico" sizes="any"/>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 

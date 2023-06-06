@@ -6,7 +6,7 @@
 
   "promo_install": "Download and setup AveTemp",
   "promo_reduce": "It will reduce temps and noise in idle",
-  "promo_turbo": "And will set max performance when it needed",
+  "promo_turbo": "Under load, it will turn on the turbo",
 
   "download_button": "Download",
 

@@ -14,17 +14,17 @@ function Promo(props) {
         <div className={props.styles.icon_list}>
           <div className={props.styles.icon_item}>
             <Image src="/images/promo_setup.png" width="96" height="96" alt=""></Image>
-            <p className={props.styles.promo_label}>{promo_install}</p>
+            <p className={props.styles.promo_label_one}>{promo_install}</p>
           </div>
           
           <div className={props.styles.icon_item}>
             <Image src="/images/promo_temps.png" width="96" height="96" alt=""></Image>
-            <p className={props.styles.promo_label}>{promo_reduce}</p>
+            <p className={props.styles.promo_label_two}>{promo_reduce}</p>
           </div>
 
           <div className={props.styles.icon_item}>
             <Image src="/images/promo_performance.png" width="96" height="96" alt=""></Image>
-            <p className={props.styles.promo_label}>{promo_turbo}</p>
+            <p className={props.styles.promo_label_three}>{promo_turbo}</p>
           </div>
         </div>
     );

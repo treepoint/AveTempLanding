@@ -6,6 +6,7 @@ body {
   color: #222222;
   margin: 0px;
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 * {
@@ -36,7 +37,7 @@ h2 {
 }
 
 h3 {
-  margin: 16px 0px 8px 0px;
+  margin: 0px 0px 8px 0px;
   margin-right: auto;
   font-size: 26px;
   scroll-margin-top: 108px;
@@ -62,10 +63,6 @@ a {
 
 a:hover, a:active {
   color: #dc3545;
-}
-
-@media screen and (min-resolution: 120dpi) { 
-  body {zoom: 0.8;}
 }
 
 ul li {

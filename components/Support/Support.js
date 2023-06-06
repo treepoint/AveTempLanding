@@ -10,11 +10,11 @@ function Support(props) {
 
     return (
         <div className={props.styles.support}>
-            <h2 id="support" className={props.styles.centered_elem}>
+            <h3 id="support" className={props.styles.centered_elem}>
                 {support_headline} 
                 <Image alt="support AveTemp icon" src="/images/heart_icon.png" width='32.5px' height='22px'></Image>
                 AveTemp
-            </h2>
+            </h3>
             <p className={props.styles.centered_elem}>{support_text}</p>
 
             <div className={[props.styles.icon_list, props.styles.centered].join(' ')}>

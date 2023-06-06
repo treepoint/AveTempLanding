@@ -39,7 +39,7 @@ function HowItWorksScreen(props) {
                     reverse={true} 
                     image={"settings_window_screenshot_url"}
                     alt={"settings_window_screenshot_alt"}
-                    image_style={{maxHeight: "902px", height: "902px", maxWidth: "100%", width: "100%"}}
+                    image_style={{maxHeight: "759px", height: "759px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}
                     main_content={getContent()}
                     />

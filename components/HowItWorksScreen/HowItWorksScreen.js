@@ -56,7 +56,7 @@ function HowItWorksScreen(props) {
                     reverse={true} 
                     image={"main_window_screenshot_url"}
                     alt={"main_window_screenshot_alt"}
-                    image_style={{maxHeight: "472px", height: "472px", maxWidth: "100%", width: "100%"}}
+                    image_style={{maxHeight: "424px", height: "424px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}
                     main_content={getContent()}
                     below_additinonal_block={getDownloadButton()}
