@@ -18,6 +18,7 @@ function HowItWorksScreen(props) {
     const HIW_text_7 = intl.formatMessage({ id: "HIW_text_7" });
     
     const download_button = intl.formatMessage({ id: "download_button" });
+    const main_window_screenshot_alt = intl.formatMessage({ id: "main_window_screenshot_alt" });
 
     function getDownloadButton() {
       return (
@@ -55,7 +56,7 @@ function HowItWorksScreen(props) {
                     columns={2} 
                     reverse={true} 
                     image={"main_window_screenshot_url"}
-                    alt={"main_window_screenshot_alt"}
+                    alt={main_window_screenshot_alt}
                     image_style={{maxHeight: "424px", height: "424px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}
                     main_content={getContent()}

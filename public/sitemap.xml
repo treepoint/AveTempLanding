@@ -7,10 +7,26 @@
 
   <url>
     <loc>https://avetemp.ru/</loc>
-    <lastmod>2023-05-09T19:12:06+00:00</lastmod>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://avetemp.ru/en</loc>
-    <lastmod>2023-05-09T19:12:06+00:00</lastmod>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://avetemp.ru/en/changelog</loc>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://avetemp.ru/changelog</loc>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://avetemp.ru/about_turbo</loc>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://avetemp.ru/en/about_turbo</loc>
+    <lastmod>2023-06-15T00:12:06+00:00</lastmod>
   </url>
 </urlset>

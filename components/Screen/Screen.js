@@ -7,16 +7,22 @@ function Screen(props) {
     const intl = useIntl();
 
     function getHeadline() {
-        if (typeof(props.h1) !== 'undefined') {
-            const h1 = intl.formatMessage({ id: props.h1 });
+        if (typeof(props.h3) !== 'undefined') {
+            const h2 = intl.formatMessage({ id: props.h3 });
 
-            return <h1 id={props.name}>{h1}</h1>
+            return <h3 id={props.name}>{props.h3}</h3>
         }
 
         if (typeof(props.h2) !== 'undefined') {
             const h2 = intl.formatMessage({ id: props.h2 });
 
             return <h2 id={props.name}>{h2}</h2>
+        }
+
+        if (typeof(props.h1) !== 'undefined') {
+            const h1 = intl.formatMessage({ id: props.h1 });
+
+            return <h1 id={props.name}>{h1}</h1>
         }
     }
 

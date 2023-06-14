@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { IntlProvider } from "react-intl";
+import Layout from "../components/Layout/Layout";
 
 import en from "../lang/en.json";
 import ru from "../lang/ru.json";
@@ -16,7 +17,9 @@ function App({ Component, pageProps }) {
 
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <Component {...pageProps} dir={"ltr"} />
+      <Layout dir={"ltr"}>
+        <Component {...pageProps} dir={"ltr"} />
+      </Layout>
     </IntlProvider>
   );
 }

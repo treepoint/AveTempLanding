@@ -32,7 +32,8 @@ function WhyScreen(props) {
     }
 
     return (<Screen name={"why"} 
-                    h2={"why_headline"} 
+                    h2={props.h2 ? props.h2 : "why_headline"} 
+                    h3={props.h3} 
                     styles={props.styles} 
                     reverse={true}
                     columns={2} 

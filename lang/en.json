@@ -142,5 +142,16 @@
   "settings_window_screenshot_url" : "/images/screenshots/en/settings.png",
 
   "main_window_screenshot_alt" : "AveTemp main window",
-  "settings_window_screenshot_alt" : "AveTemp settings window"
+  "settings_window_screenshot_alt" : "AveTemp settings window",
+
+  "about_turbo_header" : "Why does the processor heat up in turbo mode",
+  "about_turbo_headline" : "About turbo",
+  "alt_cpu_turbo" : "Laptop cooling system overheating",
+  "alt_p_vs_f" : "TDP vs. frequency graph",
+  "at_1" : "Any modern processor has several performance modes, from power saving to maximum performance mode.",
+  "at_2" : "Windows defaults to an aggressive performance mode that maximizes computer responsiveness and provides only benefits with sufficient cooling, but this is not always the case. For example, in compact PCs such as notebooks or nettops, this leads to high temperatures, constant noise from the cooling system, drying out of thermal paste, and the need for frequent maintenance and cleaning.",
+  "at_3" : "This happens because in order to increase performance you need to increase the power of the processor, but doubling the power does not give you double the performance gain. For example, to run at 1GHz the Ryzen 4600H processor needs only 5 watts of power, but to run at 2GHz it needs 15 watts. At 4GHz it needs all of 45-50 watts. So it turns out that to work at 50% performance the processor needs 30% power, and 100% performance — all 100%.",
+  "at_4" : "Physically, this phenomenon is explained by the change in resistance of the materials of the processor when the temperature changes and the need to increase the voltage to raise the frequency. That is, to make the processor run faster, we need to increase the voltage and supply more power to the processor, but the heat increases. With heating, the resistance of the materials of the crystal grows, the power drop increases, which means that for the next frequency increase we need to increase the voltage, adjusted for the additional heat dissipation.",
+  "at_5" : "Therefore, often aggressive use of Turbo mode in the processor is not justified.",
+  "at_how_to_avoid" : "How to avoid it"
 }

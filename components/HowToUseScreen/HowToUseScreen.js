@@ -15,6 +15,8 @@ function HowItWorksScreen(props) {
     const HTU_text_7 = intl.formatMessage({ id: "HTU_text_7" });
     const HTU_text_8 = intl.formatMessage({ id: "HTU_text_8" });
     const HTU_text_9 = intl.formatMessage({ id: "HTU_text_9" });
+
+    const settings_window_screenshot_alt = intl.formatMessage({ id: "settings_window_screenshot_alt" });
     
     function getContent() {
         return (
@@ -38,7 +40,7 @@ function HowItWorksScreen(props) {
                     columns={2} 
                     reverse={true} 
                     image={"settings_window_screenshot_url"}
-                    alt={"settings_window_screenshot_alt"}
+                    alt={settings_window_screenshot_alt}
                     image_style={{maxHeight: "759px", height: "759px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}
                     main_content={getContent()}

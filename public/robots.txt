@@ -2,5 +2,6 @@ User-agent: *
 Disallow: 
 Disallow: /ru
 Disallow: /ru/
+Disallow: /ru/*
 
 Sitemap: https://avetemp.ru/sitemap.xml

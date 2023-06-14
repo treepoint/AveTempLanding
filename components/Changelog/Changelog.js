@@ -5,7 +5,7 @@ import Release from "../Release/Release.js";
 import "../../_globals.js";
 
 function Changelog(props) {
-    const [isSpoilerOpened, setSpoiler] = React.useState(false);
+    const [isSpoilerOpened, setSpoiler] = React.useState(props.is_default_opened);
 
     const intl = useIntl();
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
