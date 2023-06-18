@@ -1,5 +1,6 @@
-import Screen from "../components/Screen/Screen.js";
+import Screen from "../elements/Screen/Screen.js";
 import WhyScreen from "../components/WhyScreen/WhyScreen.js";
+import DownloadButton from "../elements/DownloadButton/DownloadButton.js";
 import { useIntl } from "react-intl";
 
 import styles from "../styles/Main.module.scss";
@@ -18,18 +19,6 @@ export default function About_turbo() {
   const at_4 = intl.formatMessage({ id: "at_4" });
   const at_5 = intl.formatMessage({ id: "at_5" });
   const at_how_to_avoid = intl.formatMessage({ id: "at_how_to_avoid" });
-
-  const download_button = intl.formatMessage({ id: "download_button" });
-
-  function getDownloadButton() {
-    return (
-        <a className={[styles.btn, styles.btn_outline_danger].join(' ')}
-            href={download_link} 
-            role="button">
-            {download_button}
-        </a>
-    )
- }
 
   function getFirstMainContent() {
     return (<>
@@ -75,7 +64,7 @@ export default function About_turbo() {
             styles={styles} 
             h3={at_how_to_avoid} 
             h2={undefined}/>
-        {getDownloadButton()}
+        {<DownloadButton isCentered/>}
     </>
   );
 }

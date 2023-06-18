@@ -1,6 +1,7 @@
 'use client';
 import { useIntl } from "react-intl";
 import Screen from "../../elements/Screen/Screen.js";
+import DownloadButton from "../../elements/DownloadButton/DownloadButton.js";
 
 function HowItWorksScreen(props) {
 
@@ -19,16 +20,6 @@ function HowItWorksScreen(props) {
     
     const download_button = intl.formatMessage({ id: "download_button" });
     const main_window_screenshot_alt = intl.formatMessage({ id: "main_window_screenshot_alt" });
-
-    function getDownloadButton() {
-      return (
-          <a className={[props.styles.btn, props.styles.btn_outline_danger].join(' ')}
-              href={download_link} 
-              role="button">
-              {download_button}
-          </a>
-      )
-   }
 
     function getContent() {
         return (
@@ -60,7 +51,7 @@ function HowItWorksScreen(props) {
                     image_style={{maxHeight: "424px", height: "424px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}
                     main_content={getContent()}
-                    below_additinonal_block={getDownloadButton()}
+                    below_additinonal_block={<DownloadButton isCentered/>}
                     />
     );
 }

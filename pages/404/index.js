@@ -1,5 +1,5 @@
 import styles from './index.module.scss'
-import Button from '../../components/Button/Button'
+import Button from '../../elements/Button/Button'
 import { useIntl } from "react-intl"
 import { useRouter } from 'next/router'
 

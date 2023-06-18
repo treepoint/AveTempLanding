@@ -5,6 +5,7 @@ import Head from "next/head";
 import Script from 'next/script'
 import Image from "next/image";
 import LanguageSelector from "../../elements/LanguageSelector/LanguageSelector";
+import DownloadButton from "../../elements/DownloadButton/DownloadButton";
 import Spacer from "../../elements/Spacer/Spacer";
 import YandexMetrika from "../../elements/YandexMetrika/YandexMetrika";
 import { useIntl } from "react-intl";
@@ -26,8 +27,6 @@ function Header(props) {
     const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const about_turbo_headline = intl.formatMessage({ id: "about_turbo_headline" });
-
-    const download_button = intl.formatMessage({ id: "download_button" });
 
     function getMainAddress(url) {
         if (url.includes("#")) {
@@ -110,14 +109,8 @@ function Header(props) {
                             </div>
 
                             <Spacer styles={props.styles}/>
-                            
                             <LanguageSelector styles={props.styles} locales={props.locales}/>
-
-                            <a className={[props.styles.btn, props.styles.btn_danger].join(' ')}
-                                href={download_link} 
-                                role="button">
-                            {download_button}
-                            </a>
+                            <DownloadButton isPrimary/>
                         </div>
                     </div>
                 </div>
