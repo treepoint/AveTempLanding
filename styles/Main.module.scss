@@ -228,12 +228,6 @@
   max-width: 96px;
 }
 
-.spacer {
-  margin-left: auto;
-  margin-right: auto;
-  flex-grow: 1;
-}
-
 .btn {
   width: max-content;
   display: block;
@@ -272,37 +266,6 @@
   width: max-content;
   margin-left: 16px;
   margin-top: 0px;
-}
-
-.update_message {
-  position: fixed;
-  top: 54px;
-  padding-top: 6px;
-  background: #e6f5e8;
-  width: 100%;
-  padding-bottom: 6px;
-  font-weight: 600;
-  color: #425d46;
-  display: none;
-  justify-content: center;
-  border-bottom: 1px solid #bee1c3;
-  grid-column-gap: 4px;
-  -moz-column-gap: 4px;
-  column-gap: 4px;
-  z-index: 99;
-}
-
-.update_message.visible {
-  display: flex;
-}
-
-.update_message_link {
-  color: #425d46;
-}
-
-.update_message_link:hover,
-.update_message_link:active {
-  color: #587b5d;
 }
 
 .header {
@@ -509,37 +472,6 @@
 .centered_elem {
   margin-left: auto;
   margin-right: auto;
-}
-
-.btn {
-  text-decoration: none;
-  padding: 9px 12px;
-  border-radius: 6px;
-}
-
-.btn_outline_danger {
-  border: 1px solid #dc3545;
-}
-
-.btn_danger {
-  background: #dc3545;
-  color: #fff;
-}
-
-.btn_outline_danger:hover {
-  background: #dc3545;
-  color: #fff;
-}
-
-.btn_danger:hover {
-  background: #bb2d3b;
-  color: #fff;
-}
-
-.btn_outline_danger:active,
-.btn_danger:active {
-  background: #b02a37;
-  color: #fff;
 }
 
 .languages {

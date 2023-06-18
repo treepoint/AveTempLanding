@@ -1,5 +1,6 @@
 'use client';
 import { useIntl } from "react-intl";
+import styles from './Updating_message.module.scss'
 import "../../_globals.js";
 
 function Updating_message(props) {
@@ -10,14 +11,14 @@ function Updating_message(props) {
 
     function isVisible() {
         if (props.visible) {
-            return props.styles.visible;
+            return styles.visible;
         }
     }
 
     return (
-    <div className={[props.styles.update_message, isVisible()].join(' ')}>
+    <div className={[styles.update_message, isVisible()].join(' ')}>
         { message }
-        <a className={props.styles.update_message_link} 
+        <a className={styles.update_message_link} 
            href={download_link} 
            rel="noopener">
            { download }

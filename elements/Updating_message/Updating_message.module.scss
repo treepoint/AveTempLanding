@@ -1,0 +1,30 @@
+.update_message {
+  position: fixed;
+  top: 54px;
+  padding-top: 6px;
+  background: #e6f5e8;
+  width: 100%;
+  padding-bottom: 6px;
+  font-weight: 600;
+  color: #425d46;
+  display: none;
+  justify-content: center;
+  border-bottom: 1px solid #bee1c3;
+  grid-column-gap: 4px;
+  -moz-column-gap: 4px;
+  column-gap: 4px;
+  z-index: 99;
+}
+
+.update_message.visible {
+  display: flex;
+}
+
+.update_message_link {
+  color: #425d46;
+}
+
+.update_message_link:hover,
+.update_message_link:active {
+  color: #587b5d;
+}
