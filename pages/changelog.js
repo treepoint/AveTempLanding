@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import "../_globals.js";
 
-import styles from "../styles/Main.module.css";
+import styles from "../styles/Main.module.scss";
 
 export default function ChangelogPage() {
   const { locales } = useRouter();

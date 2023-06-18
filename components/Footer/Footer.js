@@ -1,5 +1,6 @@
 'use client';
 import { useIntl } from "react-intl";
+import styles from './Footer.module.scss'
 import "../../_globals.js";
 
 function Footer(props) {
@@ -9,6 +10,8 @@ function Footer(props) {
     const issues_headline = intl.formatMessage({ id: "issues_headline" });
     const discussions_headline = intl.formatMessage({ id: "discussions_headline" });
     const download = intl.formatMessage({ id: "download_button" });
+
+    let currentYear= new Date().getFullYear(); 
 
     return (
         <div className={props.styles.footer_and_header}>
@@ -35,6 +38,7 @@ function Footer(props) {
                         </a>
                         </li>
                 </ul>
+                <div className={styles.copyright}>© 2022-{currentYear}, AveTemp. </div>
             </div>
     </div>
     );

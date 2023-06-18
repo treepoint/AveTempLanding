@@ -1,6 +1,6 @@
 'use client';
 import { useIntl } from "react-intl";
-import Screen from "../Screen/Screen.js";
+import Screen from "../../elements/Screen/Screen.js";
 
 function HowItWorksScreen(props) {
 

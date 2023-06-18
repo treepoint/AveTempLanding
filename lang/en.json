@@ -9,6 +9,7 @@
   "promo_turbo": "Under load, it will turn on the turbo",
 
   "download_button": "Download",
+  "send_button": "Submit",
 
   "h1": "How it works",
 
@@ -153,5 +154,19 @@
   "at_3" : "This happens because in order to increase performance you need to increase the power of the processor, but doubling the power does not give you double the performance gain. For example, to run at 1GHz the Ryzen 4600H processor needs only 5 watts of power, but to run at 2GHz it needs 15 watts. At 4GHz it needs all of 45-50 watts. So it turns out that to work at 50% performance the processor needs 30% power, and 100% performance — all 100%.",
   "at_4" : "Physically, this phenomenon is explained by the change in resistance of the materials of the processor when the temperature changes and the need to increase the voltage to raise the frequency. That is, to make the processor run faster, we need to increase the voltage and supply more power to the processor, but the heat increases. With heating, the resistance of the materials of the crystal grows, the power drop increases, which means that for the next frequency increase we need to increase the voltage, adjusted for the additional heat dissipation.",
   "at_5" : "Therefore, often aggressive use of Turbo mode in the processor is not justified.",
-  "at_how_to_avoid" : "How to avoid it"
+  "at_how_to_avoid" : "How to avoid it",
+
+  "feedback_headline" : "Get in touch",
+  "feedback_text_1" : "I would be glad to get any feedback: about bugs, suggestions for improvement, help in development and testing data.",
+  "feedback_text_2" : "The list of current tasks is available at",
+  "feedback_text_3" : "If you have an account, feel free to create new tasks or comment on old ones.",
+  "feedback_text_4" : "Or write me through the form, I regularly check my mail, so I will answer within 1-2 days.",
+
+  "ff_message" : "Message",
+  "ff_disclaimer_1" : "I promise to use your Email only to get back to you. No mailings without your consent.",
+  "ff_error" : "An error occurred, try again later.",
+  "ff_success" : "Letter received, thanks for the feedback!",
+
+  "home_button" : "Home",
+  "not_found_text" : "There is no such page yet :("
 }

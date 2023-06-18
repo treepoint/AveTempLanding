@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+%input {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #ffffff;
+    line-height: 1.5;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #cac9c9;
+    text-overflow: ellipsis;
+    padding: 8px 16px;
+    max-width: 100%;
+
+    &::placeholder {
+        color: #b3b3b3;
+    }
+
+    &:hover {
+        outline: none;
+        border: 1px solid #919191;
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid #8a8a8a;
+    }
+
+    &.error {
+        border: 1px solid #ff3131;
+    }
+}
+
+.input { 
+   @extend %input;
+}
+
+.textarea {
+    @extend %input;
+    height: 80px;
+}

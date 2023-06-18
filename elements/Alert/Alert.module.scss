@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+%alert {
+    width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    display: none;
+    margin-bottom: 0px;
+    padding: 7px 16px;
+}
+
+.alert {
+    @extend %alert;
+
+    &.success {
+        color: #3d6f14;
+        display: block;
+        background: #e5f9d3;
+    }
+
+    &.error {
+        color: #740711;
+        display: block;
+        background: #ffd4d4;
+    }
+}

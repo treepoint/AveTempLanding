@@ -1,12 +1,12 @@
 
 import Header from "../Header/Header";
-import Updating_message from "../Updating_message/Updating_message";
+import Updating_message from "../../elements/Updating_message/Updating_message";
 import Footer from "../Footer/Footer";
 
 import { useRouter } from "next/router";
 import "../../_globals.js";
 
-import styles from "../../styles/Main.module.css";
+import styles from "../../styles/Main.module.scss";
 
 export default function Layout(props) {
   const { locales } = useRouter();

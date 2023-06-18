@@ -2,7 +2,7 @@ import Screen from "../components/Screen/Screen.js";
 import WhyScreen from "../components/WhyScreen/WhyScreen.js";
 import { useIntl } from "react-intl";
 
-import styles from "../styles/Main.module.css";
+import styles from "../styles/Main.module.scss";
 
 import "../_globals.js";
 

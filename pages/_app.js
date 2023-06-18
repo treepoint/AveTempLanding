@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 import en from "../lang/en.json";
 import ru from "../lang/ru.json";
 
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 const messages = {
   ru,

@@ -4,9 +4,9 @@
 import Head from "next/head";
 import Script from 'next/script'
 import Image from "next/image";
-import LanguageSelector from "../LanguageSelector/LanguageSelector";
-import Spacer from "../Spacer/Spacer";
-import YandexMetrika from "../YandexMetrika/YandexMetrika";
+import LanguageSelector from "../../elements/LanguageSelector/LanguageSelector";
+import Spacer from "../../elements/Spacer/Spacer";
+import YandexMetrika from "../../elements/YandexMetrika/YandexMetrika";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
 import "../../_globals.js";
@@ -23,10 +23,19 @@ function Header(props) {
     const features_headline = intl.formatMessage({ id: "features_headline" });
     const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
     const support_headline = intl.formatMessage({ id: "support_headline" });
+    const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const about_turbo_headline = intl.formatMessage({ id: "about_turbo_headline" });
 
     const download_button = intl.formatMessage({ id: "download_button" });
+
+    function getMainAddress(url) {
+        if (url.includes("#")) {
+            return "/"+locale+url;
+        }
+
+        return "/"+locale+"/"+url;
+    }
 
     return (
             <>
@@ -77,22 +86,25 @@ function Header(props) {
                             <div className={props.styles.header_menu}>
                                 <ul>
                                     <li>
-                                        <a href={"/"+locale+"/#how_it_works"} rel="noopener">{h1}</a>
+                                        <a href={getMainAddress("#how_it_works")} rel="noopener">{h1}</a>
                                     </li>
                                     <li>
-                                        <a href={"/"+locale+"/#features"} rel="noopener">{features_headline}</a>
+                                        <a href={getMainAddress("#features")} rel="noopener">{features_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={"/"+locale+"/#how_to_use"} rel="noopener">{HTU_headline}</a>
+                                        <a href={getMainAddress("#how_to_use")} rel="noopener">{HTU_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={"/"+locale+"/#support"} rel="noopener">{support_headline}</a>
+                                        <a href={getMainAddress("#support")} rel="noopener">{support_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={"/"+locale+"/changelog"} rel="noopener">{changelog_headline}</a>
+                                        <a href={getMainAddress("#feedback")} rel="noopener">{feedback_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={"/"+locale+"/about_turbo"} rel="noopener">{about_turbo_headline}</a>
+                                        <a href={getMainAddress("changelog")} rel="noopener">{changelog_headline}</a>
+                                    </li>
+                                    <li>
+                                        <a href={getMainAddress("about_turbo")} rel="noopener">{about_turbo_headline}</a>
                                     </li>
                                 </ul>
                             </div>

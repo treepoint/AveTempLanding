@@ -1,0 +1,75 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+%button {
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 8px 32px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+}
+
+%button_regular {
+    @extend %button;
+
+    color: #bb2d3b;
+    border: 1px solid #dc3545;
+    background-color: #fff; 
+}
+
+.button_regular {
+    @extend %button_regular;
+
+    &:focus,
+    &:hover {
+        background: #dc3545;
+        color: #fff;
+    }
+
+    &:active {
+        background: #b02a37;
+        color: #fff;
+    }
+}
+
+.button_regular:after {
+    @extend %button_regular;
+}
+
+%button_primary {
+    @extend %button;
+
+    background: #dc3545;
+    color: #fff;
+}
+
+.button_primary {
+    @extend %button_primary;
+
+    &:focus,
+    &:hover {
+        background: #bb2d3b;
+        color: #fff;
+    }
+
+    &:active {
+        background: #b02a37;
+        color: #fff;
+    }
+
+    &.left {
+        margin-left: unset;
+    }
+}
+
+.button_primary:after {
+    @extend %button_primary;
+}
+
+.button_hidden {
+    display: none;
+}
