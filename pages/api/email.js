@@ -7,6 +7,11 @@ export default function handler(req, res) {
     return
   }
 
+  if (req.method === 'OPTIONS') {
+    res.status(200).send({ code: 200, message: 'Only POST' })
+    return
+  }
+
   let body = JSON.parse(req.body);
 
   let message = {
