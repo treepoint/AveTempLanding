@@ -21,6 +21,7 @@
   "changelog_headline": "Changelog",
   "issues_headline": "Issues",
   "githab_page_headline": "Github main page",
+  "articles_headline" : "Articles",
 
   "and": "and",
 
@@ -48,6 +49,9 @@
   "feature_autostart": "Autostart on user logon",
   "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
   "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
+
+  "feature_cl" : "A complete list of changes and functionality from version to version can be found here — ",
+  "feature_cl_link" : "list of changes",
 
   "HTU_text_1": "First, ", 
   "HTU_text_2": "download",
@@ -168,5 +172,30 @@
   "ff_success" : "Letter received, thanks for the feedback!",
 
   "home_button" : "Home",
-  "not_found_text" : "There is no such page yet :("
+  "not_found_text" : "There is no such page yet :(",
+
+  "how_descrease_temperature" : "How to reduce processor temperature",
+  "dirty_cooler" : "Picture of a dirty cooling system",
+  "cpu_params" : "Processor parameters, TDP and temperature",
+  "turbo" : "turbo",
+
+  "hdt_1" : "The processor can become warm for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or frequent use of ",
+  "hdt_2" : "Проблема недостаточно качественно подобранного охлаждения актуальна только для настольных ПК, в ноутбуках и неттопах заменить охлаждение нельзя. Выбрать подходящую систем охлаждения достаточно просто, если знать параметры процессора и материнской платы, куда это охлаждение будет устанавливаться.",
+  "hdt_3" : "In the case of a processor it is sufficient to know its TDP (Thermal Design Power) - the heat pack. Usually this information can be found on the Intel or AMD website, in the specifications of the processor, just like the maximum operating temperature.",
+  "hdt_4" : "For a motherboard you need to know its socket. This can be AM4, AM5, LGA 1700 and others.",
+  "hdt_5" : "Usually these two parameters are enough to choose a new cooling system. The new system should firstly have a motherboard socket mount and secondly dissipate more TDP than the processor provides. Preferably with a reserve.",
+
+  "hdt_6" : "The next potential problem with CPU overheating is the lack of profiling, which is especially true for laptops.",
+  "hdt_7" : "Many people know that you have to dust the computer, but that's not the only thing you have to do. There is thermal paste between the CPU's heat distribution cover and the cooling system itself. It fills all the space between the CPU and the cooling system, displacing air. This is important because air is an extremely poor conductor of heat.",
+  "hdt_8" : "After a few years, the thermal paste dries out and stops working - it needs to be changed.",
+  "hdt_9" : "Remember, if you are not an expert and are not willing to take the risks, do not clean or change the thermal paste on your PC yourself! The same applies to replacing the cooling system.",
+  "hdt_10" : "To do this work, you need to understand what you are doing. Also, laptops often use PCM (Phase Change Material) instead of thermal paste. This is a material that conducts heat very well, better than many thermal pastes, but is hard when cold. It's very easy to get confused with dried thermal paste, remove it, apply a new one, and see that the temperatures are worse!",
+
+  "hdt_11" : "The last thing that can happen is that the processor is using Turbo mode too often. In short, it is a mode in which the processor can run faster, but it also gets hotter.",
+  "hdt_12" : "This is good for heavy loads, such as games or rendering videos, increased responsiveness of the computer, but also increases heat and noise, in addition leads to the above described drying out of thermal paste, clogging cooling dust and, as a consequence, the need for frequent preventive maintenance.",
+  "hdt_13" : "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. However, for really time-consuming tasks you have to manually raise them back up as well. This is inconvenient.",
+  "hdt_14" : "To automate this process, I wrote a program called AveTemp, you can read more about it at ",
+  "hdt_14_1" : "home page",
+  "hdt_15" : "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
+  "hdt_16" : "The source code is available on Github, you can build the program yourself. I will be glad if you find it useful."
 }

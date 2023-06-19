@@ -25,8 +25,8 @@ function Header(props) {
     const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
     const support_headline = intl.formatMessage({ id: "support_headline" });
     const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
-    const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const about_turbo_headline = intl.formatMessage({ id: "about_turbo_headline" });
+    const articles_headline = intl.formatMessage({ id: "articles_headline" });
 
     function getMainAddress(url) {
         if (url.includes("#")) {
@@ -54,7 +54,6 @@ function Header(props) {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <meta name="viewport" content="width=device-width , initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-                <link rel="icon" href="/favicon.ico" sizes="any"/>
                 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 
                 {/* Add hreflang links */}
@@ -100,10 +99,10 @@ function Header(props) {
                                         <a href={getMainAddress("#feedback")} rel="noopener">{feedback_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={getMainAddress("changelog")} rel="noopener">{changelog_headline}</a>
+                                        <a href={getMainAddress("about_turbo")} rel="noopener">{about_turbo_headline}</a>
                                     </li>
                                     <li>
-                                        <a href={getMainAddress("about_turbo")} rel="noopener">{about_turbo_headline}</a>
+                                        <a href={getMainAddress("articles")} rel="noopener">{articles_headline}</a>
                                     </li>
                                 </ul>
                             </div>
