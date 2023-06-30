@@ -1,43 +1,36 @@
 
-import Header from "../Header/Header";
-import Updating_message from "../../elements/Updating_message/Updating_message";
-import Footer from "../Footer/Footer";
+import Header from "../Header/Header"
+import Updating_message from "../../elements/Updating_message/Updating_message"
+import Footer from "../Footer/Footer"
 
-import { useRouter } from "next/router";
-import "../../_globals.js";
+import { useRouter } from "next/router"
+import "../../_globals.js"
 
-import styles from "../../styles/Main.module.scss";
+import styles from "./Layout.module.scss"
+import main_styles from "../../styles/Main.module.scss"
 
 export default function Layout(props) {
   const { locales } = useRouter();
 
-  function isThereNewUpdate() {
-      const date = new Date(); 
-      let month = date.getMonth()
-
-      if (month == 3 ) {
-          return true;
-      } 
-
-      return true;
-  }
-
   function extenedMainClass() {
-    if (isThereNewUpdate()) {
       return styles.extended;
-    }
   }
 
   return (
-    <div>
-      <Header styles={styles} locales = {[...locales]}/>
-      <Updating_message styles={styles} visible={isThereNewUpdate()}/>
+    <>
+      <Header 
+        styles={main_styles} 
+        locales = {[...locales]} 
+        title={props.title}
+        description={props.description}
+      />
+      <Updating_message isVisible/>
 
       <main dir={props.dir} className={[styles.main, extenedMainClass()].join(' ')}>
-       {props.children}
+        {props.children}
       </main>
 
-      <Footer styles={styles} locales = {[...locales]}/>
-    </div>
+      <Footer styles={main_styles} locales = {[...locales]}/>
+    </>
   );
 }

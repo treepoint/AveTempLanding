@@ -42,7 +42,7 @@ function AboutScreen(props) {
                      styles={props.styles} 
                      columns={2} 
                      main_content={getContent()}
-                     second_content={<Support styles={props.styles}/>}
+                     second_content={<Support/>}
              />
     );
 }

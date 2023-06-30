@@ -10,7 +10,7 @@ function Updating_message(props) {
     const download = intl.formatMessage({ id: "download_button" });
 
     function isVisible() {
-        if (props.visible) {
+        if (props.isVisible) {
             return styles.visible;
         }
     }

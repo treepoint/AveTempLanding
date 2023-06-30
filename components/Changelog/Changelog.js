@@ -1,8 +1,9 @@
-'use client';
-import { useIntl } from "react-intl";
-import React from 'react';
-import Release from "../Release/Release.js";
-import "../../_globals.js";
+'use client'
+import { useIntl } from "react-intl"
+import React from 'react'
+import Release from "../Release/Release.js"
+import styles from "./Changelog.module.scss"
+import "../../_globals.js"
 
 function Changelog(props) {
     const [isSpoilerOpened, setSpoiler] = React.useState(props.is_default_opened);
@@ -142,7 +143,7 @@ function Changelog(props) {
                 <h2 id="changelog">{changelog_headline}</h2>
                 <p>{releases_location_text} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener, noreferrer">Github</a></p>
             
-                <div className={props.styles.release_description}>
+                <div className={styles.release_description}>
                     {getReleasesArray().map((release, index) => (
                         <Release key = {index}
                                 styles={props.styles} 

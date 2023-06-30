@@ -3,6 +3,11 @@ import Button from '../../elements/Button/Button'
 import { useIntl } from "react-intl"
 import { useRouter } from 'next/router'
 
+Page404.title = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.title_404" });
+}
+
 export default function Page404() {
   const router = useRouter();
   const intl = useIntl();

@@ -1,5 +1,6 @@
-'use client';
-import { useIntl } from "react-intl";
+'use client'
+import { useIntl } from "react-intl"
+import styles from './Release.module.scss'
 
 function Release(props) {
 
@@ -30,7 +31,7 @@ function Release(props) {
     ))
 
     return (
-      <div className={props.styles.release}>
+      <div className={styles.release}>
         <h3>{props.title}</h3>
         {getDescription()}
         <ul>

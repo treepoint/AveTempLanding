@@ -1,3 +1,17 @@
 .wrapper {
     margin-bottom: auto;
+    display: flex;
+    row-gap: 24px;
+    column-gap: 24px;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 620px) {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.headline {
+    margin-bottom: 12px;
 }

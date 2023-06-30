@@ -1,11 +1,21 @@
-import Screen from "../elements/Screen/Screen.js";
-import WhyScreen from "../components/WhyScreen/WhyScreen.js";
-import DownloadButton from "../elements/DownloadButton/DownloadButton.js";
+import Screen from "../../../elements/Screen/Screen.js";
+import WhyScreen from "../../../components/WhyScreen/WhyScreen.js";
+import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js";
 import { useIntl } from "react-intl";
 
-import styles from "../styles/Main.module.scss";
+import styles from "../../../styles/Main.module.scss";
 
-import "../_globals.js";
+import "../../../_globals.js";
+
+About_turbo.title = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.title_about_turbo" });
+}
+
+About_turbo.description = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.description_about_turbo" });
+}
 
 export default function About_turbo() {
   const intl = useIntl();

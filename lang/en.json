@@ -1,6 +1,14 @@
 {
   "meta.title": "AveTemp - reducing CPU temperature and notebook noise",
+  "meta.title_404": "AveTemp — page not found",
+  "meta.title_changelog": "AveTemp — changelog",
+  "meta.title_articles": "AveTemp — processor heat knowledge base",
+  "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
+  "meta.title_htd": "AveTemp — how to reduce processor temperature",
+
   "meta.description": "Free tool to monitor CPU temperature and TDP, reduce CPU temperature and notebook noise based on current load",
+  "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase...",
+  "meta.description_htd": "The processor can warm up for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or...",
 
   "update_message_text": "New version 1.4.7 is available!",
 
@@ -24,6 +32,8 @@
   "articles_headline" : "Articles",
 
   "and": "and",
+
+  "read_more" : "Read more...",
 
   "HIW_text_1": "AveTemp is a free program that uses the ", 
   "HIW_text_2": "With library help, it:",
@@ -180,7 +190,7 @@
   "turbo" : "turbo",
 
   "hdt_1" : "The processor can become warm for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or frequent use of ",
-  "hdt_2" : "Проблема недостаточно качественно подобранного охлаждения актуальна только для настольных ПК, в ноутбуках и неттопах заменить охлаждение нельзя. Выбрать подходящую систем охлаждения достаточно просто, если знать параметры процессора и материнской платы, куда это охлаждение будет устанавливаться.",
+  "hdt_2" : "The problem of insufficient cooling is relevant only for desktop PCs, in laptops and nettops the cooling cannot be replaced. Choosing the right cooling system is easy enough if you know the parameters of the processor and motherboard, where this cooling will be installed.",
   "hdt_3" : "In the case of a processor it is sufficient to know its TDP (Thermal Design Power) - the heat pack. Usually this information can be found on the Intel or AMD website, in the specifications of the processor, just like the maximum operating temperature.",
   "hdt_4" : "For a motherboard you need to know its socket. This can be AM4, AM5, LGA 1700 and others.",
   "hdt_5" : "Usually these two parameters are enough to choose a new cooling system. The new system should firstly have a motherboard socket mount and secondly dissipate more TDP than the processor provides. Preferably with a reserve.",

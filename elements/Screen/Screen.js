@@ -51,10 +51,9 @@ function Screen(props) {
         return <div className={props.styles.screenshot} style={props.image_style}>
                     <Image alt={props.alt} 
                         src={getImageUrl()} 
-                        layout="fill" 
-                        objectFit="contain"
-                        priority={props.image_priority}
-                        objectPosition={props.image_postition}>
+                        fill
+                        style={{ objectFit: 'contain' }}
+                        priority={props.image_priority}>
                     </Image>
                </div>
         }

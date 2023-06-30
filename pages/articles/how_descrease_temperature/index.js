@@ -1,12 +1,22 @@
-import Screen from "../elements/Screen/Screen.js";
-import Promo from "../components/Promo/Promo.js";
-import DownloadButton from "../elements/DownloadButton/DownloadButton.js";
+import Screen from "../../../elements/Screen/Screen.js";
+import Promo from "../../../components/Promo/Promo.js";
+import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js";
 import { useIntl } from "react-intl";
 import { useRouter } from "next/router";
 
-import styles from "../styles/Main.module.scss";
+import styles from "../../../styles/Main.module.scss";
 
-import "../_globals.js";
+import "../../../_globals.js";
+
+HowToDescreaseTemperature.title = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.title_htd" });
+}
+
+HowToDescreaseTemperature.description = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.description_htd" });
+}
 
 export default function HowToDescreaseTemperature() {
   const intl = useIntl();
