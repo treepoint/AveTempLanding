@@ -3,7 +3,6 @@ import Promo from "../../../components/Promo/Promo.js"
 import Link from "next/link.js"
 import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js"
 import { useIntl } from "react-intl"
-import { useRouter } from "next/router"
 import { getMainAddress } from "../../../support/support.js"
 
 import "../../../_globals.js"
@@ -104,7 +103,7 @@ export default function HowToDescreaseTemperature() {
                     reverse={true}
                     columns={2} 
                     main_content={getThirdMainContent()}
-                    second_content={<Promo styles={styles}/>}
+                    second_content={<Promo/>}
         />
         {<DownloadButton isCentered/>}
     </>
