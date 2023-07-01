@@ -1,6 +1,7 @@
 import styles from './ArticlePreview.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getMainAddress } from '../../support/support'
 import { useRouter } from "next/router"
 import { useIntl } from "react-intl"
 
@@ -9,14 +10,6 @@ export default function ArticlePreview(props) {
     const intl = useIntl();
 
     const read_more = intl.formatMessage({ id: "read_more" });
-
-    function getMainAddress(url) {
-        if (url.includes("#")) {
-            return "/"+locale+url;
-        }
-
-        return "/"+locale+"/"+url;
-    }
 
     return (
             <div className={styles.wrapper}>

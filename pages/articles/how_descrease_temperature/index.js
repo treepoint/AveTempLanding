@@ -50,7 +50,7 @@ export default function HowToDescreaseTemperature() {
 
   function getFirstMainContent() {
     return (<>
-        <p>{hdt_1}<a href={'/'+locale+'/about_turbo'}>{turbo}</a>.</p>
+        <p>{hdt_1}<a href={'/'+locale+'/articles/about_turbo'}>{turbo}</a>.</p>
         <p>{hdt_2}</p>
         <p>{hdt_3}</p>
         <p>{hdt_4}</p>

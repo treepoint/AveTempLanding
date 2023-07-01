@@ -4,6 +4,7 @@ import Head from "next/head"
 import Script from 'next/script'
 import Image from "next/image"
 import Link from "next/link"
+import { getMainAddress } from "../../support/support"
 import LanguageSelector from "../../elements/LanguageSelector/LanguageSelector"
 import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Spacer from "../../elements/Spacer/Spacer"
@@ -42,14 +43,6 @@ function Header(props) {
     const about_turbo_headline = intl.formatMessage({ id: "about_turbo_headline" });
     const articles_headline = intl.formatMessage({ id: "articles_headline" });
 
-    function getMainAddress(url) {
-        if (url.includes("#")) {
-            return "/"+locale+url;
-        }
-
-        return "/"+locale+"/"+url;
-    }
-
     function getMenuItems() {
         let items = [
             {name: h1, url: '#how_it_works'},
@@ -87,8 +80,8 @@ function Header(props) {
                     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
 
                     {/* Add hreflang links */}
-                    <link rel="alternate" href={host} hrefLang="x-default" />
-                    <link rel="alternate" href={host+"/en"} hrefLang="en" />
+                    {/*<link rel="alternate" href={host} hrefLang="x-default" />*/}
+                    <link rel="alternate" href={host+"/"+{locale}} hrefLang={locale} />
 
                     <YandexMetrika 
                         yid={91976312}
