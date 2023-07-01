@@ -1,4 +1,3 @@
-'use client';
 import styles from './Spacer.module.scss'
 
 function Spacer(props) {

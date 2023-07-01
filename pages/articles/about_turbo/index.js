@@ -3,8 +3,6 @@ import WhyScreen from "../../../components/WhyScreen/WhyScreen.js";
 import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js";
 import { useIntl } from "react-intl";
 
-import styles from "../../../styles/Main.module.scss";
-
 import "../../../_globals.js";
 
 About_turbo.title = () => {
@@ -49,7 +47,6 @@ export default function About_turbo() {
     <>
       <Screen name={"about_turbo"} 
                     h1={about_turbo_header} 
-                    styles={styles} 
                     reverse={true}
                     columns={2} 
                     main_content={getFirstMainContent()}
@@ -60,7 +57,6 @@ export default function About_turbo() {
                     />
 
         <Screen name={"about_turbo"} 
-                    styles={styles} 
                     reverse={false}
                     columns={2} 
                     main_content={getSecondMainContent()}
@@ -71,7 +67,6 @@ export default function About_turbo() {
         />
 
         <WhyScreen 
-            styles={styles} 
             h2={at_how_to_avoid} 
         />
         {<DownloadButton isCentered/>}

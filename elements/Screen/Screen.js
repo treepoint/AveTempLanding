@@ -1,9 +1,9 @@
-'use client';
-import { useIntl } from "react-intl";
-import Image from "next/image.js";
+import { useIntl } from "react-intl"
+import Image from "next/image.js"
+
+import styles from './Screen.module.scss'
 
 function Screen(props) {
-
     const intl = useIntl();
 
     function getHeadline() {
@@ -27,14 +27,14 @@ function Screen(props) {
     }
 
     function getColumnsStyles() {
-        let classes = [props.styles.columns];
+        let classes = [styles.columns];
 
         if (props.columns == 2) {
-            classes.push(props.styles.two);
+            classes.push(styles.two);
         }
 
         if (props.reverse) {
-            classes.push(props.styles.reverse);
+            classes.push(styles.reverse);
         }
 
         return classes.join(' ');
@@ -48,7 +48,7 @@ function Screen(props) {
 
     function getSecondColumnContent() {
         if (props.image) {
-        return <div className={props.styles.screenshot} style={props.image_style}>
+        return <div className={styles.screenshot} style={props.image_style}>
                     <Image alt={props.alt} 
                         src={getImageUrl()} 
                         fill
@@ -64,13 +64,13 @@ function Screen(props) {
     }
 
     return (
-        <div className={props.styles.screen}>
+        <div className={styles.wrapper}>
             {getHeadline()}
             <div className={getColumnsStyles()}>
-                <div className={props.styles.screenshot_column}>
+                <div className={styles.screenshot_column}>
                     {getSecondColumnContent()}
                 </div>
-                <div className={props.styles.half}>
+                <div className={styles.half}>
                     {props.above_additinonal_block}
                     {props.main_content}
                     {props.below_additinonal_block}

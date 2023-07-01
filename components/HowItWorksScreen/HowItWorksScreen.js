@@ -40,7 +40,6 @@ function HowItWorksScreen(props) {
 
     return (<Screen name={"how_it_works"} 
                     h1={"h1"} 
-                    styles={props.styles} 
                     columns={2} 
                     reverse={true} 
                     image={"main_window_screenshot_url"}

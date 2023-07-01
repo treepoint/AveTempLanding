@@ -6,8 +6,6 @@ import { useIntl } from "react-intl"
 import { useRouter } from "next/router"
 import { getMainAddress } from "../../../support/support.js"
 
-import styles from "../../../styles/Main.module.scss"
-
 import "../../../_globals.js"
 
 HowToDescreaseTemperature.title = () => {
@@ -22,7 +20,6 @@ HowToDescreaseTemperature.description = () => {
 
 export default function HowToDescreaseTemperature() {
   const intl = useIntl();
-  const { locale } = useRouter();
 
   const how_descrease_temperature = intl.formatMessage({ id: "how_descrease_temperature" });
   const dirty_cooler = intl.formatMessage({ id: "dirty_cooler" });
@@ -85,7 +82,6 @@ export default function HowToDescreaseTemperature() {
     <>
       <Screen name={"how_descrease_temperature"} 
                     h1={how_descrease_temperature} 
-                    styles={styles} 
                     reverse={true}
                     columns={2} 
                     main_content={getFirstMainContent()}
@@ -96,7 +92,6 @@ export default function HowToDescreaseTemperature() {
                     />
 
         <Screen name={"dirty_system"} 
-                    styles={styles} 
                     reverse={false}
                     columns={2} 
                     main_content={getSecondMainContent()}
@@ -106,7 +101,6 @@ export default function HowToDescreaseTemperature() {
                     image_priority={100}
         />
         <Screen name={"programm_option"} 
-                    styles={styles} 
                     reverse={true}
                     columns={2} 
                     main_content={getThirdMainContent()}

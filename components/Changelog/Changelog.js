@@ -7,18 +7,9 @@ import styles from "./Changelog.module.scss"
 import "../../_globals.js"
 
 function Changelog(props) {
-    const [isSpoilerOpened, setSpoiler] = React.useState(props.is_default_opened);
-
     const intl = useIntl();
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const releases_location_text = intl.formatMessage({ id: "releases_location_text" });
-    const show_more = intl.formatMessage({ id: "show_more" });
-
-    function setSpoilerOpened() {
-        if (!isSpoilerOpened) {
-            setSpoiler(true);
-        }
-    }
 
     let releases = [
         {'title' : '1.4.7', 
@@ -121,41 +112,24 @@ function Changelog(props) {
     ]
 
     function getReleasesArray() {
-       if (!isSpoilerOpened) {
-            return releases.slice(0,2)
-       } else {
-            return releases;
-       }
-    }
-
-    function getShowMoreStyles() {
-        let classes = [props.styles.anchor_link]
-
-        if (isSpoilerOpened) {
-            classes.push(props.styles.hidden);
-        }
-
-       return classes.join(' ')
+        return releases;
     }
 
     return (
-        <div className={props.styles.screen}>
-            <div className={[props.styles.columns, props.styles.one].join(' ')}>
+        <div className={styles.wrapper}>
+            <div className={[styles.columns, styles.one].join(' ')}>
                 <h1 id="changelog">{changelog_headline}</h1>
                 <p>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link></p>
             
                 <div className={styles.release_description}>
                     {getReleasesArray().map((release, index) => (
                         <Release key = {index}
-                                styles={props.styles} 
-                                title={release.title} 
-                                description={release.description}
-                                changes={release.changes}
-                                ps={release.ps}/>
+                                 title={release.title} 
+                                 description={release.description}
+                                 changes={release.changes}
+                                 ps={release.ps}/>
                     ))}
                 </div>
-
-                <a className={getShowMoreStyles()} onClick={setSpoilerOpened}>{show_more}</a>
             </div>
         </div>
     );

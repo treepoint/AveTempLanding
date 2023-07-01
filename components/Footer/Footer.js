@@ -1,7 +1,8 @@
 'use client';
-import { useIntl } from "react-intl";
+import { useIntl } from "react-intl"
+import Link from "next/link";
 import styles from './Footer.module.scss'
-import "../../_globals.js";
+import "../../_globals.js"
 
 function Footer(props) {
 
@@ -13,30 +14,24 @@ function Footer(props) {
 
     let currentYear= new Date().getFullYear(); 
 
+    function getFooterMenu() {
+        let items = [
+            {url: "https://github.com/treepoint/AveTemp", text : githab_page_headline},
+            {url: "https://github.com/treepoint/AveTemp/issues", text : issues_headline},
+            {url: "https://github.com/treepoint/AveTemp/discussions", text : discussions_headline},
+            {url: download_link, text : download}
+        ]
+
+        return items.map(item => {
+            return <li><Link href={item.url}>{item.text}</Link></li>
+        })
+    }
+
     return (
-        <div className={props.styles.footer_and_header}>
-            <div className={props.styles.footer}>
+        <div className={styles.wrapper}>
+            <div className={styles.inner}>
                 <ul>
-                        <li>
-                        <a href="https://github.com/treepoint/AveTemp" target="_blank" rel="noopener, noreferrer">
-                            {githab_page_headline}
-                        </a>
-                        </li>
-                        <li>
-                        <a href="https://github.com/treepoint/AveTemp/issues" target="_blank" rel="noopener, noreferrer">
-                            {issues_headline}
-                        </a>
-                        </li>
-                        <li>
-                        <a href="https://github.com/treepoint/AveTemp/discussions" target="_blank" rel="noopener, noreferrer">
-                            {discussions_headline}
-                        </a>
-                        </li>
-                        <li>
-                        <a href={download_link} target="_blank" rel="noopener, noreferrer">
-                            { download }
-                        </a>
-                        </li>
+                    {getFooterMenu()}
                 </ul>
                 <div className={styles.copyright}>© 2022-{currentYear}, AveTemp. </div>
             </div>

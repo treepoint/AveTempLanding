@@ -83,8 +83,6 @@
 
   "releases_location_text": "All releases are available on ",
 
-  "show_more": "Show more",
-
   "1_4_7_cores_load" : "Fixed: cores load showing correctly on Intel CPU's now",
   "1_4_7_max_values" : "Fixed: max values for TDP and temps now are not going over the top",
   "1_4_7_version_number" : "Feature: added new version number to update message",

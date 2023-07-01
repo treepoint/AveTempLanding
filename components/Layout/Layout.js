@@ -7,7 +7,6 @@ import { useRouter } from "next/router"
 import "../../_globals.js"
 
 import styles from "./Layout.module.scss"
-import main_styles from "../../styles/Main.module.scss"
 
 export default function Layout(props) {
   const { locales } = useRouter();
@@ -19,7 +18,6 @@ export default function Layout(props) {
   return (
     <>
       <Header 
-        styles={main_styles} 
         locales = {[...locales]} 
         title={props.title}
         description={props.description}
@@ -30,7 +28,7 @@ export default function Layout(props) {
         {props.children}
       </main>
 
-      <Footer styles={main_styles} locales = {[...locales]}/>
+      <Footer locales = {[...locales]}/>
     </>
   );
 }

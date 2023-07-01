@@ -36,7 +36,6 @@ function HowItWorksScreen(props) {
 
     return (<Screen name={"how_to_use"} 
                     h2={"HTU_headline"} 
-                    styles={props.styles} 
                     columns={2} 
                     reverse={true} 
                     image={"settings_window_screenshot_url"}

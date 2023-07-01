@@ -34,11 +34,10 @@ function WhyScreen(props) {
     return (<Screen name={"why"} 
                     h2={props.h2 ? props.h2 : "why_headline"} 
                     h3={props.h3} 
-                    styles={props.styles} 
                     reverse={true}
                     columns={2} 
                     main_content={getContent()}
-                    second_content={<Promo styles={props.styles}/>}
+                    second_content={<Promo/>}
                     />
     );
 }

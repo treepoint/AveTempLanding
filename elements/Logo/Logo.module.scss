@@ -1,0 +1,16 @@
+.logo {
+    width: 36px;
+    height: 36px;
+    margin-right: 16px;
+  }
+  
+.logo_block {
+    font-size: 24px;
+    color: #222222;
+    text-decoration: none;
+    display: flex;
+}
+
+.logo_block:hover {
+    opacity: 0.7;
+}

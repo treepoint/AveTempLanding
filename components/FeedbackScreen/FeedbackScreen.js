@@ -30,11 +30,10 @@ export default function FeedbackScreen(props) {
 
     return (<Screen name={"feedback"} 
                     h2={"feedback_headline"} 
-                    styles={props.styles} 
                     reverse={true}
                     columns={2} 
                     main_content={getContent()}
-                    second_content={<FeedbackForm styles={props.styles}/>}
+                    second_content={<FeedbackForm/>}
                     />
     );
 }

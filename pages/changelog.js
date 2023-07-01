@@ -3,7 +3,6 @@ import { useRouter } from "next/router"
 import { useIntl } from "react-intl"
 
 import "../_globals.js"
-import styles from "../styles/Main.module.scss"
 
 ChangelogPage.title = () => {
   const intl = useIntl();
@@ -20,7 +19,7 @@ export default function ChangelogPage() {
 
   return (
     <>
-      <Changelog styles={styles} locales = {[...locales]} is_default_opened={true}/>
+      <Changelog locales = {[...locales]} is_default_opened={true}/>
     </>
   );
 }
