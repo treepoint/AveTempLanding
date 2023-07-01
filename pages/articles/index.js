@@ -30,6 +30,11 @@ export default function Articles() {
   const hdt_2 = intl.formatMessage({ id: "hdt_2" });
   const cpu_params = intl.formatMessage({ id: "cpu_params" });
 
+  const noizy_ntb = intl.formatMessage({ id: "noizy_ntb" });
+  const nntb_1 = intl.formatMessage({ id: "nntb_1" });
+  const nntb_2 = intl.formatMessage({ id: "nntb_2" });
+  const alt_noizy_ntb = intl.formatMessage({ id: "alt_noizy_ntb" });
+
   const helpful_materials_headline = intl.formatMessage({ id: "helpful_materials_headline" });
   const for_what = intl.formatMessage({ id: "for_what" });
   const main_window_screenshot_url = intl.formatMessage({ id: "main_window_screenshot_url" });
@@ -38,6 +43,13 @@ export default function Articles() {
   function getArticlesPreviews() {
 
     let articles = [
+      {
+        name: noizy_ntb, 
+        url: 'articles/notebook_is_noisy', 
+        description: [nntb_1, nntb_2],
+        image_url: '/images/noizy_notebook.jpg',
+        alt: alt_noizy_ntb
+      },
       {
         name: about_turbo_header, 
         url: 'articles/about_turbo', 

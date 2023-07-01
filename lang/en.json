@@ -5,6 +5,7 @@
   "meta.title_articles": "AveTemp — processor heat knowledge base",
   "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
   "meta.title_htd": "AveTemp — how to reduce processor temperature",
+  "meta.title_notebook_noisy" : "AveTemp — laptop noises and heats up, what to do?",
 
   "meta.description": "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
   "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it",
@@ -12,6 +13,7 @@
   "meta.description_articles" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
   "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase",
   "meta.description_htd": "The processor can heat up for several reasons: using poor cooling, running without preventive cleaning, using turbo mode. This can be avoided by manually lowering the frequencies",
+  "meta.description_notebook_noisy" : "Often, immediately after buying a new laptop, it is found that the laptop is noisy even without load. It can be both gaming laptops and ordinary office laptops with Ryzen or Intel processors",
 
   "update_message_text": "New version 1.4.7 is available!",
 
@@ -211,5 +213,19 @@
   "hdt_14" : "To automate this process, I wrote a program called AveTemp, you can read more about it at ",
   "hdt_14_1" : "home page",
   "hdt_15" : "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
-  "hdt_16" : "The source code is available on Github, you can build the program yourself. I will be glad if you find it useful."
+  "hdt_16" : "The source code is available on Github, you can build the program yourself. I will be glad if you find it useful.",
+
+  "noizy_ntb" : "Laptop is noisy and warm, what should I do?",
+  "alt_noizy_ntb" : "Gaming laptop is noisy and heats up",
+  "nntb_1" : "Often, immediately after buying a new laptop, it is found that the laptop is noisy even without load. This can be the case with gaming laptops as well as with ordinary office laptops.",
+  "nntb_2" : "This is a very frustrating situation, because a new thing should make you happy, not annoyed. Unfortunately, modern technical solutions in laptops are often designed to give maximum performance, even where it is not required.",
+  "nntb_3" : "For this purpose, laptops often put unnecessarily powerful processors from the top of the line Ryzen or Intel and their performance is excessive. Read more about this here — ",
+
+  "alt_noizy_ntb_2" : "Laptop cooling system",
+  "nntb_4" : "In addition, the situation is complicated by the fact that the laptop is a very compact device, it is impossible to install a powerful and uncompromising cooling. Usually it is 1-2 heat pipes, a small heatsink and a cooler.",
+  "nntb_5" : "This is enough to keep the laptop from burning out, but not enough to keep it running passively - without spinning the cooler and, consequently, without noise. In addition, the situation is complicated by the fact that modern processors very often use Turbo mode, in which they overclock on any occasion, even when opening a browser.",
+  "nntb_6" : "If the laptop is not new, then in addition to this, the situation may be complicated by other reasons, I wrote about it here —",
+  "nntb_7" : "However, often neither changing the thermal paste nor cleaning helps, the only thing left is to limit the processor. Given the power of modern processors, there is no problem to lower the frequency for everyday use. There is still enough performance for all your daily tasks.",
+  "nntb_8" : "There are ways to change the CPU frequency manually, but this is inconvenient. For example, if you need to quickly unpack a zip archive or run a code compilation. To automate this process I wrote a program called AveTemp.",
+  "nntb_9" : "It not only monitors the state of the processor, but also knows how to automatically change the mode of the processor depending on the load.  It is described in more detail at "
 }

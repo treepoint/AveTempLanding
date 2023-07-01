@@ -1,7 +1,7 @@
-import Screen from "../../../elements/Screen/Screen.js";
-import WhyScreen from "../../../components/WhyScreen/WhyScreen.js";
-import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js";
-import { useIntl } from "react-intl";
+import Screen from "../../../elements/Screen/Screen.js"
+import WhyScreen from "../../../components/WhyScreen/WhyScreen.js"
+import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js"
+import { useIntl } from "react-intl"
 
 import "../../../_globals.js";
 
