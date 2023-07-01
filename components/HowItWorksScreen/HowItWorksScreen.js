@@ -39,7 +39,7 @@ function HowItWorksScreen(props) {
     }
 
     return (<Screen name={"how_it_works"} 
-                    h1={"h1"} 
+                    h2={"h1"} 
                     columns={2} 
                     reverse={true} 
                     image={"main_window_screenshot_url"}

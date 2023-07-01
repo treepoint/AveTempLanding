@@ -88,7 +88,7 @@ export default function Articles() {
 
   return (
     <>
-      <h1 className={styles.headline}>{articles_headline}</h1>
+      <h1>{articles_headline}</h1>
       <div className={styles.wrapper}>
         {getArticlesPreviews()}
       </div>

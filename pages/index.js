@@ -9,6 +9,7 @@ import "../_globals.js";
 export default function Home() {
   return (
     <>
+      <h1>AveTemp — программа для уменьшения нагрева процессора</h1>
       <HowItWorksScreen/>
       <WhyScreen/>
       <FeatureScreen/>

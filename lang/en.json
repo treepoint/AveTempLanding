@@ -6,7 +6,7 @@
   "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
   "meta.title_htd": "AveTemp — how to reduce processor temperature",
 
-  "meta.description": "Free software to monitor processor temperature and TDP, automatically reduce processor temperature and notebook noise based on current load and usage",
+  "meta.description": "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
   "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it",
   "meta.description_changelog" : "A list of changes and release descriptions of AveTemp CPU Heat Reduction software. Details about what functionality was added in which release, download links",
   "meta.description_articles" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
