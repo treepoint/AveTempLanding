@@ -84,7 +84,7 @@ export default function HowToDescreaseTemperature() {
   return (
     <>
       <Screen name={"how_descrease_temperature"} 
-                    h2={how_descrease_temperature} 
+                    h1={how_descrease_temperature} 
                     styles={styles} 
                     reverse={true}
                     columns={2} 

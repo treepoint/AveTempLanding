@@ -8,6 +8,11 @@ Page404.title = () => {
   return intl.formatMessage({ id: "meta.title_404" });
 }
 
+Page404.description = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.description_404" });
+}
+
 export default function Page404() {
   const router = useRouter();
   const intl = useIntl();

@@ -1,6 +1,7 @@
 'use client'
 import { useIntl } from "react-intl"
 import React from 'react'
+import Link from "next/link.js"
 import Release from "../Release/Release.js"
 import styles from "./Changelog.module.scss"
 import "../../_globals.js"
@@ -140,8 +141,8 @@ function Changelog(props) {
     return (
         <div className={props.styles.screen}>
             <div className={[props.styles.columns, props.styles.one].join(' ')}>
-                <h2 id="changelog">{changelog_headline}</h2>
-                <p>{releases_location_text} <a href="https://github.com/treepoint/AveTemp/releases" target="_blank" rel="noopener, noreferrer">Github</a></p>
+                <h1 id="changelog">{changelog_headline}</h1>
+                <p>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link></p>
             
                 <div className={styles.release_description}>
                     {getReleasesArray().map((release, index) => (

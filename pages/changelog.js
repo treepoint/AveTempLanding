@@ -10,6 +10,11 @@ ChangelogPage.title = () => {
   return intl.formatMessage({ id: "meta.title_changelog" });
 }
 
+ChangelogPage.description = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.description_changelog" });
+}
+
 export default function ChangelogPage() {
   const { locales } = useRouter();
 

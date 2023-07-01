@@ -2,14 +2,27 @@ import styles from './ArticlePreview.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getMainAddress } from '../../support/support'
-import { useRouter } from "next/router"
 import { useIntl } from "react-intl"
 
 export default function ArticlePreview(props) {
-    const { locale } = useRouter();
     const intl = useIntl();
 
     const read_more = intl.formatMessage({ id: "read_more" });
+
+    function getDescription() {
+        if (props.description) {
+            return <>
+                        <div className={styles.description}>
+                            {props.description.map(description => {
+                                return <p className={styles.p}>{description}</p>
+                            } )}
+                        </div>
+                        <div className={styles.read_more}>
+                            <Link href={getMainAddress(props.url)}>{read_more}</Link>
+                        </div>
+                    </>
+        }
+    }
 
     return (
             <div className={styles.wrapper}>
@@ -24,14 +37,7 @@ export default function ArticlePreview(props) {
                 <div className={styles.title}>
                     <Link href={getMainAddress(props.url)}>{props.name}</Link>
                 </div>
-                <div className={styles.description}>
-                    {props.description.map(description => {
-                        return <p className={styles.p}>{description}</p>
-                    } )}
-                </div>
-                <div className={styles.read_more}>
-                    <Link href={getMainAddress(props.url)}>{read_more}</Link>
-                </div>
+                {getDescription()}
             </div>
       );
 }

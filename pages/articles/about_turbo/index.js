@@ -48,7 +48,7 @@ export default function About_turbo() {
   return (
     <>
       <Screen name={"about_turbo"} 
-                    h2={about_turbo_header} 
+                    h1={about_turbo_header} 
                     styles={styles} 
                     reverse={true}
                     columns={2} 
@@ -72,8 +72,8 @@ export default function About_turbo() {
 
         <WhyScreen 
             styles={styles} 
-            h3={at_how_to_avoid} 
-            h2={undefined}/>
+            h2={at_how_to_avoid} 
+        />
         {<DownloadButton isCentered/>}
     </>
   );

@@ -1,4 +1,3 @@
-import Support from "../../components/Support/Support"
 import ArticlePreview from "../../components/ArticlePreview/ArticlePreview"
 import { useIntl } from "react-intl"
 
@@ -9,6 +8,11 @@ import "../../_globals.js";
 Articles.title = () => {
   const intl = useIntl();
   return intl.formatMessage({ id: "meta.title_articles" });
+}
+
+Articles.description = () => {
+  const intl = useIntl();
+  return intl.formatMessage({ id: "meta.description_articles" });
 }
 
 export default function Articles() {
@@ -26,6 +30,11 @@ export default function Articles() {
   const hdt_2 = intl.formatMessage({ id: "hdt_2" });
   const cpu_params = intl.formatMessage({ id: "cpu_params" });
 
+  const helpful_materials_headline = intl.formatMessage({ id: "helpful_materials_headline" });
+  const for_what = intl.formatMessage({ id: "for_what" });
+  const main_window_screenshot_url = intl.formatMessage({ id: "main_window_screenshot_url" });
+  const main_window_screenshot_alt = intl.formatMessage({ id: "main_window_screenshot_alt" });
+  
   function getArticlesPreviews() {
 
     let articles = [
@@ -56,13 +65,37 @@ export default function Articles() {
     })
   }
 
+  function getHelpfulMaterials() {
+
+    let articles = [
+      {
+        name: for_what, 
+        url: '', 
+        image_url: main_window_screenshot_url,
+        alt: main_window_screenshot_alt
+      }
+    ]
+    
+    return articles.map(article => {
+      return <ArticlePreview 
+              name={article.name}
+              url={article.url}
+              image_url={article.image_url}
+              alt={article.alt}
+            />
+    })
+  }
+
   return (
     <>
       <h1 className={styles.headline}>{articles_headline}</h1>
       <div className={styles.wrapper}>
         {getArticlesPreviews()}
       </div>
-      <Support/>
+      <h2 className={styles.headline}>{helpful_materials_headline}</h2>
+      <div className={styles.wrapper}>
+        {getHelpfulMaterials()}
+      </div>
     </>
   );
 }

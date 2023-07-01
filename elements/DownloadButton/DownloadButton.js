@@ -11,7 +11,7 @@ export default function DownloadButton(props) {
 
     return (
         <div className={props.isCentered ? styles.centered : ''}>
-            <form method="get" action={download_link}>
+            <form method="GET" action={download_link}>
                 <Button 
                     name={download_button} 
                     isPrimary={props.isPrimary}

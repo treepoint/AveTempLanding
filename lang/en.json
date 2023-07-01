@@ -7,10 +7,15 @@
   "meta.title_htd": "AveTemp — how to reduce processor temperature",
 
   "meta.description": "Free tool to monitor CPU temperature and TDP, reduce CPU temperature and notebook noise based on current load",
+  "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it.",
+  "meta.description_changelog" : "A list of changes and releases of AveTemp. Details on when functionality was added",
+  "meta.description_articles" : "Articles about why the processor is warm, how to reduce its temperature, how to reduce the noise from the computer",
   "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase...",
   "meta.description_htd": "The processor can warm up for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or...",
 
   "update_message_text": "New version 1.4.7 is available!",
+
+  "for_what": "How to reduce the temperature with AveTemp",
 
   "promo_install": "Download and setup AveTemp",
   "promo_reduce": "It will reduce temps and noise in idle",
@@ -30,6 +35,7 @@
   "issues_headline": "Issues",
   "githab_page_headline": "Github main page",
   "articles_headline" : "Articles",
+  "helpful_materials_headline" : "Useful information",
 
   "and": "and",
 
