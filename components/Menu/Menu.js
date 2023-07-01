@@ -33,7 +33,7 @@ export default function Menu(props) {
 
     function getItems() {
         return items.map(item => {
-            return <Link className={styles.item} href={getMainAddress(item.url)}>{item.name}</Link>
+            return <Link className={styles.item} href={getMainAddress(item.url)} onClick={showMenu}>{item.name}</Link>
         })
     }
 
