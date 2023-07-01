@@ -1,9 +1,9 @@
-import Changelog from "../components/Changelog/Changelog";
-import { useRouter } from "next/router";
+import Changelog from "../components/Changelog/Changelog"
+import { useRouter } from "next/router"
+import { useIntl } from "react-intl"
 
-import "../_globals.js";
-
-import styles from "../styles/Main.module.scss";
+import "../_globals.js"
+import styles from "../styles/Main.module.scss"
 
 ChangelogPage.title = () => {
   const intl = useIntl();
