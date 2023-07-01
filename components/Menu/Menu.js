@@ -52,6 +52,7 @@ export default function Menu(props) {
                     height={48} 
                     width={48} 
                     onClick={showMenu}
+                    alt={host}
                 />
             </>
             : ''}

@@ -6,12 +6,12 @@
   "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
   "meta.title_htd": "AveTemp — how to reduce processor temperature",
 
-  "meta.description": "Free tool to monitor CPU temperature and TDP, reduce CPU temperature and notebook noise based on current load",
-  "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it.",
-  "meta.description_changelog" : "A list of changes and releases of AveTemp. Details on when functionality was added",
-  "meta.description_articles" : "Articles about why the processor is warm, how to reduce its temperature, how to reduce the noise from the computer",
-  "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase...",
-  "meta.description_htd": "The processor can warm up for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or...",
+  "meta.description": "Free software to monitor processor temperature and TDP, automatically reduce processor temperature and notebook noise based on current load and usage",
+  "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it",
+  "meta.description_changelog" : "A list of changes and release descriptions of AveTemp CPU Heat Reduction software. Details about what functionality was added in which release, download links",
+  "meta.description_articles" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
+  "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase",
+  "meta.description_htd": "The processor can heat up for several reasons: using poor cooling, running without preventive cleaning, using turbo mode. This can be avoided by manually lowering the frequencies",
 
   "update_message_text": "New version 1.4.7 is available!",
 

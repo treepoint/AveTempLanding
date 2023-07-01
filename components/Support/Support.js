@@ -22,7 +22,9 @@ function Support() {
                         <div className={styles.currency}>
                             {card.currency}
                         </div>
-                        {card.number}
+                        <div className={styles.card_number}>
+                            {card.number}
+                        </div>
                     </div>
         })
     }
