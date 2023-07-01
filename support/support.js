@@ -47,3 +47,19 @@ export function getCanonicalURL() {
     <link rel="canonical" href={canonicalUrl} />
   );
 };
+
+export function getAlternateURL() {
+    const { locale } = useRouter();
+
+    let url;
+
+    if (locale == 'ru') { 
+        url = host;
+    } else {
+        url = host + '/' + locale
+    }
+  
+    return (
+      <link rel="alternate" href={url} hrefLang={locale}/>
+    );
+  };

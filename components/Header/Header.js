@@ -8,7 +8,7 @@ import YandexMetrika from "../../elements/YandexMetrika/YandexMetrika"
 import GoogleTags from "../../elements/GoogleTags/GoogleTags"
 import Logo from "../../elements/Logo/Logo"
 import Menu from "../Menu/Menu"
-import { getCanonicalURL } from "../../support/support"
+import { getCanonicalURL, getAlternateURL } from "../../support/support"
 import { getMainAddress } from "../../support/support"
 import { useIntl } from "react-intl"
 import { useRouter } from "next/router"
@@ -47,7 +47,7 @@ function Header(props) {
                     <link type="image/png" sizes="120x120" rel="icon" href="/favicon-120x120.png"/>
 
                     {/* Add hreflang links */}
-                    <link rel="alternate" href={getMainAddress('')} hrefLang={locale} />
+                    {getAlternateURL()}
                     {getCanonicalURL()}
 
                     <YandexMetrika yid={91976312}/>
