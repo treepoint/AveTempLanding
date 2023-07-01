@@ -1,8 +1,10 @@
-'use client';
-import { useIntl } from "react-intl";
-import { useRouter } from "next/router";
-import Screen from "../../elements/Screen/Screen.js";
-import Support from "../Support/Support.js";
+'use client'
+import { useIntl } from "react-intl"
+import { useRouter } from "next/router"
+import Link from "next/link.js"
+import { getMainAddress } from "../../support/support.js"
+import Screen from "../../elements/Screen/Screen.js"
+import Support from "../Support/Support.js"
 
 function AboutScreen(props) {
 
@@ -32,7 +34,7 @@ function AboutScreen(props) {
                     <li>{feature_autocolor}</li>
                     <li>{feature_low_cpu}</li>
             </ul>
-            <p>{feature_cl}<a href={"/"+locale+"/changelog"}>{feature_cl_link}</a>.</p>
+            <p>{feature_cl}<Link href={getMainAddress('changelog')}>{feature_cl_link}</Link>.</p>
           </>
         );
     }

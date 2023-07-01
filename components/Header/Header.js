@@ -40,7 +40,7 @@ function Header(props) {
     const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
     const support_headline = intl.formatMessage({ id: "support_headline" });
     const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
-    const about_turbo_headline = intl.formatMessage({ id: "about_turbo_headline" });
+    const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const articles_headline = intl.formatMessage({ id: "articles_headline" });
 
     function getMenuItems() {
@@ -50,7 +50,7 @@ function Header(props) {
             {name: HTU_headline, url: '#how_to_use'},
             {name: support_headline, url: '#support'},
             {name: feedback_headline, url: '#feedback'},
-            {name: about_turbo_headline, url: 'articles/about_turbo'},
+            {name: changelog_headline, url: 'changelog'},
             {name: articles_headline, url: 'articles'}
         ]
 
@@ -81,7 +81,7 @@ function Header(props) {
 
                     {/* Add hreflang links */}
                     {/*<link rel="alternate" href={host} hrefLang="x-default" />*/}
-                    <link rel="alternate" href={host+"/"+{locale}} hrefLang={locale} />
+                    <link rel="alternate" href={getMainAddress('')} hrefLang={locale} />
 
                     <YandexMetrika 
                         yid={91976312}
@@ -95,7 +95,7 @@ function Header(props) {
                 <div className={[props.styles.footer_and_header, props.styles.fixed].join(' ')}>
                     <div className={props.styles.header}>
                         <div className={props.styles.header_inner}>
-                            <Link className={styles.logo_block} href={host}>
+                            <Link className={styles.logo_block} href={getMainAddress('')}>
                                 <Image
                                     src="/images/logo.png"
                                     width={36}

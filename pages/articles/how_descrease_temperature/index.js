@@ -1,12 +1,14 @@
-import Screen from "../../../elements/Screen/Screen.js";
-import Promo from "../../../components/Promo/Promo.js";
-import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js";
-import { useIntl } from "react-intl";
-import { useRouter } from "next/router";
+import Screen from "../../../elements/Screen/Screen.js"
+import Promo from "../../../components/Promo/Promo.js"
+import Link from "next/link.js"
+import DownloadButton from "../../../elements/DownloadButton/DownloadButton.js"
+import { useIntl } from "react-intl"
+import { useRouter } from "next/router"
+import { getMainAddress } from "../../../support/support.js"
 
-import styles from "../../../styles/Main.module.scss";
+import styles from "../../../styles/Main.module.scss"
 
-import "../../../_globals.js";
+import "../../../_globals.js"
 
 HowToDescreaseTemperature.title = () => {
   const intl = useIntl();
@@ -50,7 +52,7 @@ export default function HowToDescreaseTemperature() {
 
   function getFirstMainContent() {
     return (<>
-        <p>{hdt_1}<a href={'/'+locale+'/articles/about_turbo'}>{turbo}</a>.</p>
+        <p>{hdt_1}<Link href={getMainAddress('articles/about_turbo')}>{turbo}</Link>.</p>
         <p>{hdt_2}</p>
         <p>{hdt_3}</p>
         <p>{hdt_4}</p>
@@ -73,7 +75,7 @@ export default function HowToDescreaseTemperature() {
         <p>{hdt_11}</p>
         <p>{hdt_12}</p>
         <p>{hdt_13}</p>
-        <p>{hdt_14}<a href={"/"+locale+"/"}>{hdt_14_1}</a>.</p>
+        <p>{hdt_14}<Link href={getMainAddress('')}>{hdt_14_1}</Link>.</p>
         <p>{hdt_15}</p>
         <p>{hdt_16}</p>
     </>);
