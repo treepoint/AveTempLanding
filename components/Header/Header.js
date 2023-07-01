@@ -43,6 +43,7 @@ function Header(props) {
                     <meta name="description" content={description} />
                     <meta name="viewport" content="width=device-width , initial-scale=1.0"/>
                     <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+                    <link type="image/png" sizes="120x120" rel="icon" href="/favicon-120x120.png"/>
 
                     {/* Add hreflang links */}
                     <link rel="alternate" href={getMainAddress('')} hrefLang={locale} />
