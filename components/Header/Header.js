@@ -19,7 +19,6 @@ import "../../_globals.js"
 function Header(props) {
 
     const intl = useIntl();
-    const { locale } = useRouter();
 
     let title;
     let description;
@@ -49,9 +48,8 @@ function Header(props) {
                     {/* Add hreflang links */}
                     {getAlternateURL()}
                     {getCanonicalURL()}
-
-                    <YandexMetrika yid={91976312}/>
                 </Head>
+                <YandexMetrika yid={91976312}/>
 
                 <div className={styles.wrapper}>
                     <div className={styles.inner}>

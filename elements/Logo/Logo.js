@@ -5,13 +5,15 @@ import { getMainAddress } from "../../support/support"
 import styles from './Logo.module.scss'
 
 export default function Logo() {
-    return <Link className={styles.logo_block} href={getMainAddress('')}>
-                <Image
-                    src="/images/logo.png"
-                    width={36}
-                    height={36}
-                    alt="AveTemp Logo"
-                    className={styles.logo}
-                />
-            </Link>  
+    return <div className={styles.logo_block}>
+                <Link href={getMainAddress('')}>
+                    <Image
+                        src="/images/logo.png"
+                        width={36}
+                        height={36}
+                        alt="AveTemp Logo"
+                        className={styles.logo}
+                    />
+                </Link>
+            </div>  
 }

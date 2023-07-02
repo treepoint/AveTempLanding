@@ -32,7 +32,7 @@ function Release(props) {
 
     return (
       <div className={styles.release}>
-        <h3>{props.title}</h3>
+        <h2>{props.title}</h2>
         {getDescription()}
         <ul>
             {changes.map((text, index) => (

@@ -1,7 +1,7 @@
 {
   "meta.title": "AveTemp — снижение температуры процессора и шума ноутбука",
   "meta.title_404": "AveTemp — страница не найдена",
-  "meta.title_changelog": "AveTemp — история изменений",
+  "meta.title_changelog": "AveTemp — история изменений и релизов",
   "meta.title_articles": "AveTemp — база знаний по нагреву процессоров",
   "meta.title_about_turbo": "AveTemp — почему греется процессор в режиме турбо",
   "meta.title_htd": "AveTemp — как снизить температуру процессора",
@@ -25,6 +25,8 @@
 
   "download_button": "Скачать",
   "send_button": "Отправить",
+
+  "main_h1" : "AveTemp — программа для уменьшения нагрева процессора",
 
   "h1": "Как это работает",
 

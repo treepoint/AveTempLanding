@@ -1,7 +1,7 @@
 {
   "meta.title": "AveTemp — reducing CPU temperature and notebook noise",
   "meta.title_404": "AveTemp — page not found",
-  "meta.title_changelog": "AveTemp — changelog",
+  "meta.title_changelog": "AveTemp — history of changes and releases",
   "meta.title_articles": "AveTemp — processor heat knowledge base",
   "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
   "meta.title_htd": "AveTemp — how to reduce processor temperature",
@@ -25,6 +25,8 @@
 
   "download_button": "Download",
   "send_button": "Submit",
+
+  "main_h1" : "AveTemp — the program for reducing CPU heat",
 
   "h1": "How it works",
 
