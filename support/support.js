@@ -62,4 +62,9 @@ export function getAlternateURL() {
     return (
       <link rel="alternate" href={url} hrefLang={locale}/>
     );
-  };
+};
+
+export const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+}

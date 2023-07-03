@@ -1,5 +1,5 @@
 .wrapper {
-    margin-top: 8px;
+    margin-top: 36px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -20,8 +20,7 @@
     display: grid;
     width: 50%;
     align-content: baseline;
-    margin-top: 8px;
-  
+
     @media (max-width: 992px) { 
       width: 100%;
       display: flex;

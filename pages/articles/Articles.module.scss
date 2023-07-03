@@ -1,9 +1,9 @@
 .wrapper {
-    margin-bottom: auto;
     display: flex;
     row-gap: 24px;
     column-gap: 24px;
     margin-bottom: 64px;
+    margin-top: 36px;
 
     @media screen and (max-width: 620px) {
         flex-direction: column;

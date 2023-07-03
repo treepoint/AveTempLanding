@@ -7,7 +7,7 @@
 .wrapper {
     @extend %wrapper;
 
-    @media (max-width: 1240px) { 
+    @media (max-width: 1060px) { 
         display: none;
     } 
     
@@ -37,7 +37,7 @@
     height: 100vh;
     padding-top: 52px;
 
-    @media (min-width: 1241px) { 
+    @media (min-width: 1061px) { 
         display: none;
     }  
 
@@ -67,7 +67,7 @@
     margin-left: 24px;
     opacity: 0.9;
 
-    @media (min-width: 1241px) { 
+    @media (min-width: 1061px) { 
         display: none;
     }
 

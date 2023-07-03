@@ -1,7 +1,10 @@
 'use client';
-import { useIntl } from "react-intl";
-import Screen from "../../elements/Screen/Screen.js";
-import FeedbackForm from "../FeedbackForm/FeedbackForm.js";
+import { useIntl } from "react-intl"
+import Screen from "../../elements/Screen/Screen.js"
+import FeedbackForm from "../FeedbackForm/FeedbackForm.js"
+import { openInNewTab } from "../../support/support.js";
+
+import styles from './FeedbackScreen.module.scss'
 
 export default function FeedbackScreen(props) {
 
@@ -24,6 +27,20 @@ export default function FeedbackScreen(props) {
                 <p>
                     {feedback_text_4}
                 </p>
+                <div className={styles.social_icons}>
+                    <div 
+                        className={styles.telegram} 
+                        onClick={() => openInNewTab("https://t.me/PaulKhoziashev")}>
+                    </div>
+                    <div 
+                        className={styles.mail} 
+                        onClick={() => openInNewTab("mailto: 79194544428@ya.ru")}>
+                    </div>
+                    <div 
+                        className={styles.github} 
+                        onClick={() => openInNewTab("https://github.com/treepoint")}>
+                    </div>
+                </div>
             </div>
         );
     }

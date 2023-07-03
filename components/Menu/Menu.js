@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import Blur from '../../elements/Blur/Blur'
 import { getMainAddress } from '../../support/support'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import { useIntl } from "react-intl"
 
@@ -13,20 +13,20 @@ export default function Menu(props) {
 
     const intl = useIntl();
 
-    const h1 = intl.formatMessage({ id: "h1" });
     const features_headline = intl.formatMessage({ id: "features_headline" });
     const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
-    const support_headline = intl.formatMessage({ id: "support_headline" });
     const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
+    const support_headline = intl.formatMessage({ id: "support_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const articles_headline = intl.formatMessage({ id: "articles_headline" });
+    const road_map = intl.formatMessage({ id: "road_map" });
 
     let items = [
-        {name: h1, url: '#how_it_works'},
-        {name: features_headline, url: '#features'},
         {name: HTU_headline, url: '#how_to_use'},
-        {name: support_headline, url: '#support'},
+        {name: road_map, url: '#road_map'},
         {name: feedback_headline, url: '#feedback'},
+        {name: support_headline, url: '#support'},
+        {name: features_headline, url: '#features'},
         {name: changelog_headline, url: 'changelog'},
         {name: articles_headline, url: 'articles'}
     ]

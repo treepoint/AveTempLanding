@@ -41,6 +41,7 @@ function AboutScreen(props) {
 
     return ( <Screen name={"features"} 
                      h2={"features_headline"} 
+                     reverse={true}
                      columns={2} 
                      main_content={getContent()}
                      second_content={<Support/>}
