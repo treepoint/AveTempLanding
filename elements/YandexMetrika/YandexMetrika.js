@@ -62,7 +62,8 @@ function convertParam(boolValue, defaultValue) {
           <img
             src={pixelSource}
             style={{ position: "absolute", left: "-9999px" }}
-            alt=""
+            alt="yandex pixel"
+            loading="lazy"
           />
         </div>
       </noscript>
