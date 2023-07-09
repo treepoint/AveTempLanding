@@ -18,8 +18,8 @@ function Promo() {
         {src: '/images/promo_performance.png', styles: styles.promo_label_three, text: promo_turbo},
       ]
 
-      return promos.map(promo => {
-        return <div className={styles.item}>
+      return promos.map((promo, index) => {
+        return <div className={styles.item} key={index}>
                   <Image 
                     src={promo.src}
                     width={96} 

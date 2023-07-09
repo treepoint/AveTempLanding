@@ -1,6 +1,6 @@
 'use client';
-import { useIntl } from "react-intl";
-import Screen from "../../elements/Screen/Screen.js";
+import { useIntl } from "react-intl"
+import Screen from "../../elements/Screen/Screen.js"
 
 function HowItWorksScreen(props) {
 
@@ -35,10 +35,10 @@ function HowItWorksScreen(props) {
     }
 
     return (<Screen name={"how_to_use"} 
-                    h2={"HTU_headline"} 
+                    h2={{ id: "HTU_headline" }} 
                     columns={2} 
                     reverse={false} 
-                    image={"settings_window_screenshot_url"}
+                    image={{id: "settings_window_screenshot_url" }}
                     alt={settings_window_screenshot_alt}
                     image_style={{maxHeight: "759px", height: "759px", maxWidth: "100%", width: "100%"}}
                     image_priority={100}

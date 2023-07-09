@@ -1,0 +1,66 @@
+{
+    "blocks_below" : [
+        {"name"  : "WhyScreen"}
+    ],
+    "en" : 
+    {
+        "title" : "AveTemp - laptop is noisy and warm, what to do?",
+        "description" : "Often right after buying a new laptop you find that the laptop is noisy even without load. It can be both gaming laptops and ordinary office laptops, with Ryzen or Intel processors",
+        "h1" : "Laptop is noisy and warm, what to do?",
+        "screens" : [
+            { "content" : 
+                [
+                    "Often right after buying a new laptop you find that the laptop is noisy even without load. This can be the case with gaming laptops as well as with ordinary office laptops.",
+                    "This is a very frustrating situation, because the new thing should please, not annoy. Unfortunately, modern technical solutions in laptops are often designed to give maximum performance, even where it is not required.",
+                    "To that end, laptops often put unnecessarily powerful processors from the top of the line Ryzen or Intel and their performance is excessive. Read more about this here - <Link href='articles/about_turbo'>why the processor is warming in turbo mode</Link>."
+                ],
+              "image" : "/images/noizy_notebook.jpg",
+              "image_alt" : "gaming laptop noises and heats up.",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                "In addition, the situation is complicated by the fact that the laptop is a very compact device, it is impossible to install a powerful and uncompromising cooling there. Usually it is 1-2 heat pipes, a small heatsink and a cooler.",
+                "This is enough to keep the laptop from burning out, but not enough to keep it running passively - without spinning the cooler and, consequently, without noise. In addition, the situation is complicated by the fact that modern processors very often use Turbo mode, in which they overclock on any occasion, even when opening a browser.",
+                "If the laptop is not new, in addition to this, the situation can be complicated by other reasons, I wrote about it here - <Link href='articles/how_descrease_temperature'>how to reduce the temperature of the processor</Link>.",
+                "However, often neither changing the thermal paste nor cleaning doesn't help, the only thing left is to limit the CPU. Given the power of modern CPUs, there is no problem to lower the frequency for everyday use. There is still enough performance for all everyday tasks.",
+                "There are ways to change the CPU frequency manually, but this is inconvenient. For example, if you need to quickly unpack a zip archive or run a code compilation. To automate this process, I wrote a program called AveTemp.",
+                "It not only monitors the state of the processor, but also knows how to automatically change the mode of the processor depending on the load. See <Link href='/'>main page</Link> for more information."
+                ],
+                "image" : "/images/cooling_system.jpg",
+                "image_alt" : "Laptop cooling system"
+            }
+        ]
+    },
+
+    "ru" : 
+    {
+        "title" : "AveTemp — ноутбук шумит и греется, что делать?",
+        "description" : "Часто сразу после покупки нового ноутбука обнаруживается, что ноутбук шумит даже без нагрузки. Это может быть и у игровых ноутбуков и у обычных офисных, с процессорами Ryzen или Intel",
+        "h1" : "Ноутбук шумит и греется, что делать?",
+        "screens" : [
+            { "content" : 
+                [
+                    "Часто сразу после покупки нового ноутбука обнаруживается, что ноутбук шумит даже без нагрузки. Это может быть и у игровых ноутбуков и у обычных офисных.", 
+                    "Это очень расстраивающая ситуация, потому что новая вещь должна радовать, а не раздражать. К сожалению, современные технические решения в ноутбуках часто рассчитаны на то, чтобы выдать максимальную производительность, даже там где этого не требуется.",
+                    "Для этого в ноутбуки часто ставят неоправданно мощные процессоры из топовых линеек Ryzen или Intel и их производительности избыточно. Подробнее об этом рассказывал здесь — <Link href='articles/about_turbo'>почему греется процессор в режиме турбо</Link>."
+                ],
+              "image" : "/images/noizy_notebook.jpg",
+              "image_alt" : "Игровой ноутбук шумит и греется",
+              "reverse": true
+            },
+            { "content" : 
+                [
+                "Кроме того, ситуацию осложняет то, что ноутбук это очень компактное устройство, туда невозможно установить мощное и бескомпромиссное охлаждение. Обычно это 1-2 тепловых трубки, небольшой радиатор и кулер.",
+                "Этого достаточно чтобы не давать ноутбуку сгорать, но недостаточно чтобы он работал пассивно — не вращая кулер и, как следствие, без шума. Кроме того, ситуацию осложняет то, что современные процессоры очень часто используют режим Турбо, при котором они разгоняются по любому поводу, даже при открытии браузера.",
+                "Если ноутбук не новый, то помимо этого, ситуация может осложняться и другими причинами, об этом писал здесь — <Link href='articles/how_descrease_temperature'>как снизить температуру процессора</Link>.",
+                "Однако, зачастую ни замена термопасты ни чистка не помогают, единственное что остается — ограничить процессор. Учитывая мощности современных процессоров, нет никакой проблемы в том, чтобы для повседневного использования понизить его частоты. Производительности все равно хватит для всех повседневных задач.",
+                "Есть способы, как изменять частоту процессора вручную, однако это неудобно. Например, если необходимо быстро распаковать zip-архив или запустить компиляцию кода. Для автоматизации этого процесса я написал программу под названием AveTemp.",
+                "Она не только мониторит состояние процессора, но и умеет автоматически изменять режим работы процессора в зависимости от нагрузки. Подробнее описано на <Link href='/'>главной странице</Link>."
+                ],
+                "image" : "/images/cooling_system.jpg",
+                "image_alt" : "Система охлаждения ноутбука"
+            }            
+        ]
+    }
+}

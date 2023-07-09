@@ -13,8 +13,8 @@ export default function ArticlePreview(props) {
         if (props.description) {
             return <>
                         <div className={styles.description}>
-                            {props.description.map(description => {
-                                return <p className={styles.p}>{description}</p>
+                            {props.description.map((description, index) => {
+                                return <div key={index}>{description}</div>
                             } )}
                         </div>
                         <div className={styles.read_more}>

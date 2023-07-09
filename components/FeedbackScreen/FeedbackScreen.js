@@ -46,7 +46,7 @@ export default function FeedbackScreen(props) {
     }
 
     return (<Screen name={"feedback"} 
-                    h2={"feedback_headline"} 
+                    h2={{ id: "feedback_headline" }} 
                     reverse={true}
                     columns={2} 
                     main_content={getContent()}

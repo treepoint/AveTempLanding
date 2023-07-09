@@ -39,10 +39,10 @@ function HowItWorksScreen(props) {
     }
 
     return (<Screen name={"how_it_works"} 
-                    h2={props.h2 ? props.h2 : "h1"} 
+                    h2={props.h2 ? props.h2 : {id: "h1"}} 
                     columns={2} 
                     reverse={!props.isReverse ? true : false} 
-                    image={"main_window_screenshot_url"}
+                    image={{id: "main_window_screenshot_url" }}
                     alt={main_window_screenshot_alt}
                     image_style={{maxHeight: "424px", height: "424px", maxWidth: "100%", width: "100%",}}
                     image_priority={100}

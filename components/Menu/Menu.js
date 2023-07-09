@@ -19,11 +19,11 @@ export default function Menu(props) {
     const support_headline = intl.formatMessage({ id: "support_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const articles_headline = intl.formatMessage({ id: "articles_headline" });
-    const road_map = intl.formatMessage({ id: "road_map" });
+    const road_map_headline = intl.formatMessage({ id: "road_map_headline" });
 
     let items = [
         {name: HTU_headline, url: '#how_to_use'},
-        {name: road_map, url: '#road_map'},
+        {name: road_map_headline, url: '#road_map'},
         {name: feedback_headline, url: '#feedback'},
         {name: support_headline, url: '#support'},
         {name: features_headline, url: '#features'},
@@ -32,8 +32,13 @@ export default function Menu(props) {
     ]
 
     function getItems() {
-        return items.map(item => {
-            return <Link className={styles.item} href={getMainAddress(item.url)} onClick={showMenu}>{item.name}</Link>
+        return items.map((item, index) => {
+            return <Link 
+                        key={index} 
+                        className={styles.item} 
+                        href={getMainAddress(item.url)} 
+                        onClick={showMenu}>{item.name}
+                    </Link>
         })
     }
 

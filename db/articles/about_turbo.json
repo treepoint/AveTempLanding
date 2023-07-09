@@ -1,0 +1,59 @@
+{
+    "blocks_below" : [
+        {"name"  : "WhyScreen", "title" : { "en" : "How to avoid it", "ru" : "Как этого избежать" }},
+        {"name"  : "DownloadButton"}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — почему греется процессор в режиме турбо",
+        "description" : "Это происходит так как для повышения производительности необходимо повышать мощность работы процессора, но повышение мощности вдвое не дает двойной прирост",
+        "h1" : "Почему греется процессор в режиме турбо",
+        "screens" : [
+            { "content" : 
+                [
+                    "Любой современный процессор имеет несколько режимов производительности, начиная с энергосберегающего и заканчивая режимом максимальной производительности.",
+                    "По умолчанию в Windows используется агрессивый режим производительности, который обеспечивает максимальную отзывчивость компьютера и при достаточном охлаждении дает только преимущества, однако это не всегда так. Например, в компактных ПК — ноутбуках или неттопах это приводит к повышенным температурам, постоянному шуму от системы охлаждения, высыханию термопасты и необходимости часто профилактики и очистки.",
+                    "Это происходит так как для повышения производительности необходимо повышать мощность работы процессора, но повышение мощности вдвое не дает двойной прирост производительности. Например, для работы на частоте 1 ГГц процессору Ryzen 4600H достаточно 5 ватт энергии, однако чтобы работать на частоте в 2 Ггц нужно уже 15. Для частоты 4 ГГц нужно уже все 45-50 ватт. Выходит так, что для работы на 50% производительности процессору нужно 30% энергии, а на 100% производительности все 100%."
+                ],
+              "image" : "/images/cpu_turbo.jpg",
+              "image_alt" : "Перегрев системы охлаждения ноутбука",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                    "Физически это явление объясняется изменением сопротивления материалов процессора при изменении температуры и необходимостью увеличивать напряжение для поднятия частоты. То есть, чтобы процессор работал быстрее, нам нужно увеличить на нем напряжение и подать больше мощности, но при этом увеличивается нагрев. С нагревом растет сопротивление материалов кристала, увеличивается падение мощности, а значит для следующего увеличения частоты надо повысить напряжение уже с поправкой на дополнительное рассеивание тепла.",
+                    "Потому зачастую агрессивное использование режима Турбо в процессора не оправдано."
+                ],
+              "image" : "/images/p_vs_f.png",
+              "image_alt" : "График зависимости TDP от частоты"
+            }
+        ]
+    },
+
+    "en" : 
+    {
+        "title" : "AveTemp - why the processor is warming up in turbo mode",
+        "description" : "This happens because you need to increase the power of the processor to improve performance, but doubling the power does not give you a double increase.",
+        "h1" : "Why does the processor warm up in turbo mode",
+        "screens" : [
+            { "content" : 
+                [
+                    "Any modern processor has several performance modes, ranging from power saving to maximum performance mode.",
+                    "Windows defaults to aggressive performance mode, which provides maximum computer responsiveness and with sufficient cooling only benefits, but this is not always the case. For example, in compact PCs - laptops or nettops - this leads to elevated temperatures, constant noise from the cooling system, dried up thermal paste and the need for frequent preventive maintenance and cleaning.",
+                    "This happens because you have to increase the power of the processor to improve performance, but doubling the power does not double the performance gain. For example, a Ryzen 4600H needs only 5 watts of power to run at 1GHz, but to run at 2GHz it needs 15 watts. At 4GHz it needs all of 45-50 watts. So to get 50% performance the processor needs 30% power and 100% performance it needs 100% power."
+                ],
+              "image" : "/images/cpu_turbo.jpg",
+              "image_alt" : "Laptop cooling system overheating",
+              "reverse" : true
+            }, 
+            { "content" : 
+                [
+                    "Physically, this phenomenon is explained by the change in resistance of the processor materials as the temperature changes and the need to increase the voltage to raise the frequency. That is, to make the processor run faster, we need to increase the voltage on it and supply more power, but this increases the heat. With heating, the resistance of the materials of the crystal grows, the power drop increases, which means that for the next frequency increase we need to increase the voltage already adjusted for the additional heat dissipation.",
+                    "Therefore, often aggressive use of Turbo mode in a processor is not justified."
+                ],
+              "image" : "/images/p_vs_f.png",
+              "image_alt" : "TDP vs. frequency graph"
+            }
+        ]
+    }
+}

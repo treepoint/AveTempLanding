@@ -3,11 +3,20 @@
     row-gap: 24px;
     column-gap: 24px;
     margin-bottom: 64px;
-    margin-top: 36px;
 
     @media screen and (max-width: 620px) {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.key_wrapper {
+    &:first-of-type {
+        margin-top: 0px;
+    }
+
+    @media (max-width: 620px) { 
+        margin-top: 32px;
     }
 }

@@ -8,8 +8,6 @@ export default function RoadMapScreen(props) {
 
     const intl = useIntl();
 
-    const road_map = intl.formatMessage({ id: "road_map" });
-
     const r_map_1 = intl.formatMessage({ id: "r_map_1" });
     const r_map_2 = intl.formatMessage({ id: "r_map_2" });
     const r_map_3 = intl.formatMessage({ id: "r_map_3" });
@@ -56,7 +54,7 @@ export default function RoadMapScreen(props) {
 
         return (
         <>
-            <ul>
+            <ul className={styles.ul}>
                 {tasks.map(task => {
                     return (
                         <>
@@ -71,7 +69,7 @@ export default function RoadMapScreen(props) {
     }
 
     return (<Screen name={"roadmap"} 
-            h2={road_map} 
+            h2={{ id: "road_map_headline" }}
             columns={2} 
             reverse={!props.isReverse ? true : false} 
             main_content={getContent()}

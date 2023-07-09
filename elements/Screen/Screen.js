@@ -3,26 +3,32 @@ import Image from "next/image.js"
 
 import styles from './Screen.module.scss'
 
-function Screen(props) {
+export default function Screen(props) {
     const intl = useIntl();
 
     function getHeadline() {
-        if (typeof(props.h3) !== 'undefined') {
-            const h2 = intl.formatMessage({ id: props.h3 });
+        if (typeof(props.h3) == 'object' && props.h3 !== null) {
+            const h3 = intl.formatMessage(props.h3);
 
+            return <h3 id={props.name}>{h3}</h3>
+        } else if (typeof(props.h3) == 'string') {
             return <h3 id={props.name}>{props.h3}</h3>
         }
 
-        if (typeof(props.h2) !== 'undefined') {
-            const h2 = intl.formatMessage({ id: props.h2 });
+        if (typeof(props.h2) == 'object' && props.h2 !== null) {
+            const h2 = intl.formatMessage(props.h2);
 
             return <h2 id={props.name}>{h2}</h2>
+        } else if (typeof(props.h2) == 'string') {
+            return <h2 id={props.name}>{props.h2}</h2>
         }
 
-        if (typeof(props.h1) !== 'undefined') {
-            const h1 = intl.formatMessage({ id: props.h1 });
+        if (typeof(props.h1) == 'object' && props.h1 !== null) {
+            const h1 = intl.formatMessage(props.h1);
 
             return <h1 id={props.name}>{h1}</h1>
+        } else if (typeof(props.h1) == 'string') {
+            return <h1 id={props.name}>{props.h1}</h1>
         }
     }
 
@@ -41,7 +47,11 @@ function Screen(props) {
     }
 
     function getImageUrl() {
-        const image_url = intl.formatMessage({ id: props.image });
+        if (typeof(props.image) == 'string') {
+            return props.image;
+        }
+
+        const image_url = intl.formatMessage(props.image);
 
         return image_url;
     }
@@ -52,7 +62,7 @@ function Screen(props) {
                     <Image alt={props.alt} 
                         src={getImageUrl()} 
                         fill
-                        style={{ objectFit: 'contain' }}
+                        className={props.reverse? [styles.image, styles.right].join(' ') : styles.image}
                         priority={props.image_priority}>
                     </Image>
                </div>
@@ -64,7 +74,7 @@ function Screen(props) {
     }
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} key={props.index}>
             {getHeadline()}
             <div className={getColumnsStyles()}>
                 <div className={styles.screenshot_column}>
@@ -79,5 +89,3 @@ function Screen(props) {
         </div>
     );
 }
-
-export default Screen;

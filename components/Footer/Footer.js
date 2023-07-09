@@ -22,8 +22,8 @@ function Footer(props) {
             {url: download_link, text : download}
         ]
 
-        return items.map(item => {
-            return <li><Link href={item.url}>{item.text}</Link></li>
+        return items.map((item, index) => {
+            return <li key={index}><Link href={item.url}>{item.text}</Link></li>
         })
     }
 

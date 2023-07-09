@@ -21,8 +21,8 @@ function Header(props) {
     let title;
     let description;
 
-    if (typeof(props.title) == 'function') {
-        title = props.title();
+    if (typeof(props.title) == 'object') {
+        title = intl.formatMessage(props.title());
     } else {
         title = intl.formatMessage({ id: "meta.title" });
     }

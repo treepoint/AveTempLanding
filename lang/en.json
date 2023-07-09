@@ -3,17 +3,11 @@
   "meta.title_404": "AveTemp — page not found",
   "meta.title_changelog": "AveTemp — history of changes and releases",
   "meta.title_articles": "AveTemp — processor heat knowledge base",
-  "meta.title_about_turbo": "AveTemp — why does the processor heat up in turbo mode",
-  "meta.title_htd": "AveTemp — how to reduce processor temperature",
-  "meta.title_notebook_noisy" : "AveTemp — laptop noises and heats up, what to do?",
 
   "meta.description": "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
   "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it",
   "meta.description_changelog" : "A list of changes and release descriptions of AveTemp CPU Heat Reduction software. Details about what functionality was added in which release, download links",
   "meta.description_articles" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
-  "meta.description_about_turbo": "This is because in order to improve performance, you need to increase the power of the processor, but doubling the power does not give a double increase",
-  "meta.description_htd": "The processor can heat up for several reasons: using poor cooling, running without preventive cleaning, using turbo mode. This can be avoided by manually lowering the frequencies",
-  "meta.description_notebook_noisy" : "Often, immediately after buying a new laptop, it is found that the laptop is noisy even without load. It can be both gaming laptops and ordinary office laptops with Ryzen or Intel processors",
 
   "update_message_text": "New version 1.4.7 is available!",
 
@@ -40,7 +34,7 @@
   "githab_page_headline": "Github main page",
   "articles_headline" : "Articles",
   "helpful_materials_headline" : "Useful information",
-  "road_map" : "Road Map",
+  "road_map_headline" : "Road Map",
 
   "and": "and",
 
@@ -168,17 +162,6 @@
   "main_window_screenshot_alt" : "AveTemp main window",
   "settings_window_screenshot_alt" : "AveTemp settings window",
 
-  "about_turbo_header" : "Why does the processor heat up in turbo mode",
-  "about_turbo_headline" : "About turbo",
-  "alt_cpu_turbo" : "Laptop cooling system overheating",
-  "alt_p_vs_f" : "TDP vs. frequency graph",
-  "at_1" : "Any modern processor has several performance modes, from power saving to maximum performance mode.",
-  "at_2" : "Windows defaults to an aggressive performance mode that maximizes computer responsiveness and provides only benefits with sufficient cooling, but this is not always the case. For example, in compact PCs such as notebooks or nettops, this leads to high temperatures, constant noise from the cooling system, drying out of thermal paste, and the need for frequent maintenance and cleaning.",
-  "at_3" : "This happens because in order to increase performance you need to increase the power of the processor, but doubling the power does not give you double the performance gain. For example, to run at 1GHz the Ryzen 4600H processor needs only 5 watts of power, but to run at 2GHz it needs 15 watts. At 4GHz it needs all of 45-50 watts. So it turns out that to work at 50% performance the processor needs 30% power, and 100% performance — all 100%.",
-  "at_4" : "Physically, this phenomenon is explained by the change in resistance of the materials of the processor when the temperature changes and the need to increase the voltage to raise the frequency. That is, to make the processor run faster, we need to increase the voltage and supply more power to the processor, but the heat increases. With heating, the resistance of the materials of the crystal grows, the power drop increases, which means that for the next frequency increase we need to increase the voltage, adjusted for the additional heat dissipation.",
-  "at_5" : "Therefore, often aggressive use of Turbo mode in the processor is not justified.",
-  "at_how_to_avoid" : "How to avoid it",
-
   "feedback_headline" : "How to get in touch?",
   "feedback_text_1" : "I would be glad to get any feedback: about bugs, suggestions for improvement, help in development and testing data.",
   "feedback_text_2" : "The list of current tasks is available at",
@@ -192,45 +175,6 @@
 
   "home_button" : "Home",
   "not_found_text" : "There is no such page yet :(",
-
-  "how_descrease_temperature" : "How to reduce processor temperature",
-  "dirty_cooler" : "Picture of a dirty cooling system",
-  "cpu_params" : "Processor parameters, TDP and temperature",
-  "turbo" : "turbo",
-
-  "hdt_1" : "The processor can become warm for a number of reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or frequent use of ",
-  "hdt_2" : "The problem of insufficient cooling is relevant only for desktop PCs, in laptops and nettops the cooling cannot be replaced. Choosing the right cooling system is easy enough if you know the parameters of the processor and motherboard, where this cooling will be installed.",
-  "hdt_3" : "In the case of a processor it is sufficient to know its TDP (Thermal Design Power) - the heat pack. Usually this information can be found on the Intel or AMD website, in the specifications of the processor, just like the maximum operating temperature.",
-  "hdt_4" : "For a motherboard you need to know its socket. This can be AM4, AM5, LGA 1700 and others.",
-  "hdt_5" : "Usually these two parameters are enough to choose a new cooling system. The new system should firstly have a motherboard socket mount and secondly dissipate more TDP than the processor provides. Preferably with a reserve.",
-
-  "hdt_6" : "The next potential problem with CPU overheating is the lack of profiling, which is especially true for laptops.",
-  "hdt_7" : "Many people know that you have to dust the computer, but that's not the only thing you have to do. There is thermal paste between the CPU's heat distribution cover and the cooling system itself. It fills all the space between the CPU and the cooling system, displacing air. This is important because air is an extremely poor conductor of heat.",
-  "hdt_8" : "After a few years, the thermal paste dries out and stops working - it needs to be changed.",
-  "hdt_9" : "Remember, if you are not an expert and are not willing to take the risks, do not clean or change the thermal paste on your PC yourself! The same applies to replacing the cooling system.",
-  "hdt_10" : "To do this work, you need to understand what you are doing. Also, laptops often use PCM (Phase Change Material) instead of thermal paste. This is a material that conducts heat very well, better than many thermal pastes, but is hard when cold. It's very easy to get confused with dried thermal paste, remove it, apply a new one, and see that the temperatures are worse!",
-
-  "hdt_11" : "The last thing that can happen is that the processor is using Turbo mode too often. In short, it is a mode in which the processor can run faster, but it also gets hotter.",
-  "hdt_12" : "This is good for heavy loads, such as games or rendering videos, increased responsiveness of the computer, but also increases heat and noise, in addition leads to the above described drying out of thermal paste, clogging cooling dust and, as a consequence, the need for frequent preventive maintenance.",
-  "hdt_13" : "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. However, for really time-consuming tasks you have to manually raise them back up as well. This is inconvenient.",
-  "hdt_14" : "To automate this process, I wrote a program called AveTemp, you can read more about it at ",
-  "hdt_14_1" : "home page",
-  "hdt_15" : "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
-  "hdt_16" : "The source code is available on Github, you can build the program yourself. I will be glad if you find it useful.",
-
-  "noizy_ntb" : "Laptop is noisy and warm, what should I do?",
-  "alt_noizy_ntb" : "Gaming laptop is noisy and heats up",
-  "nntb_1" : "Often, immediately after buying a new laptop, it is found that the laptop is noisy even without load. This can be the case with gaming laptops as well as with ordinary office laptops.",
-  "nntb_2" : "This is a very frustrating situation, because a new thing should make you happy, not annoyed. Unfortunately, modern technical solutions in laptops are often designed to give maximum performance, even where it is not required.",
-  "nntb_3" : "For this purpose, laptops often put unnecessarily powerful processors from the top of the line Ryzen or Intel and their performance is excessive. Read more about this here — ",
-
-  "alt_noizy_ntb_2" : "Laptop cooling system",
-  "nntb_4" : "In addition, the situation is complicated by the fact that the laptop is a very compact device, it is impossible to install a powerful and uncompromising cooling. Usually it is 1-2 heat pipes, a small heatsink and a cooler.",
-  "nntb_5" : "This is enough to keep the laptop from burning out, but not enough to keep it running passively - without spinning the cooler and, consequently, without noise. In addition, the situation is complicated by the fact that modern processors very often use Turbo mode, in which they overclock on any occasion, even when opening a browser.",
-  "nntb_6" : "If the laptop is not new, then in addition to this, the situation may be complicated by other reasons, I wrote about it here —",
-  "nntb_7" : "However, often neither changing the thermal paste nor cleaning helps, the only thing left is to limit the processor. Given the power of modern processors, there is no problem to lower the frequency for everyday use. There is still enough performance for all your daily tasks.",
-  "nntb_8" : "There are ways to change the CPU frequency manually, but this is inconvenient. For example, if you need to quickly unpack a zip archive or run a code compilation. To automate this process I wrote a program called AveTemp.",
-  "nntb_9" : "It not only monitors the state of the processor, but also knows how to automatically change the mode of the processor depending on the load.  It is described in more detail at ",
 
   "r_map_1" : "The current version is a test release. It is necessary first of all to understand whether it is necessary to develop it further or it is enough as it is now.",
   "r_map_2" : "I really want to continue to develop and I have a plan, it is marked next to it. I really like the idea of making a convenient and useful program, as it primarily benefits me.",

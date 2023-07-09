@@ -6,7 +6,7 @@ import Release from "../Release/Release.js"
 import styles from "./Changelog.module.scss"
 import "../../_globals.js"
 
-function Changelog(props) {
+function Changelog() {
     const intl = useIntl();
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const releases_location_text = intl.formatMessage({ id: "releases_location_text" });

@@ -17,8 +17,8 @@ function Support() {
             { currency: 'RUB', number: '2202 2023 3862 1422'},
         ];
 
-        return cards.map(card => {
-            return <div className={styles.list_item}>
+        return cards.map((card, index) => {
+            return <div className={styles.list_item} key={index}>
                         <div className={styles.currency}>
                             {card.currency}
                         </div>

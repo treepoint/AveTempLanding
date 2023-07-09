@@ -6,10 +6,9 @@ import { getMainAddress } from "../../support/support.js"
 import Screen from "../../elements/Screen/Screen.js"
 import Support from "../Support/Support.js"
 
-function AboutScreen(props) {
+function AboutScreen() {
 
     const intl = useIntl();
-    const { locale } = useRouter();
 
     const feature_continuous = intl.formatMessage({ id: "feature_continuous" });
     const feature_collecting_states = intl.formatMessage({ id: "feature_collecting_states" });
@@ -40,7 +39,7 @@ function AboutScreen(props) {
     }
 
     return ( <Screen name={"features"} 
-                     h2={"features_headline"} 
+                     h2={{ id: "features_headline" }}
                      reverse={true}
                      columns={2} 
                      main_content={getContent()}

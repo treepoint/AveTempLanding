@@ -16,18 +16,19 @@
     margin-top: 8px;
     margin-right: auto;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .description {
     margin-top: 0px;
-    max-height: 196px;
+    max-height: 188px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: break-spaces;
     line-height: 24px;
 
     @media (max-width: 700px) { 
-        max-height: 370px;
+        max-height: 374px;
     }
 
     @media (max-width: 620px) { 

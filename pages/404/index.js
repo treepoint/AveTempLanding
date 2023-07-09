@@ -4,13 +4,11 @@ import { useIntl } from "react-intl"
 import { useRouter } from 'next/router'
 
 Page404.title = () => {
-  const intl = useIntl();
-  return intl.formatMessage({ id: "meta.title_404" });
+  return { id: "meta.title_404" };
 }
 
 Page404.description = () => {
-  const intl = useIntl();
-  return intl.formatMessage({ id: "meta.description_404" });
+  return { id: "meta.description_404" };
 }
 
 export default function Page404() {

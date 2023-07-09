@@ -1,4 +1,5 @@
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 export function getMainAddress(url) {
     const { locale } = useRouter();
@@ -68,3 +69,32 @@ export const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
 }
+
+export function parseContent(content) {
+    return content.map((item, index) => {
+
+        if (item.includes('<Link')) {
+          return (parsePwithLink(item, index));        
+        }
+
+        return <p key={index}>{item}</p>
+    })
+}
+
+export function parsePwithLink(p, index) {
+    let before_link = p.split('<Link')[0];
+  
+    let prelink = p.split("href='")[1];
+    let link_href = prelink.split("'>")[0];
+  
+    let prelink_text = prelink.split("'>")[1];
+    let link_text = prelink_text.split('</Link>')[0];
+  
+    let after_link = prelink_text.split('</Link>')[1];
+  
+    return (
+      <p key={index}>
+        {before_link}<Link href={getMainAddress(link_href)}>{link_text}</Link>{after_link}
+      </p>
+      );      
+  }

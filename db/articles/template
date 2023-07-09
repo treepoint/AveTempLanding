@@ -1,0 +1,56 @@
+{
+    "blocks_below" : [
+        {"name"  : "", "title" : { "en" : "", "ru" : "" }}
+    ],
+    "ru" : 
+    {
+        "title" : "",
+        "description" : "",
+        "h1" : "",
+        "screens" : [
+            { "content" : 
+                [
+                    "",
+                    ""
+                ],
+              "image" : "",
+              "image_alt" : "",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                    "",
+                    ""
+                ],
+              "image" : "",
+              "image_alt" : ""
+            }
+        ]
+    },
+
+    "en" : 
+    {
+        "title" : "",
+        "description" : "",
+        "h1" : "",
+        "screens" : [
+            { "content" : 
+                [
+                    "",
+                    ""
+                ],
+              "image" : "",
+              "image_alt" : "",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                    "",
+                    ""
+                ],
+              "image" : "",
+              "image_alt" : ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "blocks_below" : [
+        {"name"  : "DownloadButton"}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — как снизить температуру процессора",
+        "description" : "Процессор может греться по нескольким причинам: использование плохого охлаждения, работа без профилактической чистки, использование режима турбо. Этого можно избежать, если вручную снизить частоты",
+        "h1" : "Как снизить температуру процессора",
+        "screens" : [
+            { "content" : 
+                [
+                    "Процессор может греться по нескольким причинам. Это может быть использование недостаточно хорошего охлаждения, долгая работа без профилактической чистки или частое использование режима <Link href='articles/about_turbo'>турбо</Link>.",
+                    "Проблема недостаточно качественно подобранного охлаждения актуальна только для настольных ПК, в ноутбуках и неттопах заменить охлаждение нельзя. Выбрать подходящую систем охлаждения достаточно просто, если знать параметры процессора и материнской платы, куда это охлаждение будет устанавливаться.",
+                    "В случае с процессором достаточно узнать его TDP (Thermal Design Power) — тепловой пакет. Обычно эту информацию можно найти на сайте Intel или AMD, в характеристиках процессора, точно так же как максимальную рабочую температуру.",
+                    "Для материнской планы нужно узнать её сокет (socket). Это может быть AM4, AM5, LGA 1700 и прочие.",
+                    "Обычно для подбора нового охлаждения достаточно этих двух параметров. Новая система должна во-первых иметь крепление для сокета материнской платы, а во вторых рассеивать TDP больше, чем процессор выделяет. Желательно с запасом."
+                ],
+              "image" : "/images/cpu_params.png",
+              "image_alt" : "Параметры процессора, TDP и температура",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                    "Следующая потенциальная проблема перегрева процессора — отсутствие профиликтики, что особенно актуально для ноутбуков.",
+                    "Многие знают про то, что компьютер надо чистить от пыли, но это не единственное что нужно сделать. Между теплораспределительной крышкой процессора и самим охлаждением находится термопаста. Она заполняет все пространство между процессором и системой охлаждения, вытесняя воздух. Это важно, так как воздух крайне плохо проводит тепло.",
+                    "Спустя несколько лет, термопаста высыхает и перестает работать — её нужно поменять.",
+                    "Помните, если вы не специалист и не готовы взять на себя риски, то не чистите и не меняйте термопасту у своего ПК самостоятельно! Тоже самое относится и к замене системы охлаждения.",
+                    "Для выполнения этих работ надо понимать что вы делаете. Кроме того, в ноутбуках часто вместо термопасты используется PCM (Phase Change Material). Это материал, который отлично проводит тепло, лучше чем многие термопасты, но в холодном состоянии твердый. Его очень легко перепутать с засохшей термопастой, убрать, нанести новую и увидеть, что температуры стали хуже!"
+                ],
+              "image" : "/images/dirty_cooler.webp",
+              "image_alt" : "Грязная система охлаждения ПК"
+            },
+            { "content" : 
+                [
+                    "Последнее что может быть — процессор слишком часто использует режим Турбо. Если кратко, то это режим, в котором процессор может работать быстрее, но при этом и греется тоже сильнее.",
+                    "Это хорошо для тяжелых нагрузок, таких как игры или рендеринг видео, повышенной отзывчивости компьютера, но так же увеличивает нагрев и шум, кроме того приводит к описанному выше высыханию термопасты, засорению охлаждения пылью и, как следствие, необходимости частых профилактик.",
+                    "Перегрева и шума можно избежать, если вручную снизить рабочие частоты процессора. Однако для действительно трудоемких задач нужно так же вручную повышать их обратно. Это неудобно.",
+                    "Для автоматизации этого процесса я написал программу AveTemp, подробнее о ней можно почитать на <Link href='/'>главной странице</Link>.",
+                    "Технически, программа только изменяет настройки плана питания Windows в зависимости от нагрузки. Никакие системные вызовы, за исключением получения данных из реестра о том, какая тема сейчас установлена в системе не используются.",
+                    "Исходный код доступен на Github, вы можете собрать программу сами. Буду рад, если она окажется вам полезной."
+                ],
+            "additional_block" : "Promo",
+            "reverse" : true
+        }
+        ]
+    },
+
+    "en" : 
+    {
+        "title" : "AveTemp - how to reduce processor temperature",
+        "description" : "Processor can heat up for several reasons: using bad cooling, running without preventive cleaning, using turbo mode. This can be avoided by manually lowering the frequencies.",
+        "h1" : "How to reduce processor temperature",
+        "screens" : [
+            { "content" : 
+                [
+                    "The processor can warm up for several reasons. It could be the use of insufficient cooling, long operation without preventive cleaning or frequent use of <Link href='articles/about_turbo'>turbo</Link> mode.",
+                    "The problem of inadequate cooling is only relevant for desktop PCs, in laptops and nettops you cannot replace the cooling. Choosing the right cooling system is easy enough if you know the parameters of the processor and motherboard where this cooling will be installed.",
+                    "In the case of a CPU, all you need to know is its TDP (Thermal Design Power). Usually this information can be found on the Intel or AMD website, in the specifications of the processor, just like the maximum operating temperature.",
+                    "For the motherboard you need to know its socket. It can be AM4, AM5, LGA 1700 and others.",
+                    "Usually these two parameters are enough to choose a new cooling system. The new system must first have a socket on the motherboard, and secondly to dissipate TDP more than the processor provides. Preferably with a reserve."
+                ],
+              "image" : "/images/cpu_params.png",
+              "image_alt" : "Processor parameters, TDP and temperature",
+              "reverse" : true
+            },
+            { "content" : 
+                [
+                    "The next potential problem with CPU overheating is lack of profiling, which is especially true for laptops.",
+                    "Many people know about dusting the computer, but that's not the only thing to do. Between the CPU's heat distribution cover and the cooling itself is thermal paste. It fills all the space between the CPU and the cooling system, displacing air. This is important because air is extremely poor at conducting heat.",
+                    "After a few years, the thermal paste dries out and stops working - it needs to be changed.",
+                    "Remember, unless you are an expert and are willing to take the risks, do not clean or change the thermal paste on your PC yourself! The same applies to replacing the cooling system.",
+                    "To do this work you need to understand what you are doing. Also, laptops often use PCM (Phase Change Material) instead of thermal paste. It's a material that conducts heat very well, better than many thermal pastes, but is hard when cold. It's very easy to mistake it for dried thermal paste, remove it, apply a new one, and see the temperatures get worse!"
+                ],
+              "image" : "/images/dirty_cooler.webp",
+              "image_alt" : "Dirty PC cooling system"
+            },
+            { "content" : 
+                [
+                    "The last thing that can happen is that the processor is using Turbo mode too often. In short, it's a mode in which the processor can run faster, but it also warms up more.",
+                    "This is good for heavy loads such as gaming or video rendering, increased responsiveness of the computer, but also increases heat and noise, in addition leads to the above described drying out of thermal paste, clogging of cooling dust and, as a consequence, the need for frequent preventive maintenance.",
+                    "Overheating and noise can be avoided by manually reducing processor operating frequencies. However, for really time-consuming tasks you need to manually raise them back up as well. This is inconvenient.",
+                    "I wrote a program called AveTemp to automate this process, you can read more about it at <Link href='/'>main page</Link>.",
+                    "Technically, the program only changes the Windows power plan settings depending on the load. No system calls other than getting data from the registry about what theme is currently installed on the system are used.",
+                    "The source code is available on Github, you can build the program yourself. I would be glad if you find it useful."
+                ],
+            "additional_block" : "Promo",
+            "reverse" : true
+        }
+        ]
+    }
+}
