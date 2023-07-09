@@ -72,7 +72,7 @@ function FeedbackForm() {
           <form 
               className={styles.wrapper} 
               method='POST'
-              action={process.env.API_URL+'/email'}
+              action={process.env.EMAIL_URL+'/email'}
               onSubmit={submitForm}
           >
               <Input 
