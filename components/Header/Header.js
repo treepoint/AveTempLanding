@@ -30,7 +30,7 @@ function Header(props) {
     }
 
     if (typeof(props.description) == 'function') {
-        description = props.description();
+        description = intl.formatMessage(props.description());
     } else if (typeof(props.description) == 'object') {
         description = props.description.value;
     } else {
