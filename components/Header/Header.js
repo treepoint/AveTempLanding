@@ -21,14 +21,18 @@ function Header(props) {
     let title;
     let description;
 
-    if (typeof(props.title) == 'object') {
+    if (typeof(props.title) == 'function') {
         title = intl.formatMessage(props.title());
+    } else if (typeof(props.title) == 'object') {
+        title = props.title.value;
     } else {
         title = intl.formatMessage({ id: "meta.title" });
     }
 
     if (typeof(props.description) == 'function') {
         description = props.description();
+    } else if (typeof(props.description) == 'object') {
+        description = props.description.value;
     } else {
         description = intl.formatMessage({ id: "meta.description" });
     }

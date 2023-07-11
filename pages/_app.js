@@ -19,13 +19,13 @@ function App({ Component, ...pageProps }) {
   let description;
 
   if (pageProps.pageProps.title) {
-    title = () => {return pageProps.pageProps.title};
+    title = {value: pageProps.pageProps.title};
   } else {
     title = Component.title;
   }
 
   if (pageProps.pageProps.description) {
-    description = () => {return pageProps.pageProps.description};
+    description = {value: pageProps.pageProps.description};
   } else {
     description = Component.description;
   }
