@@ -42,19 +42,18 @@ export default function DownloadWindow() {
                 <div>
                     <p>{download_disclaimer}</p>
                     {your_link} <Link href={download_link}>{download}</Link>
-
-                    <div className={styles.ad}id="yandex_rtb_R-A-2952455-3"></div>
-                    <Script id="yandex_rtb_R-A-2952455-3" strategy="afterInteractive">
-                                {`window.yaContextCb.push(()=>{
-                                        Ya.Context.AdvManager.render({
-                                            "blockId": "R-A-2952455-3",
-                                            "renderTo": "yandex_rtb_R-A-2952455-3"
-                                        })
-                                    });
-                                `}
-                    </Script>
                 </div>
             }
+            <div className={styles.ad} id="yandex_rtb_R-A-2952455-3"></div>
+            <Script id="yandex_rtb_R-A-2952455-3" strategy="afterInteractive">
+                        {`window.yaContextCb.push(()=>{
+                                Ya.Context.AdvManager.render({
+                                    "blockId": "R-A-2952455-3",
+                                    "renderTo": "yandex_rtb_R-A-2952455-3"
+                                })
+                            });
+                        `}
+            </Script>
         </ModalWindow>
       );
 }
