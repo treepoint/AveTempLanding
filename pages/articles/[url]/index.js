@@ -112,7 +112,7 @@ function getSecondContent(block) {
 export default function ArticlePage(props) {
   const { locale } = useRouter();
 
-  let article = props.pageProps.article;
+  let article = props.article;
 
   let screens = article[locale].screens;
 

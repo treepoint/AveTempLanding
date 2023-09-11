@@ -6,6 +6,7 @@ import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Spacer from "../../elements/Spacer/Spacer"
 import YandexMetrika from "../../elements/YandexMetrika/YandexMetrika"
 import GoogleTags from "../../elements/GoogleTags/GoogleTags"
+import YandexAD from "../../elements/YandexAD/YandexAD"
 import Logo from "../../elements/Logo/Logo"
 import Menu from "../Menu/Menu"
 import { getCanonicalURL, getAlternateURL } from "../../support/support"
@@ -40,6 +41,7 @@ function Header(props) {
     return (
             <>
                 <GoogleTags/>
+                <YandexAD/>
                 <Head>
                     <title>{title}</title>
                     <meta name="description" content={description} />

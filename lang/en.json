@@ -40,6 +40,11 @@
 
   "read_more" : "Read more...",
 
+  "link_will_be_available" : "The link will be available via ",
+  "seconds..." : " seconds...",
+  "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
+  "your_link" : "Your link: ",
+
   "HIW_text_1": "AveTemp is a free program that uses the ", 
   "HIW_text_2": "With library help, it:",
   "HIW_ol_1": "Collects CPU temperature and TDP data.",

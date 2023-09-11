@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from './Footer.module.scss'
 import "../../_globals.js"
 
-function Footer(props) {
+function Footer() {
 
     const intl = useIntl();
     const githab_page_headline = intl.formatMessage({ id: "githab_page_headline" });
@@ -18,8 +18,7 @@ function Footer(props) {
         let items = [
             {url: "https://github.com/treepoint/AveTemp", text : githab_page_headline},
             {url: "https://github.com/treepoint/AveTemp/issues", text : issues_headline},
-            {url: "https://github.com/treepoint/AveTemp/discussions", text : discussions_headline},
-            {url: download_link, text : download}
+            {url: "https://github.com/treepoint/AveTemp/discussions", text : discussions_headline}
         ]
 
         return items.map((item, index) => {

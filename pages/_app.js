@@ -1,5 +1,8 @@
 import { useRouter } from "next/router"
 import { IntlProvider } from "react-intl"
+import { wrapper } from '../store/store';
+import { Provider } from 'react-redux'
+
 import Layout from "../components/Layout/Layout"
 
 import en from "../lang/en.json"
@@ -12,30 +15,35 @@ const messages = {
   en,
 };
 
-function App({ Component, ...pageProps }) {
+function App({ Component, ...rest }) {
   const { locale } = useRouter();
+
+  const { store, props } = wrapper.useWrappedStore(rest);
+  const { pageProps } = props;
 
   let title;
   let description;
 
-  if (pageProps.pageProps.title) {
-    title = {value: pageProps.pageProps.title};
+  if (pageProps.title) {
+    title = {value: pageProps.title};
   } else {
     title = Component.title;
   }
 
-  if (pageProps.pageProps.description) {
-    description = {value: pageProps.pageProps.description};
+  if (pageProps.description) {
+    description = {value: pageProps.description};
   } else {
     description = Component.description;
   }
 
   return (
-    <IntlProvider locale={locale} messages={messages[locale]}>
-      <Layout dir={"ltr"} title={title} description={description}>
-        <Component {...pageProps} dir={"ltr"} />
-      </Layout>
-    </IntlProvider>
+    <Provider store={store}>
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <Layout dir={"ltr"} title={title} description={description}>
+            <Component {...pageProps} dir={"ltr"} />
+        </Layout>
+      </IntlProvider>
+    </Provider>
   );
 }
 

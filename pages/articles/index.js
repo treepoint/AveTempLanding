@@ -34,7 +34,7 @@ export default function Articles(props) {
   const intl = useIntl();
   const { locale } = useRouter();
 
-  const articles = props.pageProps.articles;
+  const articles = props.articles;
 
   const articles_headline = intl.formatMessage({ id: "articles_headline" });
 
@@ -91,7 +91,7 @@ export default function Articles(props) {
         {getArticlesPreviews(articles)}
       </div>
       <h2 className={styles.headline}>{helpful_materials_headline}</h2>
-      <div className={styles.wrapper}>
+      <div className={[styles.wrapper, styles.helpful_materials].join(' ')}>
         {getHelpfulMaterials()}
       </div>
     </>
