@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import styles from './Support.module.scss'
 
-function Support() {
+export default function Support() {
 
     const intl = useIntl();
     const support_headline = intl.formatMessage({ id: "support_headline" });
@@ -65,5 +65,3 @@ function Support() {
         </div>
     );
 }
-
-export default Support;

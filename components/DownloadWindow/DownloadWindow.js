@@ -34,7 +34,7 @@ export default function DownloadWindow() {
       }, [isOpened, timer]);
 
     return (
-        <ModalWindow title={download + ' AveTemp'}>
+        <ModalWindow title={download}>
             {
                 timer ? 
                 <p>{link_will_be_available}{timer}{seconds_text}</p> 

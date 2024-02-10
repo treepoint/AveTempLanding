@@ -1,26 +1,26 @@
-import HowItWorksScreen from "../components/HowItWorksScreen/HowItWorksScreen"
-import WhyScreen from "../components/WhyScreen/WhyScreen"
-import FeatureScreen from "../components/FeatureScreen/FeatureScreen"
-import HowToUseScreen from "../components/HowToUseScreen/HowToUseScreen"
-import FeedbackScreen from "../components/FeedbackScreen/FeedbackScreen"
-import RoadMapScreen from "../components/RoadMapScreen/RoadMapScreen"
-import { useIntl } from "react-intl";
+import PageProcessor from "../cms/PageProcessor/PageProcessor"
+import { getPageByUrl } from "./api/[url]"
 
-import "../_globals.js";
+export const getStaticProps = async (context) => {
+  let page;
 
-export default function Home() {
-  const intl = useIntl();
-  const main_h1 =  intl.formatMessage({ id: "main_h1" });
+  if (process.env.API_URL.includes('localhost')) { page = await getPageByUrl('index'); }
+  else { page = await fetch(process.env.API_URL + '/index.json').json(); } 
 
+  return { 
+    props: { 
+      page: page,
+      description: page[context.locale].description,
+      title: page[context.locale].title
+    },
+    revalidate: parseInt(process.env.cache_revalidate_time), 
+  }; 
+};
+
+export default function HomePage(props) {
   return (
-    <>
-      <h1>{main_h1}</h1>
-      <HowItWorksScreen/>
-      <WhyScreen/>
-      <HowToUseScreen/>
-      <FeedbackScreen/>
-      <FeatureScreen/>
-      <RoadMapScreen/>
-    </>
-  );
+    <PageProcessor 
+      page={props.page}
+    />
+  )
 }

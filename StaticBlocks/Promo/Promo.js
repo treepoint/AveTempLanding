@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useIntl } from "react-intl"
 import styles from './Promo.module.scss'
 
-function Promo() {
+export default function Promo() {
 
     const intl = useIntl();
     const promo_install = intl.formatMessage({ id: "promo_install" });
@@ -37,5 +37,3 @@ function Promo() {
         </div>
     );
 }
-
-export default Promo;

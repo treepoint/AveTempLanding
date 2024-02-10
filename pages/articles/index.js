@@ -1,7 +1,7 @@
 import ArticlePreview from "../../components/ArticlePreview/ArticlePreview"
 import { useIntl } from "react-intl"
 import { useRouter } from "next/router"
-import { getArticlesList } from "../api/articles"
+import { getPagesList } from "../api/articles"
 import { parseContent } from "../../support/support"
 
 import styles from "./Articles.module.scss"
@@ -11,7 +11,7 @@ import "../../_globals.js"
 export const getStaticProps = async () => {
   let articles;
 
-  if (process.env.API_URL.includes('localhost')) { articles = await getArticlesList(); }
+  if (process.env.API_URL.includes('localhost')) { articles = await getPagesList(); }
   else { articles = await fetch(process.env.API_URL + '/articles/').json(); } 
 
   return { 

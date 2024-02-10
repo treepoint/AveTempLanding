@@ -6,7 +6,7 @@ import { getMainAddress } from "../../support/support.js"
 import Screen from "../../elements/Screen/Screen.js"
 import Support from "../Support/Support.js"
 
-function AboutScreen() {
+export default function AboutScreen() {
 
     const intl = useIntl();
 
@@ -47,5 +47,3 @@ function AboutScreen() {
              />
     );
 }
-
-export default AboutScreen;

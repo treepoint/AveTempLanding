@@ -1,0 +1,36 @@
+{
+    "menu" : {
+        "en" : 
+        [
+            {"name" : "How to use", "link" : "#how_to_use"},
+            {"name" : "Features", "link" : "#features"},
+            {"name" : "Support", "link" : "#support"},
+            {"name" : "Changelog", "link" : "changelog"},
+            {"name" : "Articles", "link" : "articles"}
+        ],
+        "ru" : 
+        [
+            {"name" : "Как использовать", "link" : "#how_to_use"},
+            {"name" : "Возможности", "link" : "#features"},
+            {"name" : "Поддержать", "link" : "#support"},
+            {"name" : "Список изменений", "link" : "changelog"},
+            {"name" : "Статьи", "link" : "articles"}
+        ]
+    },
+    "blocks_below" : [
+        {"name"  : "Changelog"}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — история изменений и релизов",
+        "description" : "Список изменений и описание релизов программы для снижения нагрева процессора AveTemp. Подробности о том, какая функциональность в каком релизе была добавлена, ссылки на скачивание",
+        "h1" : "Список изменений"
+    },
+
+    "en" : 
+    {
+        "title" : "AveTemp — history of changes and releases",
+        "description" : "A list of changes and release descriptions of AveTemp CPU Heat Reduction software. Details about what functionality was added in which release, download links",
+        "h1" : "Changelog"
+    }
+}
