@@ -40,8 +40,7 @@ export default function DownloadWindow() {
                 <p>{link_will_be_available}{timer}{seconds_text}</p> 
                 : 
                 <div>
-                    <p>{download_disclaimer}</p>
-                    {your_link} <Link href={download_link}>{download}</Link>
+                    <p>{download_disclaimer} {your_link} <Link href={download_link}>{download}</Link></p>
                 </div>
             }
             <div className={styles.ad} id="yandex_rtb_R-A-2952455-3"></div>

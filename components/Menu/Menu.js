@@ -15,18 +15,14 @@ export default function Menu(props) {
 
     const features_headline = intl.formatMessage({ id: "features_headline" });
     const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
-    const feedback_headline = intl.formatMessage({ id: "feedback_headline" });
     const support_headline = intl.formatMessage({ id: "support_headline" });
     const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const articles_headline = intl.formatMessage({ id: "articles_headline" });
-    const road_map_headline = intl.formatMessage({ id: "road_map_headline" });
 
     let items = [
         {name: HTU_headline, url: '#how_to_use'},
-        {name: road_map_headline, url: '#road_map'},
-        {name: feedback_headline, url: '#feedback'},
-        {name: support_headline, url: '#support'},
         {name: features_headline, url: '#features'},
+        {name: support_headline, url: '#support'},
         {name: changelog_headline, url: 'changelog'},
         {name: articles_headline, url: 'articles'}
     ]

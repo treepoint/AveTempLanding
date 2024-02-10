@@ -13,10 +13,6 @@ import styles from "./Layout.module.scss"
 export default function Layout(props) {
   const { locales } = useRouter();
 
-  function extenedMainClass() {
-      return styles.extended;
-  }
-
   return (
     <>
       <Header 
@@ -26,7 +22,7 @@ export default function Layout(props) {
       />
       <Updating_message isVisible/>
 
-      <main dir={props.dir} className={[styles.main, extenedMainClass()].join(' ')}>
+      <main dir={props.dir} className={styles.main}>
         {props.children}
         <AD/>
       </main>

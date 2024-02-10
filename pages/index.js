@@ -18,9 +18,9 @@ export default function Home() {
       <HowItWorksScreen/>
       <WhyScreen/>
       <HowToUseScreen/>
-      <RoadMapScreen/>
       <FeedbackScreen/>
       <FeatureScreen/>
+      <RoadMapScreen/>
     </>
   );
 }
