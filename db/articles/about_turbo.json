@@ -1,4 +1,22 @@
 {
+    "menu" : {
+        "en" : 
+        [
+            {"name" : "How to use", "link" : "#how_to_use"},
+            {"name" : "Features", "link" : "#features"},
+            {"name" : "Support", "link" : "#support"},
+            {"name" : "Changelog", "link" : "changelog"},
+            {"name" : "Articles", "link" : "articles"}
+        ],
+        "ru" : 
+        [
+            {"name" : "Как использовать", "link" : "#how_to_use"},
+            {"name" : "Возможности", "link" : "#features"},
+            {"name" : "Поддержать", "link" : "#support"},
+            {"name" : "Список изменений", "link" : "changelog"},
+            {"name" : "Статьи", "link" : "articles"}
+        ]
+    },
     "blocks_below" : [
         {"name"  : "WhyScreen", "title" : { "en" : "How to avoid it", "ru" : "Как этого избежать" }},
         {"name"  : "DownloadButton"}

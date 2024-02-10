@@ -1,14 +1,12 @@
-import PageProcessor from "../../../cms/PageProcessor/PageProcessor"
-import { getPageByUrl } from "../../api/articles/[url]"
-import { getPagesList } from "../../api/articles"
-
-const path = 'articles'
+import PageProcessor from "../cms/PageProcessor/PageProcessor"
+import { getPageByUrl } from "./api/[url]"
+import { getPagesList } from "./api/"
 
 export const getStaticProps = async (context) => {
   let page;
 
   if (process.env.API_URL.includes('localhost')) { page = await getPageByUrl(context.params.url); }
-  else { page = await fetch(process.env.API_URL + '/' + path + '/' + context.params.url).json(); } 
+  else { page = await fetch(process.env.API_URL + '/' + context.params.url).json(); } 
 
   if (page.status == "error") {
     return { 
@@ -36,7 +34,7 @@ export const getStaticPaths = async () => {
   let data;
 
   if (process.env.API_URL.includes('localhost')) { data = await getPagesList(); }
-  else { data = await fetch(process.env.API_URL + '/' + path).json(); } 
+  else { data = await fetch(process.env.API_URL).json(); } 
 
   const paths = data.map((page) => ({
     params: { url: page.url },
@@ -45,11 +43,9 @@ export const getStaticPaths = async () => {
   return { paths, fallback: 'blocking' };
 }
 
-export default function ArticlePage(props) {
+export default function RootPage(props) {
   return (
     <PageProcessor 
-      title={props.title}
-      description={props.description}
       page={props.page}
     />
   )

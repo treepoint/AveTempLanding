@@ -1,0 +1,67 @@
+{
+    "menu" : {
+        "en" : 
+        [
+            {"name" : "How to use", "link" : "#how_to_use"},
+            {"name" : "Features", "link" : "#features"},
+            {"name" : "Support", "link" : "#support"},
+            {"name" : "Changelog", "link" : "changelog"},
+            {"name" : "Articles", "link" : "articles"}
+        ],
+        "ru" : 
+        [
+            {"name" : "Как использовать", "link" : "#how_to_use"},
+            {"name" : "Возможности", "link" : "#features"},
+            {"name" : "Поддержать", "link" : "#support"},
+            {"name" : "Список изменений", "link" : "changelog"},
+            {"name" : "Статьи", "link" : "articles"}
+        ]
+    },
+    "ru" : 
+    {
+        "title" : "AveWall — программа для автоматической смены обоев в играх и для рабочих программ",
+        "description" : "Программа позволяет задать для каждой программы свои обои рабочего стола: черные обои на втором мониторе во время игр, рабочие обои для outlook и любые другие варианты",
+        "h1" : "AveWall — настройка обоев рабочего стола",
+        "screens" : [
+            { "content" : 
+                [
+                    "Описание AveWall."
+                ]
+            },
+            { "content" : 
+                [
+                    "Зачем нужна."
+                ]
+            },
+            { "content" : 
+                [
+                    "Как использовать."
+                ]
+            }
+        ]
+    },
+
+    "en" : 
+    {
+        "title" : "AveWall — program for automatic wallpaper change in games and for work programs",
+        "description" : "The program allows you to set a different desktop wallpaper for each program: black wallpaper on the second monitor during games, work wallpaper for outlook and any other options",
+        "h1" : "AveWall — customize your desktop wallpaper",
+        "screens" : [
+            { "content" : 
+                [
+                    "AveWall description."
+                ]
+            },
+            { "content" : 
+                [
+                    "For what."
+                ]
+            },
+            { "content" : 
+                [
+                    "How to use."
+                ]
+            }
+        ]
+    }
+}

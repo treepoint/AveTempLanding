@@ -6,5 +6,7 @@ Disallow: /ru/
 Disallow: /ru/*
 Disallow: /preload
 Disallow: /en/preload
+Disallow: /en/admin
+Disallow: /admin
 
 Sitemap: https://avetemp.ru/sitemap.xml

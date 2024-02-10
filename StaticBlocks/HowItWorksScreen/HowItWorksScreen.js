@@ -3,7 +3,7 @@ import { useIntl } from "react-intl";
 import Screen from "../../elements/Screen/Screen.js";
 import DownloadButton from "../../elements/DownloadButton/DownloadButton.js";
 
-function HowItWorksScreen(props) {
+export default function HowItWorksScreen(props) {
 
     const intl = useIntl();
 
@@ -51,5 +51,3 @@ function HowItWorksScreen(props) {
                     />
     );
 }
-
-export default HowItWorksScreen;

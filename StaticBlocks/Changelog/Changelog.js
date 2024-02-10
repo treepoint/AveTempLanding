@@ -2,13 +2,12 @@
 import { useIntl } from "react-intl"
 import React from 'react'
 import Link from "next/link.js"
-import Release from "../Release/Release.js"
+import Release from "./Release/Release.js"
 import styles from "./Changelog.module.scss"
 import "../../_globals.js"
 
-function Changelog() {
+export default function Changelog() {
     const intl = useIntl();
-    const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
     const releases_location_text = intl.formatMessage({ id: "releases_location_text" });
 
     let releases = [
@@ -117,10 +116,8 @@ function Changelog() {
 
     return (
         <div className={styles.wrapper}>
+            <p>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link>.</p>
             <div className={[styles.columns, styles.one].join(' ')}>
-                <h1 id="changelog">{changelog_headline}</h1>
-                <p>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link></p>
-            
                 <div className={styles.release_description}>
                     {getReleasesArray().map((release, index) => (
                         <Release key = {index}
@@ -134,5 +131,3 @@ function Changelog() {
         </div>
     );
 }
-
-export default Changelog;

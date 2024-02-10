@@ -6,33 +6,26 @@ import Blur from '../../elements/Blur/Blur'
 import { getMainAddress } from '../../support/support'
 import { useState } from 'react'
 
-import { useIntl } from "react-intl"
+import { useSelector } from 'react-redux'
+import { selectMenu } from '../../store/features/menuSlice'
 
 export default function Menu(props) {
     const [isActive, setIsActive] = useState(false);
 
-    const intl = useIntl();
+    let menu = useSelector(selectMenu);
 
-    const features_headline = intl.formatMessage({ id: "features_headline" });
-    const HTU_headline = intl.formatMessage({ id: "HTU_headline" });
-    const support_headline = intl.formatMessage({ id: "support_headline" });
-    const changelog_headline = intl.formatMessage({ id: "changelog_headline" });
-    const articles_headline = intl.formatMessage({ id: "articles_headline" });
+    let menu_array = [];
 
-    let items = [
-        {name: HTU_headline, url: '#how_to_use'},
-        {name: features_headline, url: '#features'},
-        {name: support_headline, url: '#support'},
-        {name: changelog_headline, url: 'changelog'},
-        {name: articles_headline, url: 'articles'}
-    ]
+    for (const [key, value] of Object.entries(menu)) {
+        menu_array.push({name: value.name, link: value.link})
+    }
 
     function getItems() {
-        return items.map((item, index) => {
+        return menu_array.map((item, index) => {
             return <Link 
                         key={index} 
                         className={styles.item} 
-                        href={getMainAddress(item.url)} 
+                        href={getMainAddress(item.link)} 
                         onClick={showMenu}>{item.name}
                     </Link>
         })

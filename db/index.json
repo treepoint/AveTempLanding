@@ -1,0 +1,40 @@
+{
+    "menu" : {
+        "en" : 
+        [
+            {"name" : "How to use", "link" : "#how_to_use"},
+            {"name" : "Features", "link" : "#features"},
+            {"name" : "Support", "link" : "#support"},
+            {"name" : "Changelog", "link" : "changelog"},
+            {"name" : "Articles", "link" : "articles"}
+        ],
+        "ru" : 
+        [
+            {"name" : "Как использовать", "link" : "#how_to_use"},
+            {"name" : "Возможности", "link" : "#features"},
+            {"name" : "Поддержать", "link" : "#support"},
+            {"name" : "Список изменений", "link" : "changelog"},
+            {"name" : "Статьи", "link" : "articles"}
+        ]
+    },
+    "blocks_below" : [
+        {"name"  : "HowItWorksScreen"},
+        {"name"  : "WhyScreen"},
+        {"name"  : "HowToUseScreen"},
+        {"name"  : "FeedbackScreen"},
+        {"name"  : "FeatureScreen"},
+        {"name"  : "RoadMapScreen"}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — программа для снижения температуры процессора и шума ноутбука",
+        "description" : "Бесплатная программа для мониторинга температуры и TDP процессора. Так же может автоматически снижать температуру и TDP процессора и уменьшать шума ноутбука исходя из текущей нагрузки и сценария использования",
+        "h1" : "AveTemp — программа для уменьшения нагрева процессора"
+    },
+    "en" : 
+    {
+        "title" : "AveTemp — the program for reducing CPU temperature and notebook noise",
+        "description" : "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
+        "h1" : "AveTemp — the program for reducing CPU heat"
+    }
+}

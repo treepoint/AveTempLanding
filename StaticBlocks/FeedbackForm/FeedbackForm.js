@@ -5,7 +5,7 @@ import Alert from '../../elements/Alert/Alert'
 import React, { useState } from "react"
 import { useIntl } from "react-intl"
 
-function FeedbackForm() {
+export default function FeedbackForm() {
   const [formSuccess, setFormSuccess] = useState(false)
 
   const [formData, setFormData] = useState({
@@ -100,5 +100,3 @@ function FeedbackForm() {
           </form>
     );
 }
-
-export default FeedbackForm;

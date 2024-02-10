@@ -3,7 +3,7 @@ import { useIntl } from "react-intl";
 import Screen from "../../elements/Screen/Screen.js";
 import Promo from "../Promo/Promo.js";
 
-function WhyScreen(props) {
+export default function WhyScreen(props) {
 
     const intl = useIntl();
 
@@ -41,5 +41,3 @@ function WhyScreen(props) {
                     />
     );
 }
-
-export default WhyScreen;

@@ -1,7 +1,5 @@
 {
-  "meta.title": "AveTemp — the program for reducing CPU temperature and notebook noise",
   "meta.title_404": "AveTemp — page not found",
-  "meta.title_changelog": "AveTemp — history of changes and releases",
   "meta.title_articles": "AveTemp — processor heat knowledge base",
 
   "meta.description": "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
@@ -19,8 +17,6 @@
 
   "download_button": "Download",
   "send_button": "Submit",
-
-  "main_h1" : "AveTemp — the program for reducing CPU heat",
 
   "h1": "How it works",
 
