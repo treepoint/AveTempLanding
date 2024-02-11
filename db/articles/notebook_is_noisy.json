@@ -1,22 +1,13 @@
 {
-    "menu" : {
-        "en" : 
-        [
-            {"name" : "How to use", "link" : "#how_to_use"},
-            {"name" : "Features", "link" : "#features"},
-            {"name" : "Support", "link" : "#support"},
-            {"name" : "Changelog", "link" : "changelog"},
-            {"name" : "Articles", "link" : "articles"}
-        ],
-        "ru" : 
-        [
-            {"name" : "Как использовать", "link" : "#how_to_use"},
-            {"name" : "Возможности", "link" : "#features"},
-            {"name" : "Поддержать", "link" : "#support"},
-            {"name" : "Список изменений", "link" : "changelog"},
-            {"name" : "Статьи", "link" : "articles"}
+    "menu" : [
+        {"name" : { "en" : "AveTemp", "ru" : "AveTemp"}, "link" : "/"},
+        {"name" : { "en" : "How to use AveTemp", "ru" : "Как использовать AveTemp"}, "link" : "#how_to_use"},
+        {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
+        {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"},
+        {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "avewall"},
+        {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
         ]
-    },
+    ,
     "blocks_below" : [
         {"name"  : "WhyScreen"}
     ],

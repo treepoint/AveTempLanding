@@ -12,8 +12,11 @@ export default function PageProcessor(props) {
   const dispatch = useDispatch();
 
   let page = props.page;
-  let menu = page.menu[locale];
+  let menu = page.menu;
   let screens = page[locale].screens;
+
+  let articles = props.articles;
+  let blocks = props.blocks;
 
   dispatch(changeMenu(menu));
 
@@ -33,7 +36,11 @@ export default function PageProcessor(props) {
                 reverse={screen.reverse}
                 columns={2} 
                 second_content={
-                  <BlocksConstructor blocks={[{'name' : screen.additional_block}]}/>
+                  <BlocksConstructor 
+                    cms_blocks={blocks} 
+                    blocks={[{'name' : screen.additional_block}]} 
+                    articles={articles}
+                  />
                 }
             />
           </div>
@@ -47,7 +54,11 @@ export default function PageProcessor(props) {
     <>
         <h1>{page[locale].h1}</h1>
         {getPage(screens)}
-        <BlocksConstructor blocks={page.blocks_below}/>
+        <BlocksConstructor 
+          cms_blocks={blocks} 
+          blocks={page.blocks_below} 
+          articles = {props.articles}
+        />
     </>
   )
 }

@@ -1,11 +1,8 @@
 {
-  "meta.title_404": "AveTemp — page not found",
-  "meta.title_articles": "AveTemp — processor heat knowledge base",
-
-  "meta.description": "Free program to monitor processor temperature and TDP. It can also automatically reduce CPU temperature and TDP and reduce notebook noise based on current load and usage scenario",
-  "meta.description_404" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it",
-  "meta.description_changelog" : "A list of changes and release descriptions of AveTemp CPU Heat Reduction software. Details about what functionality was added in which release, download links",
-  "meta.description_articles" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
+  "githab_page_headline": "Github main page",
+  "issues_headline": "Issues",
+  "discussions_headline": "Discussions",
+  "support_headline": "Support",
 
   "update_message_text": "New version 1.4.7 is available!",
 
@@ -17,20 +14,6 @@
 
   "download_button": "Download",
   "send_button": "Submit",
-
-  "h1": "How it works",
-
-  "why_headline": "Why it's needed",
-  "discussions_headline": "Discussions",
-  "features_headline": "Features",
-  "HTU_headline": "How to use",
-  "support_headline": "Support",
-  "changelog_headline": "Changelog",
-  "issues_headline": "Issues",
-  "githab_page_headline": "Github main page",
-  "articles_headline" : "Articles",
-  "helpful_materials_headline" : "Useful information",
-  "road_map_headline" : "Road Map",
 
   "and": "and",
 

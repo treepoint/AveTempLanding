@@ -14,13 +14,13 @@ export default function Menu(props) {
 
     let menu = useSelector(selectMenu);
 
-    let menu_array = [];
-
-    for (const [key, value] of Object.entries(menu)) {
-        menu_array.push({name: value.name, link: value.link})
-    }
-
     function getItems() {
+        let menu_array = [];
+
+        for (const [key, value] of Object.entries(menu)) {
+            menu_array.push({name: value.name[props.locale], link: value.link})
+        }
+
         return menu_array.map((item, index) => {
             return <Link 
                         key={index} 

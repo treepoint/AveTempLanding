@@ -1,0 +1,26 @@
+{
+    "menu" : [
+            {"name" : { "en" : "AveTemp", "ru" : "AveTemp"}, "link" : "/"},
+            {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "/avewall"},
+            {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "/#support"},
+            {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"}
+        ]
+    ,
+    "blocks_below" : [
+        {"name"  : "HowItWorksScreen", "title" : { "en" : "AveTemp", "ru" : "AveTemp"}},
+        {"name"  : "FeedbackScreen", "title" : { "en" : "How to connect", "ru" : "По всем вопросам"}},
+        {"name"  : "HelpfulMaterials", "title" : { "en" : "Useful information", "ru" : "Полезные материалы"}}
+    ],
+    "ru" : 
+    {
+        "title" : "AveWall и AveTemp — программы для комфортной работы",
+        "description" : "Бесплатные программы для управления режимами работы процессора и обоями рабочего стола",
+        "h1" : "Avewall и AveTemp — программы для комфортной работы"
+    },
+    "en" : 
+    {
+        "title" : "AveWall and AveTemp — programs for comfortable operation",
+        "description" : "Free programs for controlling CPU modes and desktop wallpapers",
+        "h1" : "AveWall and AveTemp - programs for comfortable operation"
+    }
+}

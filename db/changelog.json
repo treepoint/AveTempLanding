@@ -1,24 +1,15 @@
 {
-    "menu" : {
-        "en" : 
-        [
-            {"name" : "How to use", "link" : "#how_to_use"},
-            {"name" : "Features", "link" : "#features"},
-            {"name" : "Support", "link" : "#support"},
-            {"name" : "Changelog", "link" : "changelog"},
-            {"name" : "Articles", "link" : "articles"}
-        ],
-        "ru" : 
-        [
-            {"name" : "Как использовать", "link" : "#how_to_use"},
-            {"name" : "Возможности", "link" : "#features"},
-            {"name" : "Поддержать", "link" : "#support"},
-            {"name" : "Список изменений", "link" : "changelog"},
-            {"name" : "Статьи", "link" : "articles"}
+    "menu" : [
+            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "#how_to_use"},
+            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "#features"},
+            {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
+            {"name" : { "en" : "Changelog", "ru" : "Список изменений"}, "link" : "changelog"},
+            {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"},
+            {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "/avewall"}
         ]
-    },
+    ,
     "blocks_below" : [
-        {"name"  : "Changelog"}
+        {"name"  : "Changelog", "title" : { "en" : "How it works", "ru" : "Как это работает"}}
     ],
     "ru" : 
     {

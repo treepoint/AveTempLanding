@@ -1,6 +1,6 @@
 import PageProcessor from "../../../cms/PageProcessor/PageProcessor"
 import { getPageByUrl } from "../../api/articles/[url]"
-import { getPagesList } from "../../api/articles"
+import { getArticlesList } from "../../api/articles"
 
 const path = 'articles'
 
@@ -10,10 +10,16 @@ export const getStaticProps = async (context) => {
   if (process.env.API_URL.includes('localhost')) { page = await getPageByUrl(context.params.url); }
   else { page = await fetch(process.env.API_URL + '/' + path + '/' + context.params.url).json(); } 
 
+  let blocks;
+
+  if (process.env.API_URL.includes('localhost')) { blocks = await getBlocksList(); }
+  else { blocks = await fetch(process.env.API_URL + '/blocks/').json(); } 
+
   if (page.status == "error") {
     return { 
       props: { 
-        page: page
+        page: page,
+        blocks: blocks,
       },
       redirect: {
         destination: context.locale + '/404',
@@ -25,6 +31,7 @@ export const getStaticProps = async (context) => {
   return { 
     props: { 
       page: page,
+      blocks: blocks,
       description: page[context.locale].description,
       title: page[context.locale].title
     },
@@ -35,7 +42,7 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => { 
   let data;
 
-  if (process.env.API_URL.includes('localhost')) { data = await getPagesList(); }
+  if (process.env.API_URL.includes('localhost')) { data = await getArticlesList(); }
   else { data = await fetch(process.env.API_URL + '/' + path).json(); } 
 
   const paths = data.map((page) => ({
@@ -51,6 +58,7 @@ export default function ArticlePage(props) {
       title={props.title}
       description={props.description}
       page={props.page}
+      blocks={props.blocks}
     />
   )
 }

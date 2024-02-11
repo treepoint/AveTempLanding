@@ -1,0 +1,23 @@
+{
+    "menu" : [
+        {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
+        {"name" : { "en" : "AveTemp", "ru" : "AveTemp"}, "link" : "/"},
+        {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "avewall"},
+        {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
+        ]
+    ,
+    "blocks_below" : [
+        {"name"  : "Page404"}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — страница не найдена",
+        "description" : "Такой страницы нет. Но есть другие со статьями о нагреве процессора и инструкцией, как этот нагрев снизить"
+    },
+
+    "en" : 
+    {
+        "title" : "AveTemp — page not found",
+        "description" : "There is no such page. But there are others with articles about CPU heat and instructions on how to reduce it"
+    }
+}

@@ -1,12 +1,11 @@
 'use client'
 import { useIntl } from "react-intl"
-import { useRouter } from "next/router"
 import Link from "next/link.js"
 import { getMainAddress } from "../../support/support.js"
 import Screen from "../../elements/Screen/Screen.js"
 import Support from "../Support/Support.js"
 
-export default function AboutScreen() {
+export default function AboutScreen(props) {
 
     const intl = useIntl();
 
@@ -39,7 +38,8 @@ export default function AboutScreen() {
     }
 
     return ( <Screen name={"features"} 
-                     h2={{ id: "features_headline" }}
+                     h2={props.h2} 
+                     h3={props.h3} 
                      reverse={true}
                      columns={2} 
                      main_content={getContent()}

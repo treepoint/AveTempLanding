@@ -10,7 +10,6 @@ function Footer() {
     const githab_page_headline = intl.formatMessage({ id: "githab_page_headline" });
     const issues_headline = intl.formatMessage({ id: "issues_headline" });
     const discussions_headline = intl.formatMessage({ id: "discussions_headline" });
-    const download = intl.formatMessage({ id: "download_button" });
 
     let currentYear= new Date().getFullYear(); 
 

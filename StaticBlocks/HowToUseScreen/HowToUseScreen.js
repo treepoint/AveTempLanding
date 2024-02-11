@@ -2,7 +2,7 @@
 import { useIntl } from "react-intl"
 import Screen from "../../elements/Screen/Screen.js"
 
-export default function HowItWorksScreen() {
+export default function HowItWorksScreen(props) {
 
     const intl = useIntl();
 
@@ -35,7 +35,8 @@ export default function HowItWorksScreen() {
     }
 
     return (<Screen name={"how_to_use"} 
-                    h2={{ id: "HTU_headline" }} 
+                    h2={props.h2} 
+                    h3={props.h3} 
                     columns={2} 
                     reverse={false} 
                     image={{id: "settings_window_screenshot_url" }}

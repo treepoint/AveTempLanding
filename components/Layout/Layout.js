@@ -12,11 +12,13 @@ import styles from "./Layout.module.scss"
 
 export default function Layout(props) {
   const { locales } = useRouter();
+  const { locale } = useRouter();
 
   return (
     <>
       <Header 
         locales = {[...locales]} 
+        locale = {locale}
         title={props.title}
         description={props.description}
       />
