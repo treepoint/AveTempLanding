@@ -67,21 +67,5 @@
   "ff_success" : "Letter received, thanks for the feedback!",
 
   "home_button" : "Home",
-  "not_found_text" : "There is no such page yet :(",
-
-  "r_map_1" : "The current version is a test release. It is necessary first of all to understand whether it is necessary to develop it further or it is enough as it is now.",
-  "r_map_2" : "I really want to continue to develop and I have a plan, it is marked next to it. I really like the idea of making a convenient and useful program, as it primarily benefits me.",
-  "r_map_3" : "However, I know that my vision may not be entirely correct, so I will be happy to get any feedback: wishes, suggestions, or caught bugs. Write to me!",
-
-  "r_map_task_1_name" : "New interface, probably on React Native.",
-  "r_map_task_1_hint" : "This is a faster development. The current QT interface is very difficult to develop.",
-
-  "r_map_task_2_name" : "Processor frequency control in absolute values. For example, 2GHz, not 74%.",
-  "r_map_task_2_hint" : "Makes working with the program more convenient and understandable.",
-
-  "r_map_task_3_name" : "Individual profiles for applications with forced turbo.",
-  "r_map_task_3_hint" : "Not every type of load can be defined as Turbo. For example, applications with variable CPU usage, such as GuitarRig.",
-
-  "r_map_task_4_name" : "More information on the main screen.",
-  "r_map_task_4_hint" : "For better monitoring and customization to your needs."
+  "not_found_text" : "There is no such page yet :("
 }

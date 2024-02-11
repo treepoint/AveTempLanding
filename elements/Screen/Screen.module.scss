@@ -54,6 +54,14 @@
     @media (max-width: 992px) { 
       max-width: 100%;
     }
+
+    ul {
+        margin-top: -14px;
+        
+        &:only-child {
+            padding-left: 16px;
+        }
+    }
 } 
 
 .columns {
