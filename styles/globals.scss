@@ -30,6 +30,7 @@ h1 {
   font-size: 28px;
   scroll-margin-top: 108px;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -89,4 +90,11 @@ p {
   line-height: 14px;
   margin-top: 4px;
   padding-bottom: 8px;
+}
+
+.two_columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 32px;
 }

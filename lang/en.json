@@ -33,34 +33,6 @@
 
   "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
 
-  "releases_location_text": "All releases are available on ",
-
-  "1_4_7_cores_load" : "Fixed: cores load showing correctly on Intel CPU's now",
-  "1_4_7_max_values" : "Fixed: max values for TDP and temps now are not going over the top",
-  "1_4_7_version_number" : "Feature: added new version number to update message",
-  "1_4_7_debug_stack" : "Feature: added debug stack logging to file from LibreHardwareMonitorLib sensors if it needed. Be default it's off, can be runed by start with argument «--hardware-dump»",
-  "1_4_7_support" : "Support: added Boosty and Patreon buttons to settings window. I'll be very glad if you'll support me, subscription starts from 1$",
-
-  "1_4_6_update_LHMLib" : "Updated LHMLib to latest nightly build",
-  "1_4_6_statistics_recording" : "Feature: added recording of statistics to the file immediately after enabling this setting",
-  "1_4_6_cpu_load_not_updates" : "Fixed: CPU load sometimes not updates after Windows sleep",
-  "1_4_6_autostart_crushing" : "Fixed: if shutdown was unexpected than next autostart might crush",
-  "1_4_6_min_max_reset" : "Fixed: min and max temps and TDP were not reset if stat collecting had been enabled",
-  "1_4_6_incorrect_max_values" : "Potentially fixed: sometimes max values were incorrect",
-
-  "1_4_5_debug" : "Feature: added logging to file «debug.txt» if app goes wrong. If you will encounter crushes, you can send me that file with short description of the problem and i will try to fix that ASAP.",
-  "1_4_5_settings_not_apply" : "Fixed: CPU settings not applied in some cases.",
-  "1_4_5_minimal_states" : "Fixed: minimal default CPU states in Windows — 5 and 80 percent on battery and on plug respectively — were higher than custom maximum state and it prevented decreasing CPU frequency.",
-  "1_4_5_doubled_run" : "Fixed: double run was possible. ",
-  "1_4_5_clear_buttons" : "Fixed: clear buttons for temp, TDP, and average values were broken during last vast refactoring and not working.",
-  "1_4_5_cpu_settings_not_resetings" : "Fixed: Windows default settings for CPU does not apply when program was closed from tray.",
-  "1_4_5_UI_updates" : "Fixed: on startup UI are updating though app was running as minimized to tray.",
-  "1_4_5_change_defaults" : "Optimization: changed default values for backup interval, temps, TDP collect interval and CPU threshold to 15 min, 0.7 sec and 80 percent respectively. Affect only start without settings file.",
-  "1_4_5_tray_icon_updates" : "Optimization: tray icon now updates only if current temp was change.",
-  "1_4_5_legacy" : "Optimization: removed collection and updating 2 legacy's lists: «general_temps» and «general_TDP».",
-
-  "1_4_4_crushes": "Fixed unexpected crushes when CPU mode was changed.",
-
   "ff_message" : "Message",
   "ff_disclaimer_1" : "I promise to use your Email only to get back to you. No mailings without your consent.",
   "ff_error" : "An error occurred, try again later.",
