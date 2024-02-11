@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import { parseContent} from "../../support/support.js"
+import { parseContent } from "../contentParser.js"
 
 import BlocksConstructor from "../BlocksConstructor/BlocksConstructor.js"
 import Screen from "../../elements/Screen/Screen"
