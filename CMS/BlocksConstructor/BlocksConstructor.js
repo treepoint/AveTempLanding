@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-import FeedbackScreen from "../../StaticBlocks/FeedbackScreen/FeedbackScreen"
+import FeedbackForm from "../../components/FeedbackForm/FeedbackForm.js"
 import RoadMapScreen from "../../StaticBlocks/RoadMapScreen/RoadMapScreen"
 import Support from "../../components/Support/Support"
 import DownloadButton from "../../elements/DownloadButton/DownloadButton"
@@ -8,6 +8,7 @@ import Changelog from "../../StaticBlocks/Changelog/Changelog"
 import Articles from "../../StaticBlocks/Articles/Articles"
 import HelpfulMaterials from "../../StaticBlocks/HelpfulMaterials/HelpfulMaterials"
 import Page404 from "../../StaticBlocks/Page404/Page404"
+import SocialIcons from "../../StaticBlocks/SocialIcons/SocialIcons.js"
 
 import Screen from "../../elements/Screen/Screen"
 import { parseContent } from "../contentParser.js"
@@ -25,9 +26,13 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
       blocks.forEach(block => {
         let h2 = null;
         h2 = getH2(block, locale);
-    
-        if (block.name == "FeedbackScreen") {
-          result.push(<FeedbackScreen h2={h2}/>)
+
+        if (block.name == "SocialIcons") {
+          result.push(<SocialIcons/>)
+        }
+
+        if (block.name == "FeedbackForm") {
+          result.push(<FeedbackForm/>)
         }
     
         if (block.name == "Support") {
@@ -93,8 +98,15 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                       articles, 
                       cms_blocks)
                     }
-                    below_additinonal_block={
-                      getBlocks([{"name" : screen.below_additinonal_block}], 
+                    additional_block_below={
+                      getBlocks([{"name" : screen.additional_block_below}], 
+                      locale, 
+                      locales, 
+                      articles, 
+                      cms_blocks)
+                    }
+                    additinonal_block_above={
+                      getBlocks([{"name" : screen.additinonal_block_above}], 
                       locale, 
                       locales, 
                       articles, 
