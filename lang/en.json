@@ -61,12 +61,6 @@
 
   "1_4_4_crushes": "Fixed unexpected crushes when CPU mode was changed.",
 
-  "feedback_headline" : "How to get in touch?",
-  "feedback_text_1" : "I would be glad to get any feedback: about bugs, suggestions for improvement, help in development and testing data.",
-  "feedback_text_2" : "The list of current tasks is available at",
-  "feedback_text_3" : "If you have an account, feel free to create new tasks or comment on old ones.",
-  "feedback_text_4" : "Or write me through the form, I regularly check my mail, so I will answer within 1-2 days.",
-
   "ff_message" : "Message",
   "ff_disclaimer_1" : "I promise to use your Email only to get back to you. No mailings without your consent.",
   "ff_error" : "An error occurred, try again later.",
