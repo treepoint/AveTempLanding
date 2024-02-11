@@ -31,17 +31,6 @@
   "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
   "your_link" : "Your link: ",
 
-  "feature_continuous": "Continuous monitoring temperature and TDP of CPU",
-  "feature_collecting_states": "Collecting and showing min, max and current temps and TDP states",
-  "feature_collecting_times": "Collecting and showing average scores for 1, 5, 15, 60 minutes and 24 hours",
-  "feature_automatic_adjust": "Automatic adjust CPU performance state and CPU Turbo mode. Also, you can setup preferred CPU load threshold, Turbo modes and CPU states or disable it at all",
-  "feature_autostart": "Autostart on user logon",
-  "feature_autocolor": "Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes",
-  "feature_low_cpu": "Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%",
-
-  "feature_cl" : "A complete list of changes and functionality from version to version can be found here — ",
-  "feature_cl_link" : "list of changes",
-
   "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
 
   "releases_location_text": "All releases are available on ",

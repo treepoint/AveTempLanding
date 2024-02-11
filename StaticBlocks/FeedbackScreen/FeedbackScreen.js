@@ -1,7 +1,7 @@
 'use client';
 import { useIntl } from "react-intl"
 import Screen from "../../elements/Screen/Screen.js"
-import FeedbackForm from "../FeedbackForm/FeedbackForm.js"
+import FeedbackForm from "../../components/FeedbackForm/FeedbackForm.js"
 import { openInNewTab } from "../../support/support.js";
 
 import styles from './FeedbackScreen.module.scss'
