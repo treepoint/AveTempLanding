@@ -3,7 +3,7 @@
             "screens" : [
                 { "content" : 
                     [
-                        "AveTemp это бесплатная программа, использует библиотеку LibreHardwareMonitorLib. С помощью неё она:",
+                        "AveTemp это бесплатная программа, использует библиотеку <Link href='https://github.com/LibreHardwareMonitor/LibreHardwareMonitor'>LibreHardwareMonitorLib</Link>. С помощью неё она:",
                         "<ol>",
                         "<li>Собирает данные о температуре и TDP процессора.</li>",
                         "<li>Смотрит, есть ли повышенная нагрузка или же процессор простаивает.</li>",
@@ -25,7 +25,15 @@
             "screens" : [
                 { "content" : 
                     [
-                        "Описание AveWall."
+                        "AveTemp is a free program that uses the <Link href='https://github.com/LibreHardwareMonitor/LibreHardwareMonitor'>LibreHardwareMonitorLib</Link>. With library help, it:",
+                        "<ol>",
+                        "<li>Collects CPU temperature and TDP data.</li>",
+                        "<li>It looks to see if there is an increased load or if the processor is idle.</li>",
+                        "<li>If there is a load, it increases the CPU frequencies. If there is no load, it decreases it.</li>",
+                        "</ol>",
+                        "Therefore, at idle time the temperature and noise from cooling the computer is lower, but in the presence of heavy tasks processor starts working at full power.",
+                        "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
+                        "The source code is available on <Link href='https://github.com/treepoint/AveTemp'>Github</Link>, so you can build the program yourself."
                     ]
                     ,
                     "image" : "/images/cpu_turbo.jpg",

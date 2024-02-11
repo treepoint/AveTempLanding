@@ -7,7 +7,7 @@
         ]
     ,
     "blocks_below" : [
-        {"name"  : "HowItWorksScreen", "title" : { "en" : "AveTemp", "ru" : "AveTemp"}},
+        {"name"  : "avetemp_how_it_works", "title" : { "en" : "AveTemp", "ru" : "AveTemp"}},
         {"name"  : "FeedbackScreen", "title" : { "en" : "How to connect", "ru" : "По всем вопросам"}},
         {"name"  : "HelpfulMaterials", "title" : { "en" : "Useful information", "ru" : "Полезные материалы"}}
     ],
