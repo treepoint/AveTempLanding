@@ -83,12 +83,22 @@ function getColumnsCount(image, second_content) {
 function parseCMSblock(cms_blocks, name, h2, articles) {
   const { locale, locales } = useRouter();
 
+  let result = [];
+  let two_columns = false;
   for (let block of cms_blocks) {
     if (block.url == name) {
+
+      if (block.data.columns == 2) {
+        two_columns = true;
+      }
+
+      let screen_count = 0;
+
       for (let screen of block.data[locale].screens) {
-        return <>
-                  <Screen 
-                    h2={h2}
+        screen_count += 1;
+
+        result.push(<Screen 
+                    h2={screen_count == 1 ? h2 : null}
                     name={name} 
                     main_content={parseContent(screen.content)}
                     image={screen.image}
@@ -97,6 +107,7 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                     alt={screen.image_alt}
                     reverse={screen.reverse}
                     centered={screen.centered}
+                    half={two_columns}
                     columns={getColumnsCount(screen.image, screen.second_content_block)}
                     second_content={
                       getBlocks([{"name" : screen.second_content_block}], 
@@ -119,11 +130,16 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                       articles, 
                       cms_blocks)
                     }
-                  />
-               </>
+                  />);
       }
     }  
   }
+
+  if (two_columns) {
+    return <div className="two_columns">{result}</div>
+  }
+
+  return result;
 }
 
 export default function BlocksConstructor(props) {
