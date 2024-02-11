@@ -1,0 +1,32 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "I would be glad to get any feedback: about bugs, suggestions for improvement, help in development and testing data.",
+                        "The list of current tasks is available at <Link href='https://github.com/treepoint/AveTemp'>Github</Link>. If you have an account, feel free to create new tasks or comment on old ones.",
+                        "Or write me through the form, I regularly check my mail, so I will answer within 1-2 days."
+                    ],
+                   "reverse" : true,
+                   "second_content_block" : "FeedbackForm",
+                   "additional_block_below" : "SocialIcons"
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Буду рад любой обратной связи: о багах, предложениях по улучшению, помощи в развитии и данных тестирования.",
+                        "Список текущих задач есть на <Link href='https://github.com/treepoint/AveTemp'>Github</Link>. Если у вас есть учетная запись, чувствуйте себя свободно в создании новых задач или комментировании старых.",
+                        "Или пишите мне через форму, я регулярно проверяю почту, потому отвечу в течении 1-2 дней."
+                    ]
+                    ,
+                    "reverse" : true,
+                    "second_content_block" : "FeedbackForm",
+                    "additional_block_below" : "SocialIcons"
+                }
+            ]
+        }
+}

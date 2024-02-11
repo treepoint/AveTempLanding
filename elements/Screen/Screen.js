@@ -81,9 +81,9 @@ export default function Screen(props) {
                     {getSecondColumnContent()}
                 </div>
                 <div className={styles.half}>
-                    {props.above_additinonal_block}
+                    {props.additinonal_block_above}
                     {props.main_content}
-                    {props.below_additinonal_block}
+                    {props.additional_block_below}
                 </div>
             </div>
         </div>
