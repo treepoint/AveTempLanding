@@ -3,6 +3,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 .release_description {
@@ -24,4 +25,8 @@
 .columns.one {
   align-items: center;
   width: 100%;
+}
+
+.all_releases {
+  text-align: center;
 }

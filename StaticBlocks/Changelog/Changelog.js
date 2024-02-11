@@ -43,71 +43,7 @@ export default function Changelog() {
        },
        {'title' : '1.4.4', 
         'changes' : ['1_4_4_crushes']
-       },
-       {'title' : '1.4.3', 
-        'changes' : ['1_4_3_notifications', 
-                    '1_4_3_admin_right_description',
-                    '1_4_3_clear_icons',
-                    '1_4_3_name_and_version_link',
-                    '1_4_3_tray_localization',
-                    '1_4_3_closing_correctly',
-                    '1_4_3_cpu_name',
-                   ]
-       },
-       {'title' : '1.4.2', 
-        'changes' : ['1_4_2_autostart_delay', 
-                    '1_4_2_backup_interval',
-                    '1_4_2_intel_cpu_names',
-                    '1_4_2_not_closed_by_enter',
-                    '1_4_2_minimum_value',
-                   ]
-       },
-       {'title' : '1.4.1', 
-        'changes' : ['1_4_1_separated_cpu_method', 
-                    '1_4_1_settings_translation',
-                    '1_4_1_pause_before_autostart',
-                    '1_4_1_not_ovveriding_settings',
-                    '1_4_1_decrease_backup_interval',
-                    '1_4_1_properly_closed',
-                   ]
-       },
-       {'title' : '1.4.0', 
-        'changes' : ['1_4_0_localization']
-       },
-       {'title' : '1.3.2',
-        'description': '1_3_2_disclaimer', 
-        'changes' : ['1_3_2_issue_8', 
-                     '1_3_2_issue_10',
-                     '1_3_2_issue_12',
-                     '1_3_2_optimization',
-                     '1_3_2_added_check',
-                     '1_3_2_refactoring',
-                   ]
-       },
-       {'title' : '1.3.1',
-        'changes' : ['1_3_1_tray_icon', 
-                     '1_3_1_data_collect',
-                   ]
-       },
-       {'title' : '1.3.0',
-       'changes' : ['1_3_0_turbo', 
-                    '1_3_0_autostart',
-                    '1_3_0_realy_appying',
-                    '1_3_0_current_scheme',
-                    '1_3_0_refactoring',
-                   ]
-       },
-       {'title' : '1.2.2',
-       'changes' : ['1_2_2_cpu_performance', 
-                    '1_2_2_basic_intel_support',
-                    '1_2_2_changed_icons_format',
-                    '1_2_2_reduced_cpu_usage',
-                   ],
-        'ps' : '1_2_2_tested_on',
-       },
-       {'title' : '1.0.1',
-       'changes' : ['1_0_1_text']
-       },
+       }
     ]
 
     function getReleasesArray() {
@@ -116,7 +52,6 @@ export default function Changelog() {
 
     return (
         <div className={styles.wrapper}>
-            <p>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link>.</p>
             <div className={[styles.columns, styles.one].join(' ')}>
                 <div className={styles.release_description}>
                     {getReleasesArray().map((release, index) => (
@@ -128,6 +63,7 @@ export default function Changelog() {
                     ))}
                 </div>
             </div>
+            <p className={styles.all_releases}>{releases_location_text} <Link href="https://github.com/treepoint/AveTemp/releases">Github</Link>.</p>
         </div>
     );
 }
