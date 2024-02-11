@@ -1,0 +1,29 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "The current version is a test release. It is necessary first of all to understand whether it is necessary to develop it further or it is enough as it is now.",
+                        "I really want to continue to develop and I have a plan, it is marked next to it. I really like the idea of making a convenient and useful program, as it primarily benefits me.",
+                        "However, I know that my vision may not be entirely correct, so I will be happy to get any feedback: wishes, suggestions, or caught bugs. Write to me!"
+                    ],
+                   "reverse" : true,
+                   "second_content_block" : "avetemp_roadmap_right"
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Текущая версия это тестовый релиз. Он нужен в первую очередь чтобы понять нужно ли развивать его дальше или как есть сейчас уже достаточно.",
+                        "Я очень хочу продолжить развитие и у меня есть план, он обозначен рядом. Мне очень нравится идея сделать удобную и полезную программу, так как в первую очередь она приносит пользу мне.",
+                        "Однако я знаю, что мое видение может быть не совсем верным, потому буду рад любой обратной связи: пожеланиям, предложениям или отловленным багам. Пишите мне!"
+                    ],
+                    "reverse" : true,
+                    "second_content_block" : "avetemp_roadmap_right"
+                }
+            ]
+        }
+}

@@ -29,6 +29,11 @@ export function parseContent(content) {
             return <ol>{list}</ol>
         }
 
+        if (item.includes('<hint') && ol_list_processed) {
+            list.push(<div className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>)
+            return;
+        }
+
         //Маркированный список
         if (item.includes('<ul')) {
             ul_list_processed = true;
@@ -43,6 +48,11 @@ export function parseContent(content) {
         if (item.includes('/ul>')) {
             ul_list_processed = false;
             return <ul>{list}</ul>
+        }
+
+        if (item.includes('<hint') && ul_list_processed) {
+            list.push(<div className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>)
+            return;
         }
 
         //Обычные параграфы

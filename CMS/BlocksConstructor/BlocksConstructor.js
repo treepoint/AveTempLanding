@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 import FeedbackForm from "../../components/FeedbackForm/FeedbackForm.js"
-import RoadMapScreen from "../../StaticBlocks/RoadMapScreen/RoadMapScreen"
 import Support from "../../components/Support/Support"
 import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Promo from "../../StaticBlocks/Promo/Promo"
@@ -39,10 +38,6 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
           result.push(<Support h2={h2}/>)
         }
     
-        if (block.name == "RoadMapScreen") {
-          result.push(<RoadMapScreen h2={h2}/>)
-        }
-    
         if (block.name == "DownloadButton") {
           result.push(<DownloadButton isCentered/>)
         }
@@ -67,12 +62,28 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
           result.push(<Page404/>)
         }
 
-        result.push(parseCMSblock(cms_blocks, block.name, h2, articles));
+        block = parseCMSblock(cms_blocks, block.name, h2, articles);
+
+        if (block) {
+          result.push(block);
+        }
       })
     }
-  
+
+    if (result.length == 0) {
+      return;
+    }
+
     return result;
   }
+
+function getColumnsCount(image, second_content) {
+  if (!image && !second_content) {
+    return 1;
+  } else {
+    return 2;
+  }
+}
 
 function parseCMSblock(cms_blocks, name, h2, articles) {
   const { locale, locales } = useRouter();
@@ -90,7 +101,7 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                     image_style={screen.image_style}
                     alt={screen.image_alt}
                     reverse={screen.reverse}
-                    columns={2}
+                    columns={getColumnsCount(screen.image, screen.second_content_block)}
                     second_content={
                       getBlocks([{"name" : screen.second_content_block}], 
                       locale, 

@@ -15,7 +15,7 @@
         {"name"  : "avetemp_how_to_use", "title" : { "en" : "How to use", "ru" : "Как использовать"}},
         {"name"  : "feedback", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}},
         {"name"  : "avetemp_features", "title" : { "en" : "Features", "ru" : "Возможности"}},
-        {"name"  : "RoadMapScreen", "title" : { "en" : "Road Map", "ru" : "План развития"}}
+        {"name"  : "avetemp_roadmap_left", "title" : { "en" : "Road Map", "ru" : "План развития"}}
     ],
     "ru" : 
     {

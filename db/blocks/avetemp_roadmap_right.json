@@ -1,0 +1,39 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>New interface, probably on React Native.</li>",
+                        "<hint>This is a faster development. The current QT interface is very difficult to develop.</hint>",
+                        "<li>Processor frequency control in absolute values. For example, 2GHz, not 74%.</li>",
+                        "<hint>Makes working with the program more convenient and understandable.</hint>",
+                        "<li>Individual profiles for applications with forced turbo.</li>",
+                        "<hint>Not every type of load can be defined as Turbo. For example, applications with variable CPU usage, such as GuitarRig.</hint>",
+                        "<li>More information on the main screen.</li>",
+                        "<hint>For better monitoring and customization to your needs.</hint>",
+                        "</ul>"
+                    ]
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>Новый интерфейс, возможно на React Native.</li>",
+                        "<hint>Это более быстрое развитие. Текущий интерфейс на QT очень сложно развивать.</hint>",
+                        "<li>Управление частотой процессора в абсолютных значениях. Например, 2Ггц, а не 74%.</li>",
+                        "<hint>Сделает работу с программой удобнее и понятнее.</hint>",
+                        "<li>Индивидуальные профили для приложений с принудительным турбо.</li>",
+                        "<hint>Не любой тип нагрузки можно определить как Турбо. Например, приложения с переменным использованием CPU, такие как GuitarRig.</hint>",
+                        "<li>Больше информации на главном экране.</li>",
+                        "<hint>Для лучшего мониторинга и настройки под свои потребности.</hint>",
+                        "</ul>"
+                    ]
+                }
+            ]
+        }
+}
