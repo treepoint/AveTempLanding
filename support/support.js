@@ -20,16 +20,16 @@ export function getMainAddress(url) {
 
     if (locale == 'ru') {
         if (new_url.includes("#")) {
-            return "/"+new_url;
+            return "/" + new_url;
         }
     
-        return "/"+new_url;
+        return "/" + new_url;
     } else {
         if (new_url.includes("#")) {
-            return "/"+locale+new_url;
+            return "/" + new_url;
         }
     
-        return "/"+locale+"/"+new_url;
+        return "/" + locale + "/" + new_url;
     }
 }
 
@@ -71,10 +71,25 @@ export const openInNewTab = (url) => {
 }
 
 export function parseContent(content) {
-    return content.map((item, index) => {
+    let ol_list = []
 
+    return content.map((item, index) => {
         if (item.includes('<Link')) {
           return (parsePwithLink(item, index));        
+        }
+
+        if (item.includes('<ol')) {
+            return;
+        }
+
+        if (item.includes('/ol>')) {
+            return <ol>{ol_list}</ol>
+        }
+
+        if (item.includes('<li')) {
+            console.log(ol_list);
+            ol_list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
+            return;
         }
 
         return <p key={index}>{item}</p>

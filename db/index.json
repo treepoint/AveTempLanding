@@ -1,29 +1,21 @@
 {
-    "menu" : {
-        "en" : 
-        [
-            {"name" : "How to use", "link" : "#how_to_use"},
-            {"name" : "Features", "link" : "#features"},
-            {"name" : "Support", "link" : "#support"},
-            {"name" : "Changelog", "link" : "changelog"},
-            {"name" : "Articles", "link" : "articles"}
-        ],
-        "ru" : 
-        [
-            {"name" : "Как использовать", "link" : "#how_to_use"},
-            {"name" : "Возможности", "link" : "#features"},
-            {"name" : "Поддержать", "link" : "#support"},
-            {"name" : "Список изменений", "link" : "changelog"},
-            {"name" : "Статьи", "link" : "articles"}
+    "menu" : [
+            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "#how_to_use"},
+            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "#features"},
+            {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
+            {"name" : { "en" : "Changelog", "ru" : "Список изменений"}, "link" : "changelog"},
+            {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"},
+            {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "/avewall"},
+            {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
         ]
-    },
+    ,
     "blocks_below" : [
-        {"name"  : "HowItWorksScreen"},
-        {"name"  : "WhyScreen"},
-        {"name"  : "HowToUseScreen"},
-        {"name"  : "FeedbackScreen"},
-        {"name"  : "FeatureScreen"},
-        {"name"  : "RoadMapScreen"}
+        {"name"  : "avetemp_how_it_works", "title" : { "en" : "How it works", "ru" : "Как это работает"}},
+        {"name"  : "WhyScreen", "title" : { "en" : "Why it's needed", "ru" : "Зачем это нужно"}},
+        {"name"  : "HowToUseScreen", "title" : { "en" : "How to use", "ru" : "Как использовать"}},
+        {"name"  : "FeedbackScreen", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}},
+        {"name"  : "FeatureScreen", "title" : { "en" : "Features", "ru" : "Возможности"}},
+        {"name"  : "RoadMapScreen", "title" : { "en" : "Road Map", "ru" : "План развития"}}
     ],
     "ru" : 
     {

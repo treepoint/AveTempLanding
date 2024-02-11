@@ -69,7 +69,8 @@ export default function RoadMapScreen(props) {
     }
 
     return (<Screen name={"roadmap"} 
-            h2={{ id: "road_map_headline" }}
+            h2={props.h2} 
+            h3={props.h3} 
             columns={2} 
             reverse={!props.isReverse ? true : false} 
             main_content={getContent()}

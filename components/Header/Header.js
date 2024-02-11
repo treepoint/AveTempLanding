@@ -58,7 +58,7 @@ function Header(props) {
                 <div className={styles.wrapper}>
                     <div className={styles.inner}>
                         <Logo/> 
-                        <Menu />
+                        <Menu locale={props.locale}/>
                         <Spacer/>
                         <LanguageSelector locales={props.locales}/>
                         <DownloadButton isPrimary/>

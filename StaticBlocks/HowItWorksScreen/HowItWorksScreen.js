@@ -39,7 +39,8 @@ export default function HowItWorksScreen(props) {
     }
 
     return (<Screen name={"how_it_works"} 
-                    h2={props.h2 ? props.h2 : {id: "h1"}} 
+                    h2={props.h2} 
+                    h3={props.h3} 
                     columns={2} 
                     reverse={!props.isReverse ? true : false} 
                     image={{id: "main_window_screenshot_url" }}

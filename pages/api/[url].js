@@ -1,14 +1,14 @@
 const fs = require('fs');
 
-let acticles_folder = "./DB";
+let folder = "./DB";
 
 function getData(url) {
 
-    if(!fs.existsSync(acticles_folder + '/' + url + '.json')) {
+    if(!fs.existsSync(folder + '/' + url + '.json')) {
       return({ "status" : "error"});
     }
 
-    let data = fs.readFileSync(acticles_folder + '/' + url + '.json', { encoding: 'utf8', flag: 'r' });
+    let data = fs.readFileSync(folder + '/' + url + '.json', { encoding: 'utf8', flag: 'r' });
 
     data = JSON.parse(data);
 

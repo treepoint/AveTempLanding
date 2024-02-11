@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let folder = "./DB/articles";
+let folder = "./DB/blocks";
 
 function getData(url) {
 

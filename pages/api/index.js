@@ -1,21 +1,21 @@
 const fs = require('fs');
 
-let acticles_folder = "./DB";
+let folder = "./DB";
 
 function getData() {
-    const files = fs.readdirSync(acticles_folder);
+    const files = fs.readdirSync(folder);
 
-    let articles = []
+    let pages = []
 
     files.forEach(file => {
         if (file.includes('.json')) {
-            let data = fs.readFileSync(acticles_folder + '/' + file , { encoding: 'utf8', flag: 'r' });
+            let data = fs.readFileSync(folder + '/' + file , { encoding: 'utf8', flag: 'r' });
 
-            articles.push({url : file.replace('.json', ''), data: JSON.parse(data)})
+            pages.push({url : file.replace('.json', ''), data: JSON.parse(data)})
         }
     })
 
-    return(articles);
+    return(pages);
 }
 
 export async function getPagesList() {

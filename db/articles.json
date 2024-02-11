@@ -1,0 +1,26 @@
+{
+    "menu" : [
+        {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
+        {"name" : { "en" : "AveTemp", "ru" : "AveTemp"}, "link" : "/"},
+        {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "avewall"},
+        {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
+        ]
+    ,
+    "blocks_below" : [
+        {"name"  : "Articles"},
+        {"name"  : "HelpfulMaterials", "title" : { "en" : "Useful information", "ru" : "Полезные материалы"}}
+    ],
+    "ru" : 
+    {
+        "title" : "AveTemp — база знаний по нагреву процессоров",
+        "description" : "Статьи и полезные материалы о том, почему греется процессор, особенно в режиме турбо, как снизить его температуру, как понизить шум от компьютера и ноутбука",
+        "h1" : "Статьи"
+    },
+
+    "en" : 
+    {
+        "title" : "AveTemp — processor heat knowledge base",
+        "description" : "Articles and useful materials on why the processor is warm, especially in turbo mode, how to reduce its temperature, how to reduce the noise from the computer and laptop",
+        "h1" : "Articles"
+    }
+}

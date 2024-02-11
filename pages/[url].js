@@ -1,6 +1,8 @@
 import PageProcessor from "../cms/PageProcessor/PageProcessor"
 import { getPageByUrl } from "./api/[url]"
 import { getPagesList } from "./api/"
+import { getArticlesList } from "./api/articles"
+import { getBlocksList } from "./api/blocks"
 
 export const getStaticProps = async (context) => {
   let page;
@@ -8,10 +10,22 @@ export const getStaticProps = async (context) => {
   if (process.env.API_URL.includes('localhost')) { page = await getPageByUrl(context.params.url); }
   else { page = await fetch(process.env.API_URL + '/' + context.params.url).json(); } 
 
+  let articles;
+
+  if (process.env.API_URL.includes('localhost')) { articles = await getArticlesList(); }
+  else { articles = await fetch(process.env.API_URL + '/articles/').json(); } 
+
+  let blocks;
+
+  if (process.env.API_URL.includes('localhost')) { blocks = await getBlocksList(); }
+  else { blocks = await fetch(process.env.API_URL + '/blocks/').json(); } 
+
   if (page.status == "error") {
     return { 
       props: { 
-        page: page
+        page: page,
+        articles: articles,
+        blocks: blocks
       },
       redirect: {
         destination: context.locale + '/404',
@@ -23,6 +37,8 @@ export const getStaticProps = async (context) => {
   return { 
     props: { 
       page: page,
+      articles: articles,
+      blocks: blocks,
       description: page[context.locale].description,
       title: page[context.locale].title
     },
@@ -47,6 +63,8 @@ export default function RootPage(props) {
   return (
     <PageProcessor 
       page={props.page}
+      articles={props.articles}
+      blocks={blocks}
     />
   )
 }
