@@ -73,14 +73,34 @@ export default function Screen(props) {
         }
     }
 
+    function getWrapperStyles() {
+        let classes = [styles.wrapper];
+
+        if (props.half) {
+            classes.push(styles.half);
+        }
+
+        return classes.join(' ');
+    }
+
+    function getMainContentStyles() {
+        let classes = [styles.half];
+
+        if (props.centered) {
+            classes.push(styles.centered);
+        }
+
+        return classes.join(' ');
+    }
+
     return (
-        <div className={styles.wrapper} key={props.index}>
-            {getHeadline()}
+        <div className={getWrapperStyles()} key={props.index}>
             <div className={getColumnsStyles()}>
                 <div className={styles.screenshot_column}>
                     {getSecondColumnContent()}
                 </div>
-                <div className={styles.half}>
+                <div className={getMainContentStyles()}>
+                    {getHeadline()}
                     {props.additinonal_block_above}
                     {props.main_content}
                     {props.additional_block_below}

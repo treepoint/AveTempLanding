@@ -3,7 +3,6 @@ import FeedbackForm from "../../components/FeedbackForm/FeedbackForm.js"
 import Support from "../../components/Support/Support"
 import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Promo from "../../StaticBlocks/Promo/Promo"
-import Changelog from "../../StaticBlocks/Changelog/Changelog"
 import Articles from "../../StaticBlocks/Articles/Articles"
 import HelpfulMaterials from "../../StaticBlocks/HelpfulMaterials/HelpfulMaterials"
 import Page404 from "../../StaticBlocks/Page404/Page404"
@@ -46,10 +45,6 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
           result.push(<Promo/>)
         }
   
-        if (block.name == "Changelog") {
-          result.push(<Changelog locales = {[...locales]}/>)
-        }
-
         if (block.name == "Articles") {
           result.push(<Articles articles = {articles} h2={h2}/>)
         }
@@ -101,6 +96,7 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                     image_style={screen.image_style}
                     alt={screen.image_alt}
                     reverse={screen.reverse}
+                    centered={screen.centered}
                     columns={getColumnsCount(screen.image, screen.second_content_block)}
                     second_content={
                       getBlocks([{"name" : screen.second_content_block}], 
