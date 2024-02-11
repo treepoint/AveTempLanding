@@ -71,26 +71,50 @@ export const openInNewTab = (url) => {
 }
 
 export function parseContent(content) {
-    let ol_list = []
+    let ol_list_processed = false;
+    let ul_list_processed = false;
+
+    let list = [];
 
     return content.map((item, index) => {
+        //Ссылки
         if (item.includes('<Link')) {
           return (parsePwithLink(item, index));        
         }
 
+        //Нумерованный список
         if (item.includes('<ol')) {
+            ol_list_processed = true;
+            return;
+        }
+
+        if (item.includes('<li') && ol_list_processed) {
+            list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
             return;
         }
 
         if (item.includes('/ol>')) {
-            return <ol>{ol_list}</ol>
+            ol_list_processed = false;
+            return <ol>{list}</ol>
         }
 
-        if (item.includes('<li')) {
-            ol_list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
+        //Маркированный список
+        if (item.includes('<ul')) {
+            ul_list_processed = true;
             return;
         }
 
+        if (item.includes('<li') && ul_list_processed) {
+            list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
+            return;
+        }
+
+        if (item.includes('/ul>')) {
+            ul_list_processed = false;
+            return <ul>{list}</ul>
+        }
+
+        //Обычные параграфы
         return <p key={index}>{item}</p>
     })
 }

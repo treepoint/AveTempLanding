@@ -1,9 +1,7 @@
 import { useRouter } from "next/router"
-
-import FeatureScreen from "../../StaticBlocks/FeatureScreen/FeatureScreen"
 import FeedbackScreen from "../../StaticBlocks/FeedbackScreen/FeedbackScreen"
 import RoadMapScreen from "../../StaticBlocks/RoadMapScreen/RoadMapScreen"
-import Support from "../../StaticBlocks/Support/Support"
+import Support from "../../components/Support/Support"
 import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Promo from "../../StaticBlocks/Promo/Promo"
 import Changelog from "../../StaticBlocks/Changelog/Changelog"
@@ -27,10 +25,6 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
       blocks.forEach(block => {
         let h2 = null;
         h2 = getH2(block, locale);
-
-        if (block.name == "FeatureScreen") {
-          result.push(<FeatureScreen h2={h2}/>)
-        }
     
         if (block.name == "FeedbackScreen") {
           result.push(<FeedbackScreen h2={h2}/>)

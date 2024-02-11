@@ -1,0 +1,43 @@
+{   "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>Непрерывный мониторинг температуры и TDP процессора</li>",
+                        "<li>Сбор и отображение минимальных, максимальных, текущих температур и TDP</li>",
+                        "<li>Сбор и отображение средних показателей за 1, 5, 15, 60 минут и 24 часа</li>",
+                        "<li>Автоматическое изменение состояния производительности процессора, режима Turbo. Кроме того, все настраивается: порог загрузки процессора, целевые состояния. Так же управление процессором можно отключить вовсе</li>",
+                        "<li>Автозапуск при входе в систему</li>",
+                        "<li>Автоматическое изменение цвета шрифта в трее для темного и светлого режима Windows. Проверяется при перезагрузке AveTemp и каждые 5 минут</li>",
+                        "<li>Низкое использование процессора. Для Ryzen 4600H это < 1% максимум, большую часть времени - 0,01%</li>",
+                        "</ul>",
+                        "Полный список изменений и функциональности от версии к версии есть здесь — <Link href='/changelog'>список изменений</Link>."
+                    ],
+                   "reverse" : true,
+                   "second_content_block" : "Support"
+                }
+            ]
+        },
+    "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>Continuous monitoring temperature and TDP of CPU</li>",
+                        "<li>Collecting and showing min, max and current temps and TDP states</li>",
+                        "<li>Collecting and showing average scores for 1, 5, 15, 60 minutes and 24 hours</li>",
+                        "<li>Automatic adjust CPU performance state and CPU Turbo mode. Also, you can setup preferred CPU load threshold, Turbo modes and CPU states or disable it at all</li>",
+                        "<li>Autostart on user logon</li>",
+                        "<li>Automatic changing the color of tray font for dark and light Windows mode. It's checking on AveTemp restart and every 5 minutes</li>",
+                        "<li>Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%</li>",
+                        "</ul>",
+                        "A complete list of changes and functionality from version to version can be found here — <Link href='/changelog'>list of changes</Link>."
+                    ],
+                    "reverse" : true,
+                    "second_content_block" : "Support"
+                }
+            ]
+        }
+}
