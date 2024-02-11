@@ -100,15 +100,23 @@ export function parsePwithLink(p, index) {
   
     let prelink = p.split("href='")[1];
     let link_href = prelink.split("'>")[0];
-  
+
     let prelink_text = prelink.split("'>")[1];
     let link_text = prelink_text.split('</Link>')[0];
   
     let after_link = prelink_text.split('</Link>')[1];
-  
-    return (
-      <p key={index}>
-        {before_link}<Link href={getMainAddress(link_href)}>{link_text}</Link>{after_link}
-      </p>
-      );      
+
+    if (link_href.includes("https://")) {
+        return (
+            <p key={index}>
+              {before_link}<a href={link_href}>{link_text}</a>{after_link}
+            </p>
+          ); 
+    } else {
+        return (
+            <p key={index}>
+              {before_link}<Link href={getMainAddress(link_href)}>{link_text}</Link>{after_link}
+            </p>
+          ); 
+    }
   }

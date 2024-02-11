@@ -40,16 +40,6 @@
   "feature_cl" : "A complete list of changes and functionality from version to version can be found here — ",
   "feature_cl_link" : "list of changes",
 
-  "HTU_text_1": "First, ", 
-  "HTU_text_2": "download",
-  "HTU_text_3": " AveTemp. After that, run it and the main window of the program will open. To configure, click on the gear icon in the lower left corner.",
-  "HTU_text_4": "There are basic settings such as language, autorun, minimize to tray and so on. If you're not interested in controlling CPU modes, that's enough.",
-  "HTU_text_5": "To configure the CPU operation modes, activate the «Automatically change processor state» checkbox. Next, set the load threshold. For example, for a 6-core Ryzen, the optimal value is 70%.",
-  "HTU_text_6": "This will mean that as long as the processor is loaded at less than 70% of its current, allowed frequency, it will run at a reduced frequency.",
-  "HTU_text_7": "Next, set the maximum target condition for the idle state. It is also counted from the base frequency. For Ryzen 4600H it is 3000 MHz. For example, 50% will mean that the maximum frequency the processor will use is 1500 MHz.",
-  "HTU_text_8": "And, finally, set the condition under load. This is the state the processor will switch to when the load threshold is exceeded.",
-  "HTU_text_9": "Usually it is enough, but on some laptops this kind of frequency control is disabled. Then you can activate the checkbox «Explicitly set the state of turbo mode» and select the desired modes, similar to the percentages above.",
-
   "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
 
   "releases_location_text": "All releases are available on ",
@@ -127,12 +117,6 @@
   "1_2_2_tested_on" : "Tested on Ryzen 4600h, 4800h, Intel Pentium 7505 Gold, Intel Core i7-1165G7.",
 
   "1_0_1_text": "First release with basic monitoring functions.",
-
-  "main_window_screenshot_url" : "/images/screenshots/en/main_window.png",
-  "settings_window_screenshot_url" : "/images/screenshots/en/settings.png",
-
-  "main_window_screenshot_alt" : "AveTemp main window",
-  "settings_window_screenshot_alt" : "AveTemp settings window",
 
   "feedback_headline" : "How to get in touch?",
   "feedback_text_1" : "I would be glad to get any feedback: about bugs, suggestions for improvement, help in development and testing data.",

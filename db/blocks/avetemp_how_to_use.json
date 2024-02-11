@@ -1,0 +1,42 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "First, <Link href='https://github.com/treepoint/AveTemp/releases/download/1.4.7/AveTemp.exe'>download</Link> AveTemp. After that, run it and the main window of the program will open. To configure, click on the gear icon in the lower left corner.",
+                        "There are basic settings such as language, autorun, minimize to tray and so on. If you're not interested in controlling CPU modes, that's enough.",
+                        "To configure the CPU operation modes, activate the «Automatically change processor state» checkbox. Next, set the load threshold. For example, for a 6-core Ryzen, the optimal value is 70%.",
+                        "This will mean that as long as the processor is loaded at less than 70% of its current, allowed frequency, it will run at a reduced frequency.",
+                        "Next, set the maximum target condition for the idle state. It is also counted from the base frequency. For Ryzen 4600H it is 3000 MHz. For example, 50% will mean that the maximum frequency the processor will use is 1500 MHz.",
+                        "And, finally, set the condition under load. This is the state the processor will switch to when the load threshold is exceeded.",
+                        "Usually it is enough, but on some laptops this kind of frequency control is disabled. Then you can activate the checkbox «Explicitly set the state of turbo mode» and select the desired modes, similar to the percentages above."
+                    ],
+                   "image" : "/images/screenshots/ru/settings.png",
+                   "image_style" : {"maxHeight": "759px", "height": "759px", "maxWidth": "100%", "width": "100%"},
+                   "image_alt" : "Окно настроек AveTemp",
+                   "reverse" : false
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Сначала <Link href='https://github.com/treepoint/AveTemp/releases/download/1.4.7/AveTemp.exe'>скачайте</Link> AveTemp. После этого запустите и откроется основное окно программы. Для настройки, нажмите на иконку шестеренки в левом нижнем углу.",
+                        "Здесь есть основные настроки, такие как язык, автозапуск, сворачивание в трей и прочее. Если вас не интересует управление режимами работы процессора то этого хватит.",
+                        "Для настройки режимов работы процессора, активируйте чекбокс «Автоматические изменять состояние процессора». Далее, установите порог нагрузки. Например, для 6-ти ядерного Ryzen оптимальное значение — 70%.",
+                        "Это будет значить, что пока процессор загружен менее чем на 70% относительно его текущей, разрешенной частоты, он будет работать на пониженных частотах.",
+                        "Далее, задайте максимальную целевую частоту для состояния простоя. Она так же считается от базовой частоты. Для Ryzen 4600H это 3000 МГц. Например, 50% будет значить, что максимальная частота которую процессор будет использовать — 1500 МГц.",
+                        "И, в конце, задайте состояние под нагрузкой. Это то состояние, в которое процессор будет переключен при превышении порога нагрузки.",
+                        "Как правило этого достаточно, но на некоторых ноутбуках подобное управление частотами отключено. Тогда можно активировать чекбокс «Явно задавать состояние турбо режима» и выбрать нужные режимы, аналогично процентам выше."
+                    ]
+                    ,
+                    "image" : "/images/screenshots/en/settings.png",
+                    "image_style" : {"maxHeight": "759px", "height": "759px", "maxWidth": "100%", "width": "100%"},
+                    "image_alt" : "AveTemp settings window",
+                    "reverse" : false
+                }
+            ]
+        }
+}
