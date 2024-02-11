@@ -10,7 +10,7 @@ import HelpfulMaterials from "../../StaticBlocks/HelpfulMaterials/HelpfulMateria
 import Page404 from "../../StaticBlocks/Page404/Page404"
 
 import Screen from "../../elements/Screen/Screen"
-import { parseContent} from "../../support/support.js"
+import { parseContent } from "../contentParser.js"
 
 function getH2(block, locale) {  
   if (block.title) {

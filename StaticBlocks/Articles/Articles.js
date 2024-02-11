@@ -1,6 +1,6 @@
 import ArticlePreview from "../../components/ArticlePreview/ArticlePreview.js"
 import { useRouter } from "next/router"
-import { parseContent } from "../../support/support.js"
+import { parseContent } from "../../CMS/contentParser.js"
 
 import styles from "./Articles.module.scss"
 
