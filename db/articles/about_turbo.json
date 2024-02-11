@@ -9,7 +9,7 @@
         ]
     ,
     "blocks_below" : [
-        {"name"  : "WhyScreen", "title" : { "en" : "How to avoid it", "ru" : "Как этого избежать" }},
+        {"name"  : "avetemp_why_screen", "title" : { "en" : "How to avoid it", "ru" : "Как этого избежать" }},
         {"name"  : "DownloadButton"}
     ],
     "ru" : 

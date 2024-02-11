@@ -1,0 +1,32 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Now manufacturers are putting processors in laptops with excessive performance: 4, 6 or more high-performance cores with high frequency.",
+                        "This is good for heavy workloads such as games or video rendering, increased responsiveness of the laptop. However, it also causes the processor to heat up and turn on the cooler for any reason, even when opening a browser.",
+                        "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. For really time-consuming tasks, however, you have to manually raise them back up as well. This is inconvenient.",
+                        "AveTemp automates this routine and increases productivity when you need it."
+                    ],
+                   "reverse" : true,
+                   "second_content_block" : "Promo"
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Сейчас производители ставят в ноутбуки процессоры с избыточной производительностью: 4, 6 и больше производительных ядер с высокой частотой.",
+                        "Это хорошо для тяжелых нагрузок, таких как игры или рендеринг видео, повышенной отзывчивости ноутбука. Однако так же приводит к нагреву процессора и включению кулера по любому поводу, даже при открытии браузера.",
+                        "Перегрева и шума можно избежать, если вручную снизить рабочие частоты процессора. Однако для действительно трудоемких задач нужно так же вручную повышать их обратно. Это неудобно.",
+                        "AveTemp автоматизирует эту рутину и повышает производительность тогда, когда это нужно."
+                    ]
+                    ,
+                    "reverse" : true,
+                    "second_content_block" : "Promo"
+                }
+            ]
+        }
+}

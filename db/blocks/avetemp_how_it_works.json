@@ -17,7 +17,7 @@
                    "image_style" : {"maxHeight": "424px", "height": "424px", "maxWidth": "100%", "width": "100%"},
                    "image_alt" : "Главное окно AveTemp",
                    "reverse" : true,
-                   "additional_block" : "DownloadButton"
+                   "below_additinonal_block" : "DownloadButton"
                 }
             ]
         },
@@ -41,7 +41,7 @@
                     "image_style" : {"maxHeight": "424px", "height": "424px", "maxWidth": "100%", "width": "100%"},
                     "image_alt" : "AveTemp main window",
                     "reverse" : true,
-                    "additional_block" : "DownloadButton"
+                    "below_additinonal_block" : "DownloadButton"
                 }
             ]
         }

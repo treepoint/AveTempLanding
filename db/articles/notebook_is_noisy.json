@@ -9,7 +9,7 @@
         ]
     ,
     "blocks_below" : [
-        {"name"  : "WhyScreen"}
+        {"name"  : "avetemp_why_screen"}
     ],
     "en" : 
     {

@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 
-import WhyScreen from "../../StaticBlocks/WhyScreen/WhyScreen"
 import FeatureScreen from "../../StaticBlocks/FeatureScreen/FeatureScreen"
 import FeedbackScreen from "../../StaticBlocks/FeedbackScreen/FeedbackScreen"
 import RoadMapScreen from "../../StaticBlocks/RoadMapScreen/RoadMapScreen"
@@ -39,10 +38,6 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
     
         if (block.name == "Support") {
           result.push(<Support h2={h2}/>)
-        }
-    
-        if (block.name == "WhyScreen") {
-          result.push(<WhyScreen h2={h2}/>)
         }
     
         if (block.name == "RoadMapScreen") {
@@ -97,8 +92,15 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
                     alt={screen.image_alt}
                     reverse={screen.reverse}
                     columns={2}
+                    second_content={
+                      getBlocks([{"name" : screen.second_content_block}], 
+                      locale, 
+                      locales, 
+                      articles, 
+                      cms_blocks)
+                    }
                     below_additinonal_block={
-                      getBlocks([{"name" : screen.additional_block}], 
+                      getBlocks([{"name" : screen.below_additinonal_block}], 
                       locale, 
                       locales, 
                       articles, 

@@ -4,6 +4,13 @@
   "discussions_headline": "Discussions",
   "support_headline": "Support",
 
+  "main_window_screenshot_url" : "/images/screenshots/en/main_window.png",
+  "settings_window_screenshot_url" : "/images/screenshots/en/settings.png",
+
+  "main_window_screenshot_alt" : "AveTemp main window",
+  "settings_window_screenshot_alt" : "AveTemp settings window",
+
+
   "update_message_text": "New version 1.4.7 is available!",
 
   "for_what": "How to reduce the temperature with AveTemp",
@@ -23,11 +30,6 @@
   "seconds..." : " seconds...",
   "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
   "your_link" : "Your link: ",
-
-  "why_text_1": "Now manufacturers are putting processors in laptops with excessive performance: 4, 6 or more high-performance cores with high frequency.", 
-  "why_text_2": "This is good for heavy workloads such as games or video rendering, increased responsiveness of the laptop. However, it also causes the processor to heat up and turn on the cooler for any reason, even when opening a browser.",
-  "why_text_3": "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. For really time-consuming tasks, however, you have to manually raise them back up as well. This is inconvenient.",
-  "why_text_4": "AveTemp automates this routine and increases productivity when you need it.",
 
   "feature_continuous": "Continuous monitoring temperature and TDP of CPU",
   "feature_collecting_states": "Collecting and showing min, max and current temps and TDP states",
