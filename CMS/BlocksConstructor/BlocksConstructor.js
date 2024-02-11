@@ -2,7 +2,6 @@ import { useRouter } from "next/router"
 
 import WhyScreen from "../../StaticBlocks/WhyScreen/WhyScreen"
 import FeatureScreen from "../../StaticBlocks/FeatureScreen/FeatureScreen"
-import HowToUseScreen from "../../StaticBlocks/HowToUseScreen/HowToUseScreen"
 import FeedbackScreen from "../../StaticBlocks/FeedbackScreen/FeedbackScreen"
 import RoadMapScreen from "../../StaticBlocks/RoadMapScreen/RoadMapScreen"
 import Support from "../../StaticBlocks/Support/Support"
@@ -36,10 +35,6 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
     
         if (block.name == "FeedbackScreen") {
           result.push(<FeedbackScreen h2={h2}/>)
-        }
-    
-        if (block.name == "HowToUseScreen") {
-          result.push(<HowToUseScreen h2={h2}/>)
         }
     
         if (block.name == "Support") {
@@ -78,29 +73,37 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
           result.push(<Page404/>)
         }
 
-        if (block.name == "avetemp_how_it_works") {
-          result.push(parseCMSblock(cms_blocks, "avetemp_how_it_works", h2, locale));
-        }
+        result.push(parseCMSblock(cms_blocks, block.name, h2, articles));
       })
     }
   
     return result;
   }
 
-function parseCMSblock(cms_blocks, name, h2, locale) {
+function parseCMSblock(cms_blocks, name, h2, articles) {
+  const { locale, locales } = useRouter();
+
   for (let block of cms_blocks) {
     if (block.url == name) {
       for (let screen of block.data[locale].screens) {
         return <>
-                  <h2>{h2}</h2>
                   <Screen 
+                    h2={h2}
                     name={name} 
                     main_content={parseContent(screen.content)}
                     image={screen.image}
                     image_priority={100}
+                    image_style={screen.image_style}
                     alt={screen.image_alt}
                     reverse={screen.reverse}
-                    columns={2} 
+                    columns={2}
+                    below_additinonal_block={
+                      getBlocks([{"name" : screen.additional_block}], 
+                      locale, 
+                      locales, 
+                      articles, 
+                      cms_blocks)
+                    }
                   />
                </>
       }
