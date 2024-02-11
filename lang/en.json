@@ -24,18 +24,6 @@
   "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
   "your_link" : "Your link: ",
 
-  "HIW_text_1": "AveTemp is a free program that uses the ", 
-  "HIW_text_2": "With library help, it:",
-  "HIW_ol_1": "Collects CPU temperature and TDP data.",
-  "HIW_ol_2": "It looks to see if there is an increased load or if the processor is idle.",
-  "HIW_ol_3": "If there is a load, it increases the CPU frequencies. If there is no load, it decreases it.",
-  "HIW_text_3": "Therefore, at idle time the temperature and noise from cooling the computer is lower, but in the presence of heavy tasks processor starts working at full power.",
-  "HIW_text_4": "Technically, the program only changes the settings of the Windows power plan depending on the load. No system calls other than getting data from the registry about what theme is currently installed in the system are used.",
-  "HIW_text_5": "The source code is available on ",
-  "HIW_text_6": "Github",
-  "HIW_text_7": ", so you can build the program yourself.",
-
-
   "why_text_1": "Now manufacturers are putting processors in laptops with excessive performance: 4, 6 or more high-performance cores with high frequency.", 
   "why_text_2": "This is good for heavy workloads such as games or video rendering, increased responsiveness of the laptop. However, it also causes the processor to heat up and turn on the cooler for any reason, even when opening a browser.",
   "why_text_3": "Overheating and noise can be avoided by manually lowering the processor's operating frequencies. For really time-consuming tasks, however, you have to manually raise them back up as well. This is inconvenient.",

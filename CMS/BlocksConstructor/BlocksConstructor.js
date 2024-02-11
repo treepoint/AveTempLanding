@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 
-import HowItWorksScreen from "../../StaticBlocks/HowItWorksScreen/HowItWorksScreen"
 import WhyScreen from "../../StaticBlocks/WhyScreen/WhyScreen"
 import FeatureScreen from "../../StaticBlocks/FeatureScreen/FeatureScreen"
 import HowToUseScreen from "../../StaticBlocks/HowToUseScreen/HowToUseScreen"
@@ -32,31 +31,27 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
         h2 = getH2(block, locale);
 
         if (block.name == "FeatureScreen") {
-          result.push(<FeatureScreen h2/>)
+          result.push(<FeatureScreen h2={h2}/>)
         }
     
         if (block.name == "FeedbackScreen") {
-          result.push(<FeedbackScreen h2/>)
-        }
-    
-        if (block.name == "HowItWorksScreen") {
-          result.push(<HowItWorksScreen h2/>)
+          result.push(<FeedbackScreen h2={h2}/>)
         }
     
         if (block.name == "HowToUseScreen") {
-          result.push(<HowToUseScreen h2/>)
+          result.push(<HowToUseScreen h2={h2}/>)
         }
     
         if (block.name == "Support") {
-          result.push(<Support h2/>)
+          result.push(<Support h2={h2}/>)
         }
     
         if (block.name == "WhyScreen") {
-          result.push(<WhyScreen h2/>)
+          result.push(<WhyScreen h2={h2}/>)
         }
     
         if (block.name == "RoadMapScreen") {
-          result.push(<RoadMapScreen h2/>)
+          result.push(<RoadMapScreen h2={h2}/>)
         }
     
         if (block.name == "DownloadButton") {
@@ -72,11 +67,11 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
         }
 
         if (block.name == "Articles") {
-          result.push(<Articles articles = {articles} h2/>)
+          result.push(<Articles articles = {articles} h2={h2}/>)
         }
 
         if (block.name == "HelpfulMaterials") {
-          result.push(<HelpfulMaterials h2/>)
+          result.push(<HelpfulMaterials h2={h2}/>)
         }
 
         if (block.name == "Page404") {

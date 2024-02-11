@@ -64,7 +64,7 @@ export default function RootPage(props) {
     <PageProcessor 
       page={props.page}
       articles={props.articles}
-      blocks={blocks}
+      blocks={props.blocks}
     />
   )
 }

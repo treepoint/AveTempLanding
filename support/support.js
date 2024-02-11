@@ -87,7 +87,6 @@ export function parseContent(content) {
         }
 
         if (item.includes('<li')) {
-            console.log(ol_list);
             ol_list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
             return;
         }
