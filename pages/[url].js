@@ -1,4 +1,4 @@
-import PageProcessor from "../cms/PageProcessor/PageProcessor"
+import PageProcessor from "../CMS/PageProcessor/PageProcessor"
 import { getPageByUrl } from "./api/[url]"
 import { getPagesList } from "./api/"
 import { getArticlesList } from "./api/articles"
