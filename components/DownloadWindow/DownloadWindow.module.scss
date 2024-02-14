@@ -1,3 +1,44 @@
 .ad {
     margin-top: 8px;
 }
+
+.catalog_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+%p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.p {
+    @extend %p;
+}
+
+.small_p {
+    @extend %p;
+    font-size: 12px;
+    color: #222222;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
