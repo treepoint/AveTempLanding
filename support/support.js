@@ -1,7 +1,13 @@
 import { useRouter } from "next/router"
 
-export function getMainAddress(url) {
-    const { locale } = useRouter();
+export function getMainAddress(url, forced_locale) {
+    let locale;
+
+    if (forced_locale) {
+        locale = forced_locale;
+    } else {
+        locale = useRouter();
+    }
 
     let new_url = url;
 

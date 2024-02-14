@@ -10,14 +10,19 @@ import YandexAD from "../../elements/YandexAD/YandexAD"
 import Logo from "../../elements/Logo/Logo"
 import Menu from "../Menu/Menu"
 import { getCanonicalURL, getAlternateURL } from "../../support/support"
+
+import { useSelector } from 'react-redux'
+import { selectMenu } from '../../store/features/menuSlice'
+
 import { useIntl } from "react-intl"
 import styles from "./Header.module.scss"
 
 import "../../_globals.js"
 
 function Header(props) {
-
     const intl = useIntl();
+
+    let menu = useSelector(selectMenu);
 
     let title;
     let description;
@@ -58,11 +63,11 @@ function Header(props) {
                 <div className={styles.wrapper}>
                     <div className={styles.inner}>
                         <Logo/> 
-                        <Menu locale={props.locale}/>
+                        <Menu locale={props.locale} menu={menu}/>
                         <Spacer/>
                         <LanguageSelector locales={props.locales}/>
                         <DownloadButton isPrimary/>
-                        <Menu isMobile locale={props.locale}/>
+                        <Menu isMobile locale={props.locale} menu={menu}/>
                     </div>
                 </div>
             </>
