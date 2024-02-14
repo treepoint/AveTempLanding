@@ -25,17 +25,17 @@ export function parseContent(content) {
         }
 
         if (item.includes('<li') && ol_list_processed) {
-            list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
+            list.push(<li key={index}>{item.replace("<li>", "").replace("</li>", "")}</li>);
             return;
         }
 
         if (item.includes('/ol>')) {
             ol_list_processed = false;
-            return <ol>{list}</ol>
+            return <ol key={index}>{list}</ol>;
         }
 
         if (item.includes('<hint') && ol_list_processed) {
-            list.push(<div className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>)
+            list.push(<div key={index} className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>);
             return;
         }
 
@@ -46,22 +46,22 @@ export function parseContent(content) {
         }
 
         if (item.includes('<li') && ul_list_processed) {
-            list.push(<li>{item.replace("<li>", "").replace("</li>", "")}</li>)
+            list.push(<li key={index}>{item.replace("<li>", "").replace("</li>", "")}</li>);
             return;
         }
 
         if (item.includes('/ul>')) {
             ul_list_processed = false;
-            return <ul>{list}</ul>
+            return <ul key={index}>{list}</ul>
         }
 
         if (item.includes('<hint') && ul_list_processed) {
-            list.push(<div className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>)
+            list.push(<div key={index} className="hint">{item.replace("<hint>", "").replace("</hint>", "")}</div>);
             return;
         }
 
         //Обычные параграфы
-        return <p key={index}>{item}</p>
+        return <p key={index}>{item}</p>;
     })
 }
 
@@ -70,7 +70,7 @@ function parsePwithDownloadLink(p, index) {
     let text = p.split('<DownloadLink>')[1].split('<DownloadLink/>')[0];
     let after_link = p.split('<DownloadLink/>')[1];
 
-    return <p>{before_link}<DownloadLink text={text}/>{after_link}</p>
+    return <p key={index}>{before_link}<DownloadLink text={text}/>{after_link}</p>
   }
 
 function parsePwithLink(p, index) {

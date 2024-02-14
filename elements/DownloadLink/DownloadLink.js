@@ -17,6 +17,6 @@ export default function DownloadLink(props) {
     }
 
     return (
-            <a className={styles.download_link} isPrimary={props.isPrimary} onClick={openWindow}>{props.text ? props.text : download_button}</a>
+            <a className={styles.download_link} onClick={openWindow}>{props.text ? props.text : download_button}</a>
     ); 
 }

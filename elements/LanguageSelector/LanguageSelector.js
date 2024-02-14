@@ -9,7 +9,7 @@ function LanguageSelector(props) {
     const asPath = useRouter();
 
     function onChange(event) {
-        router.push("/"+asPath.asPath, undefined, { locale: event.target.value });
+        router.push(asPath.asPath, undefined, { locale: event.target.value });
     }
     
     function getLocationOptions() {
