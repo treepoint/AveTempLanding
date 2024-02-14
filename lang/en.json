@@ -27,10 +27,11 @@
 
   "read_more" : "Read more...",
 
-  "link_will_be_available" : "The link will be available via ",
+  "avetemp_download_description" : "To control the processor.",
+  "avewall_download_description" : "To manage your desktop wallpaper.",
+  "link_will_be_available" : "Links will be available via ",
   "seconds..." : " seconds...",
   "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
-  "your_link" : "Your link: ",
 
   "support_text": "I'd be happy for the support. Not necessary, but motivating.",
 
