@@ -1,4 +1,4 @@
-import PageProcessor from "../../cms/PageProcessor/PageProcessor"
+import PageProcessor from "../../CMS/PageProcessor/PageProcessor"
 import { getPageByUrl } from "./../api/[url]"
 
 export const getStaticProps = async (context) => {
