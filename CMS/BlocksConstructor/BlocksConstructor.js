@@ -17,32 +17,36 @@ function getH2(block, locale) {
   }
 }
 
-function getBlocks(blocks, locale, locales, articles, cms_blocks) {
+function getBlocks(blocks, locale, articles, cms_blocks) {
     let result = [];
+
+    let index = 0;
 
     if (blocks) {
       blocks.forEach(block => {
         let h2 = null;
         h2 = getH2(block, locale);
 
-        if (block.name == "SocialIcons") {
-          result.push(<SocialIcons/>)
-        }
+        index += 1;
 
-        if (block.name == "FeedbackForm") {
-          result.push(<FeedbackForm/>)
+        if (block.name == "SocialIcons") {
+          result.push(<SocialIcons key={index}/>)
         }
     
         if (block.name == "Support") {
-          result.push(<Support h2={h2}/>)
+          result.push(<Support key={index} h2={h2}/>)
         }
     
         if (block.name == "DownloadButton") {
-          result.push(<DownloadButton isCentered/>)
+          result.push(<DownloadButton key={index} isCentered/>)
         }
     
         if (block.name == "Promo") {
-          result.push(<Promo/>)
+          result.push(<Promo key={index}/>)
+        }
+
+        if (block.name == "FeedbackForm") {
+          result.push(<FeedbackForm key={index}/>)
         }
   
         if (block.name == "Articles") {
@@ -57,7 +61,7 @@ function getBlocks(blocks, locale, locales, articles, cms_blocks) {
           result.push(<Page404/>)
         }
 
-        block = parseCMSblock(cms_blocks, block.name, h2, articles);
+        block = parseCMSblock(cms_blocks, block.name, h2, articles, index);
 
         if (block) {
           result.push(block);
@@ -80,8 +84,12 @@ function getColumnsCount(image, second_content) {
   }
 }
 
-function parseCMSblock(cms_blocks, name, h2, articles) {
-  const { locale, locales } = useRouter();
+function parseCMSblock(cms_blocks, name, h2, articles, index=0) {
+  const { locale } = useRouter();
+
+  if (!cms_blocks) {
+    return;
+  }
 
   let result = [];
   let two_columns = false;
@@ -98,56 +106,54 @@ function parseCMSblock(cms_blocks, name, h2, articles) {
         screen_count += 1;
 
         result.push(<Screen 
-                    h2={screen_count == 1 ? h2 : null}
-                    name={name} 
-                    main_content={parseContent(screen.content)}
-                    image={screen.image}
-                    image_priority={100}
-                    image_style={screen.image_style}
-                    alt={screen.image_alt}
-                    reverse={screen.reverse}
-                    centered={screen.centered}
-                    half={two_columns}
-                    columns={getColumnsCount(screen.image, screen.second_content_block)}
-                    second_content={
-                      getBlocks([{"name" : screen.second_content_block}], 
-                      locale, 
-                      locales, 
-                      articles, 
-                      cms_blocks)
-                    }
-                    additional_block_below={
-                      getBlocks([{"name" : screen.additional_block_below}], 
-                      locale, 
-                      locales, 
-                      articles, 
-                      cms_blocks)
-                    }
-                    additinonal_block_above={
-                      getBlocks([{"name" : screen.additinonal_block_above}], 
-                      locale, 
-                      locales, 
-                      articles, 
-                      cms_blocks)
-                    }
+                      key={screen_count}
+                      h2={screen_count == 1 ? h2 : null}
+                      name={name} 
+                      main_content={parseContent(screen.content)}
+                      image={screen.image}
+                      image_priority={100}
+                      image_style={screen.image_style}
+                      alt={screen.image_alt}
+                      reverse={screen.reverse}
+                      centered={screen.centered}
+                      half={two_columns}
+                      columns={getColumnsCount(screen.image, screen.second_content_block)}
+                      second_content={
+                        getBlocks([{"name" : screen.second_content_block}], 
+                        locale, 
+                        articles, 
+                        cms_blocks)
+                      }
+                      additional_block_below={
+                        getBlocks([{"name" : screen.additional_block_below}], 
+                        locale, 
+                        articles, 
+                        cms_blocks)
+                      }
+                      additinonal_block_above={
+                        getBlocks([{"name" : screen.additinonal_block_above}], 
+                        locale, 
+                        articles, 
+                        cms_blocks)
+                      }
                   />);
       }
     }  
   }
 
   if (two_columns) {
-    return <div className="two_columns">{result}</div>
+    return <div key={index} className="two_columns">{result}</div>
   }
 
   return result;
 }
 
 export default function BlocksConstructor(props) {
-    const { locale, locales } = useRouter();
+    const { locale } = useRouter();
 
     return (
         <>
-            {getBlocks(props.blocks, locale, locales, props.articles, props.cms_blocks)}
+            {getBlocks(props.blocks, locale, props.articles, props.cms_blocks)}
         </>
     )
 }

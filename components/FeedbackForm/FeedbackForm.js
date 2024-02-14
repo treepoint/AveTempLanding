@@ -6,7 +6,7 @@ import React, { useState } from "react"
 import { useIntl } from "react-intl"
 
 export default function FeedbackForm() {
-  const [formSuccess, setFormSuccess] = useState(false)
+  const [formSuccess, setFormSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
     email: '',
@@ -72,7 +72,7 @@ export default function FeedbackForm() {
           <form 
               className={styles.wrapper} 
               method='POST'
-              action={process.env.EMAIL_URL+'/email'}
+              action={process.env.EMAIL_URL + '/email'}
               onSubmit={submitForm}
           >
               <Input 

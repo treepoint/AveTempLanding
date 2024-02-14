@@ -5,8 +5,10 @@ import { getMainAddress } from "../../support/support"
 import styles from './Logo.module.scss'
 
 export default function Logo() {
+    let link = getMainAddress('/');
+
     return <div className={styles.logo_block}>
-                <Link href={getMainAddress('')}>
+                <Link href={link}>
                     <Image
                         src="/images/logo.png"
                         width={36}

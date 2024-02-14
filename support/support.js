@@ -1,12 +1,13 @@
 import { useRouter } from "next/router"
 
 export function getMainAddress(url, forced_locale) {
-    let locale;
+    let current_locale;
 
     if (forced_locale) {
-        locale = forced_locale;
+        current_locale = forced_locale;
     } else {
-        locale = useRouter();
+        let { locale } = useRouter();
+        current_locale = locale;
     }
 
     let new_url = url;
@@ -16,14 +17,14 @@ export function getMainAddress(url, forced_locale) {
     }
 
     if (new_url == '') {
-        if (locale == 'ru') { 
-            return '/'
+        if (current_locale == 'ru') { 
+            return '/';
         } else {
-            return '/'+locale
+            return '/' + current_locale;
         }
     }
 
-    if (locale == 'ru') {
+    if (current_locale == 'ru') {
         if (new_url.includes("#")) {
             return "/" + new_url;
         }
@@ -34,7 +35,7 @@ export function getMainAddress(url, forced_locale) {
             return "/" + new_url;
         }
     
-        return "/" + locale + "/" + new_url;
+        return "/" + current_locale + "/" + new_url;
     }
 }
 
