@@ -6,18 +6,17 @@ import Blur from '../../elements/Blur/Blur'
 import { getMainAddress } from '../../support/support'
 import { useState } from 'react'
 
-import { useSelector } from 'react-redux'
-import { selectMenu } from '../../store/features/menuSlice'
-
 export default function Menu(props) {
     const [isActive, setIsActive] = useState(false);
 
-    let menu = useSelector(selectMenu);
+    function showMenu() {
+        setIsActive(!isActive);
+    }
 
     function getItems() {
         let menu_array = [];
 
-        for (const [key, value] of Object.entries(menu)) {
+        for (let [key, value] of Object.entries(props.menu)) {
             menu_array.push({name: value.name[props.locale], link: value.link})
         }
 
@@ -25,15 +24,11 @@ export default function Menu(props) {
             return <Link 
                         key={index} 
                         className={styles.item} 
-                        href={getMainAddress(item.link)} 
+                        href={getMainAddress(item.link, props.locale)} 
                         onClick={showMenu}>
                     {item.name}
                     </Link>
         })
-    }
-
-    function showMenu() {
-        setIsActive(!isActive);
     }
 
     return (
