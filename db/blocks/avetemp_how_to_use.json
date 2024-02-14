@@ -3,7 +3,7 @@
             "screens" : [
                 { "content" : 
                     [
-                        "First, <Link href='https://github.com/treepoint/AveTemp/releases/download/1.4.7/AveTemp.exe'>download</Link> AveTemp. After that, run it and the main window of the program will open. To configure, click on the gear icon in the lower left corner.",
+                        "First, <DownloadLink>download<DownloadLink/> AveTemp. After that, run it and the main window of the program will open. To configure, click on the gear icon in the lower left corner.",
                         "There are basic settings such as language, autorun, minimize to tray and so on. If you're not interested in controlling CPU modes, that's enough.",
                         "To configure the CPU operation modes, activate the «Automatically change processor state» checkbox. Next, set the load threshold. For example, for a 6-core Ryzen, the optimal value is 70%.",
                         "This will mean that as long as the processor is loaded at less than 70% of its current, allowed frequency, it will run at a reduced frequency.",
@@ -13,7 +13,7 @@
                     ],
                    "image" : "/images/screenshots/ru/settings.png",
                    "image_style" : {"maxHeight": "759px", "height": "759px", "maxWidth": "100%", "width": "100%"},
-                   "image_alt" : "Окно настроек AveTemp",
+                   "image_alt" : "AveTemp settings window",
                    "reverse" : false
                 }
             ]
@@ -23,8 +23,8 @@
             "screens" : [
                 { "content" : 
                     [
-                        "Сначала <Link href='https://github.com/treepoint/AveTemp/releases/download/1.4.7/AveTemp.exe'>скачайте</Link> AveTemp. После этого запустите и откроется основное окно программы. Для настройки, нажмите на иконку шестеренки в левом нижнем углу.",
-                        "Здесь есть основные настроки, такие как язык, автозапуск, сворачивание в трей и прочее. Если вас не интересует управление режимами работы процессора то этого хватит.",
+                        "Сначала <DownloadLink>скачайте<DownloadLink/> AveTemp. После этого запустите и откроется основное окно программы. Для настройки, нажмите на иконку шестеренки в левом нижнем углу.",
+                        "Здесь есть основные настройки, такие как язык, автозапуск, сворачивание в трей и прочее. Если вас не интересует управление режимами работы процессора то этого хватит.",
                         "Для настройки режимов работы процессора, активируйте чекбокс «Автоматические изменять состояние процессора». Далее, установите порог нагрузки. Например, для 6-ти ядерного Ryzen оптимальное значение — 70%.",
                         "Это будет значить, что пока процессор загружен менее чем на 70% относительно его текущей, разрешенной частоты, он будет работать на пониженных частотах.",
                         "Далее, задайте максимальную целевую частоту для состояния простоя. Она так же считается от базовой частоты. Для Ryzen 4600H это 3000 МГц. Например, 50% будет значить, что максимальная частота которую процессор будет использовать — 1500 МГц.",
@@ -34,7 +34,7 @@
                     ,
                     "image" : "/images/screenshots/en/settings.png",
                     "image_style" : {"maxHeight": "759px", "height": "759px", "maxWidth": "100%", "width": "100%"},
-                    "image_alt" : "AveTemp settings window",
+                    "image_alt" : "Окно настроек AveTemp",
                     "reverse" : false
                 }
             ]

@@ -23,7 +23,6 @@ export default function Layout(props) {
         description={props.description}
       />
       <Updating_message isVisible/>
-
       <main dir={props.dir} className={styles.main}>
         {props.children}
         <AD/>

@@ -26,7 +26,8 @@ export default function Menu(props) {
                         key={index} 
                         className={styles.item} 
                         href={getMainAddress(item.link)} 
-                        onClick={showMenu}>{item.name}
+                        onClick={showMenu}>
+                    {item.name}
                     </Link>
         })
     }
@@ -52,9 +53,9 @@ export default function Menu(props) {
             : ''}
             
             {isActive | !props.isMobile ? 
-            <div className={props.isMobile? styles.mobile_wrapper : styles.wrapper}>
-                {getItems()}
-            </div>
+                <div className={props.isMobile? styles.mobile_wrapper : styles.wrapper}>
+                    {getItems()}
+                </div>
             : ''}
         </>
     );

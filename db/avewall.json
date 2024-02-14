@@ -1,58 +1,30 @@
 {
     "menu" : [
-            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "/avewall/#how_to_use"},
-            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "/avewall/#features"},
+            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "/avewall/#avewall_how_to_use"},
+            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "/avewall/#avewall_features"},
             {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "/avewall/#support"},
             {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"},
             {"name" : { "en" : "AveTemp", "ru" : "AveTemp"}, "link" : "/"},
             {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
         ]
     ,
+     "blocks_below" : [
+        {"name"  : "avewall_how_it_works", "title" : { "en" : "How it works", "ru" : "Как это работает"}},
+        {"name"  : "avewall_how_to_use", "title" : { "en" : "How to use", "ru" : "Как использовать"}},
+        {"name"  : "avewall_features", "title" : { "en" : "Features", "ru" : "Возможности"}},
+        {"name"  : "avewall_feedback", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}}
+    ],
     "ru" : 
     {
         "title" : "AveWall — программа для автоматической смены обоев в играх и для рабочих программ",
-        "description" : "Программа позволяет задать для каждой программы свои обои рабочего стола: черные обои на втором мониторе во время игр, рабочие обои для outlook и любые другие варианты",
-        "h1" : "AveWall — настройка обоев рабочего стола",
-        "screens" : [
-            { "content" : 
-                [
-                    "Описание AveWall."
-                ]
-            },
-            { "content" : 
-                [
-                    "Зачем нужна."
-                ]
-            },
-            { "content" : 
-                [
-                    "Как использовать."
-                ]
-            }
-        ]
+        "description" : "Задай свои обои рабочего стола для каждой программы: черные обои на втором мониторе во время игр, рабочие обои для Outlook и любые другие варианты",
+        "h1" : "AveWall — автоматическая смена обоев рабочего в играх и рабочих программах"
     },
 
     "en" : 
     {
         "title" : "AveWall — program for automatic wallpaper change in games and for work programs",
-        "description" : "The program allows you to set a different desktop wallpaper for each program: black wallpaper on the second monitor during games, work wallpaper for outlook and any other options",
-        "h1" : "AveWall — customize your desktop wallpaper",
-        "screens" : [
-            { "content" : 
-                [
-                    "AveWall description."
-                ]
-            },
-            { "content" : 
-                [
-                    "For what."
-                ]
-            },
-            { "content" : 
-                [
-                    "How to use."
-                ]
-            }
-        ]
+        "description" : "Set your own desktop wallpaper for each program: black wallpaper on the second monitor during games, working wallpaper for Outlook and any other variants",
+        "h1" : "AveWall — automatically change work wallpaper in games and work programs"
     }
 }

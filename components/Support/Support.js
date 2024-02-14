@@ -7,7 +7,8 @@ import styles from './Support.module.scss'
 export default function Support() {
 
     const intl = useIntl();
-    const support_headline = intl.formatMessage({ id: "support_headline" });
+    const support_headline_1 = intl.formatMessage({ id: "support_headline_1" });
+    const support_headline_2 = intl.formatMessage({ id: "support_headline_2" });
     const support_text = intl.formatMessage({ id: "support_text" });
 
     function getCards() {
@@ -32,9 +33,9 @@ export default function Support() {
     return (
         <div className={styles.wrapper}>
             <h3 id="support" className={styles.centered_elem}>
-                {support_headline} 
+                {support_headline_1} 
                 <Image alt="support AveTemp icon" src="/images/heart_icon.png" width={32.5} height={22}/>
-                AveTemp
+                {support_headline_2} 
             </h3>
             <p className={styles.centered_elem}>
                 {support_text}

@@ -1,0 +1,38 @@
+{   "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "First <DownloadLink>download<DownloadLink/> AveTemp AveWall. After that, run the file, the program will start by default in the tray. To customize, right-click on the black and purple icon.",
+                        "Basic control functions are available directly from the tray, but to access more settings click on «Show Settings».",
+                        "In the window that opens, you can specify which wallpaper should be displayed in which mode when launching which exe-file. You can also sort applications in order of priority. For example, if you want black wallpaper to be displayed by default for some game, click «Set» in the «process» column, then specify the «Black screen» mode. After that the program will automatically save the settings.",
+                        "If you want to choose a special wallpaper for this game, then select the «Custom» mode for it, then specify the path to the wallpaper file. After that the program will save the settings and work according to them.",
+                        "To specify the priority of triggering, for example, to always set the black wallpaper when starting a game — sort the processes in the desired order. You can do this by specifying the order in the «priority» column."
+                    ],
+                   "image" : "/images/screenshots/en/avewall_tray_en.png",
+                   "image_style" : {"maxHeight": "759px", "height": "200px", "maxWidth": "100%", "width": "100%"},
+                   "image_alt" : "",
+                   "reverse" : false
+                }
+            ]
+        },
+    "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "Сначала <DownloadLink>скачайте<DownloadLink/> AveTemp AveWall. После этого запустите файл, программа запустится по умолчанию в трее. Для настройки, нажмите на черно-фиолетовую иконку правой кнопкой мыши.",
+                        "Базовые функции управления доступны прямо из трея, но чтобы получить доступ к большему числу настроек нажмите на пункт «Показать настройки».",
+                        "В открывшемся окно вы можете указать при запуске какого exe-файла какие обои в каком режиме надо показывать. Так же вы можете отсортировать приложения в порядке приоритета. Например, если вы хотите чтобы для какой-то игры по умолчанию выставлялись черные обои, то нажмите «Выбрать» в столбце «процесс», далее укажите режим «Черный экран». После этого программа автоматически сохранит настройки.",
+                        "Если же вы хотите выбрать специальные обои для этой игры, то выберите для неё режим «Свои», далее укажите путь к файлу обоев. После этого программа сохранит настройки и будет работать в соответствии с ними.",
+                        "Для указания приоритета срабатывания — например, чтобы при запуске игры всегда выставлялись черные обои — отсортируйте процессы в нужном порядке. Сделать это можно с помощью указания порядка в столбце «Приоритет»."
+                    ]
+                    ,
+                    "image" : "/images/screenshots/ru/avewall_tray_ru.png",
+                    "image_style" : {"maxHeight": "759px", "height": "200px", "maxWidth": "100%", "width": "100%"},
+                    "image_alt" : "Как выглядит AveWall в трее",
+                    "reverse" : false
+                }
+            ]
+        }
+}

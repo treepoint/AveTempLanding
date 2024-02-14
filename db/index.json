@@ -1,11 +1,11 @@
 {
     "menu" : [
-            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "#how_to_use"},
-            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "#features"},
+            {"name" : { "en" : "How to use", "ru" : "Как использовать"}, "link" : "#avetemp_how_to_use"},
+            {"name" : { "en" : "Features", "ru" : "Возможности"}, "link" : "#avetemp_features"},
             {"name" : { "en" : "Support", "ru" : "Поддержать"}, "link" : "#support"},
             {"name" : { "en" : "Changelog", "ru" : "Список изменений"}, "link" : "changelog"},
             {"name" : { "en" : "Articles", "ru" : "Статьи"}, "link" : "articles"},
-            {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "/avewall"},
+            {"name" : { "en" : "AveWall", "ru" : "AveWall"}, "link" : "avewall"},
             {"name" : { "en" : "All programs", "ru" : "Все программы"}, "link" : "programs"}
         ]
     ,
@@ -13,7 +13,7 @@
         {"name"  : "avetemp_how_it_works", "title" : { "en" : "How it works", "ru" : "Как это работает"}},
         {"name"  : "avetemp_why_screen", "title" : { "en" : "Why it's needed", "ru" : "Зачем это нужно"}},
         {"name"  : "avetemp_how_to_use", "title" : { "en" : "How to use", "ru" : "Как использовать"}},
-        {"name"  : "feedback", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}},
+        {"name"  : "avetemp_feedback", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}},
         {"name"  : "avetemp_features", "title" : { "en" : "Features", "ru" : "Возможности"}},
         {"name"  : "avetemp_roadmap", "title" : { "en" : "Road Map", "ru" : "План развития"}}
     ],

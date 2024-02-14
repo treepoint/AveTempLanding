@@ -1,7 +1,10 @@
 'use client';
 import { useIntl } from "react-intl";
-import styles from './Updating_message.module.scss'
 import { useState, useEffect } from "react"
+import { useDispatch } from 'react-redux'
+import { changeIsOpened } from "../../store/features/modalWindowSlice.js"
+
+import styles from './Updating_message.module.scss'
 import "../../_globals.js";
 
 function Updating_message(props) {
@@ -18,6 +21,12 @@ function Updating_message(props) {
         }
     }
 
+    const dispatch = useDispatch();
+
+    function openWindow() {
+        dispatch(changeIsOpened(true));
+    }
+
     useEffect(() => {
         if (timer !== 0) {
             const interval = setInterval(() => {
@@ -32,7 +41,7 @@ function Updating_message(props) {
     <div className={[styles.update_message, isVisible()].join(' ')}>
         { message }
         <a className={styles.update_message_link} 
-           href={download_link} 
+           onClick={openWindow}
            rel="noopener">
            { download }
         </a>
