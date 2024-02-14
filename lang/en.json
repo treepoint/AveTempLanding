@@ -2,7 +2,8 @@
   "githab_page_headline": "Github main page",
   "issues_headline": "Issues",
   "discussions_headline": "Discussions",
-  "support_headline": "Support",
+  "support_headline_1": "Support ",
+  "support_headline_2": " development",
 
   "main_window_screenshot_url" : "/images/screenshots/en/main_window.png",
   "settings_window_screenshot_url" : "/images/screenshots/en/settings.png",
@@ -11,7 +12,7 @@
   "settings_window_screenshot_alt" : "AveTemp settings window",
 
 
-  "update_message_text": "New version 1.4.7 is available!",
+  "update_message_text": "New version is available!",
 
   "for_what": "How to reduce the temperature with AveTemp",
 
@@ -31,7 +32,7 @@
   "download_disclaimer" : "Thank you for downloading! If you have any problems, you can always text me.",
   "your_link" : "Your link: ",
 
-  "support_text": "I will be glad for the support. It is not necessary, but it motivate.",
+  "support_text": "I'd be happy for the support. Not necessary, but motivating.",
 
   "ff_message" : "Message",
   "ff_disclaimer_1" : "I promise to use your Email only to get back to you. No mailings without your consent.",

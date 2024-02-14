@@ -62,7 +62,7 @@ function Header(props) {
                         <Spacer/>
                         <LanguageSelector locales={props.locales}/>
                         <DownloadButton isPrimary/>
-                        <Menu isMobile/>
+                        <Menu isMobile locale={props.locale}/>
                     </div>
                 </div>
             </>

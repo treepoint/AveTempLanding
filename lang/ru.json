@@ -2,7 +2,8 @@
   "githab_page_headline": "Страница на Github",
   "issues_headline": "Доработки",
   "discussions_headline": "Обсуждение",
-  "support_headline": "Поддержать",
+  "support_headline_1": "Поддержать ",
+  "support_headline_2": " разработку",
 
   "main_window_screenshot_url" : "/images/screenshots/ru/main_window.png",
   "settings_window_screenshot_url" : "/images/screenshots/ru/settings.png",
@@ -10,7 +11,7 @@
   "main_window_screenshot_alt" : "Главное окно AveTemp",
   "settings_window_screenshot_alt" : "Окно настроек AveTemp",
 
-  "update_message_text": "Доступна новая версия 1.4.7!",
+  "update_message_text": "Доступна новая версия!",
 
   "for_what": "Как снизить температуру с помощью AveTemp",
 

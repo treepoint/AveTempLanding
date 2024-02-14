@@ -1,4 +1,5 @@
 import Link from "next/link"
+import DownloadLink from "../elements/DownloadLink/DownloadLink"
 import { getMainAddress } from "../support/support"
 
 export function parseContent(content) {
@@ -13,6 +14,10 @@ export function parseContent(content) {
           return (parsePwithLink(item, index));        
         }
 
+        if (item.includes('<DownloadLink/>')) {
+            return (parsePwithDownloadLink(item, index));       
+          }
+        
         //Нумерованный список
         if (item.includes('<ol')) {
             ol_list_processed = true;
@@ -59,6 +64,14 @@ export function parseContent(content) {
         return <p key={index}>{item}</p>
     })
 }
+
+function parsePwithDownloadLink(p, index) {
+    let before_link = p.split('<DownloadLink>')[0];
+    let text = p.split('<DownloadLink>')[1].split('<DownloadLink/>')[0];
+    let after_link = p.split('<DownloadLink/>')[1];
+
+    return <p>{before_link}<DownloadLink text={text}/>{after_link}</p>
+  }
 
 function parsePwithLink(p, index) {
     let before_link = p.split('<Link')[0];

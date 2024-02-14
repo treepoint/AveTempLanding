@@ -1,0 +1,41 @@
+{   "ru" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>Настройка обоев для каждого приложения.</li>",
+                        "<li>Возможность указать приоритет приложений. Например, при запуске игры выставлять обои для этой игры, а не для Visual Code.</li>",
+                        "<li>3 режима работы: «автоматический» — для работы по приоритетам. По умолчанию — статические обои выбранные по умолчанию и «черный экран».</li>",
+                        "<li>Автоматическое определение текущих обоев и установка их по умолчанию.</li>",
+                        "<li>Автозапуск при входе в систему.</li>",
+                        "<li>Два языка — русский и английский.</li>",
+                        "<li>Низкое использование процессора. Для Ryzen 4600H это < 1% максимум, большую часть времени - 0,01%</li>",
+                        "</ul>"
+                    ],
+                   "reverse" : true,
+                   "second_content_block" : "Support"
+                }
+            ]
+        },
+    "en" : 
+        {
+            "screens" : [
+                { "content" : 
+                    [
+                        "<ul>",
+                        "<li>Customize the wallpaper for each application.</li>",
+                        "<li>Ability to specify application priority. For example, when launching a game, set the wallpaper for that game and not for Visual Code.</li>",
+                        "<li>3 modes: «auto» — to work by priority. Default — static wallpaper selected by default and «black screen».</li>",
+                        "<li>Automatically detect the current wallpaper and set it as default.</li>",
+                        "<li>Autostart on user logon</li>",
+                        "<li>Two languages - Russian and English.</li>",
+                        "<li>Low CPU usage. For Ryzen 4600H it's < 1% on the peak, most of the time — 0.01%</li>",
+                        "</ul>"
+                    ],
+                    "reverse" : true,
+                    "second_content_block" : "Support"
+                }
+            ]
+        }
+}
