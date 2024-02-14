@@ -13,7 +13,7 @@
                         "Исходный код доступен на <Link href='https://github.com/treepoint/AveWall'>Github</Link>, вы можете собрать программу сами." 
                     ],
                    "image" : "/images/screenshots/ru/avewall_main_ru.png",
-                   "image_style" : {"maxHeight": "826px", "height": "552px", "maxWidth": "100%", "width": "100%"},
+                   "image_style" : {"maxHeight": "826px", "height": "640px", "maxWidth": "100%", "width": "100%"},
                    "image_alt" : "Окно настроек AveWall",
                    "reverse" : true,
                    "additional_block_below" : "DownloadButton"
@@ -36,7 +36,7 @@
                     ]
                     ,
                     "image" : "/images/screenshots/en/avewall_main_en.png",
-                    "image_style" : {"maxHeight": "826px", "height": "552px", "maxWidth": "100%", "width": "100%"},
+                    "image_style" : {"maxHeight": "826px", "height": "640px", "maxWidth": "100%", "width": "100%"},
                     "image_alt" : "AveWall main window",
                     "reverse" : true,
                     "additional_block_below" : "DownloadButton"
