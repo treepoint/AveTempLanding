@@ -52,7 +52,7 @@ export const getStaticPaths = async () => {
   if (process.env.API_URL.includes('localhost')) { data = await getPagesList(); }
   else { data = await fetch(process.env.API_URL).json(); } 
 
-  const paths = data.map((page) => ({
+  const paths = data.filter(item => item.url != '404').map((page) => ({
     params: { url: page.url },
   }));
 

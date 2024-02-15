@@ -1,9 +1,9 @@
-import styles from './Page404.module.scss'
+import styles from './Block404.module.scss'
 import Button from '../../elements/Button/Button'
 import { useIntl } from "react-intl"
 import { useRouter } from 'next/router'
 
-export default function Page404() {
+export default function Block404() {
   const router = useRouter();
   const intl = useIntl();
 
