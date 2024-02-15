@@ -7,7 +7,7 @@
         ]
     ,
     "blocks_below" : [
-        {"name"  : "Page404"}
+        {"name"  : "Block404"}
     ],
     "ru" : 
     {

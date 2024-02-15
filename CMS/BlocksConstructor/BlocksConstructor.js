@@ -5,7 +5,7 @@ import DownloadButton from "../../elements/DownloadButton/DownloadButton"
 import Promo from "../../StaticBlocks/Promo/Promo"
 import Articles from "../../StaticBlocks/Articles/Articles"
 import HelpfulMaterials from "../../StaticBlocks/HelpfulMaterials/HelpfulMaterials"
-import Page404 from "../../StaticBlocks/Page404/Page404"
+import Block404 from "../../StaticBlocks/Block404/Block404.js"
 import SocialIcons from "../../StaticBlocks/SocialIcons/SocialIcons.js"
 
 import Screen from "../../elements/Screen/Screen"
@@ -57,8 +57,8 @@ function getBlocks(blocks, locale, articles, cms_blocks) {
           result.push(<HelpfulMaterials h2={h2}/>)
         }
 
-        if (block.name == "Page404") {
-          result.push(<Page404/>)
+        if (block.name == "Block404") {
+          result.push(<Block404/>)
         }
 
         block = parseCMSblock(cms_blocks, block.name, h2, articles, index);
