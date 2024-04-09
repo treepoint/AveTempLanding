@@ -7,6 +7,7 @@ import Articles from "../../StaticBlocks/Articles/Articles"
 import HelpfulMaterials from "../../StaticBlocks/HelpfulMaterials/HelpfulMaterials"
 import Block404 from "../../StaticBlocks/Block404/Block404"
 import SocialIcons from "../../StaticBlocks/SocialIcons/SocialIcons.js"
+import SupportOrAD from "../../StaticBlocks/SupportOrAD/SupportOrAD.js"
 
 import Screen from "../../elements/Screen/Screen"
 import { parseContent } from "../contentParser.js"
@@ -59,6 +60,10 @@ function getBlocks(blocks, locale, articles, cms_blocks) {
 
         if (block.name == "Block404") {
           result.push(<Block404/>)
+        }
+
+        if (block.name == "SupportOrAD") {
+          result.push(<SupportOrAD/>)
         }
 
         block = parseCMSblock(cms_blocks, block.name, h2, articles, index);

@@ -12,9 +12,9 @@
     "blocks_below" : [
         {"name"  : "avetemp_how_it_works", "title" : { "en" : "How it works", "ru" : "Как это работает"}},
         {"name"  : "avetemp_why_screen", "title" : { "en" : "Why it's needed", "ru" : "Зачем это нужно"}},
+        {"name"  : "avetemp_features", "title" : { "en" : "Features", "ru" : "Возможности"}},
         {"name"  : "avetemp_how_to_use", "title" : { "en" : "How to use", "ru" : "Как использовать"}},
         {"name"  : "avetemp_feedback", "title" : { "en" : "How to get in touch?", "ru" : "Как связаться?"}},
-        {"name"  : "avetemp_features", "title" : { "en" : "Features", "ru" : "Возможности"}},
         {"name"  : "avetemp_roadmap", "title" : { "en" : "Road Map", "ru" : "План развития"}}
     ],
     "ru" : 

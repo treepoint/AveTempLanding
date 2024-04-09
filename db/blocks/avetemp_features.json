@@ -16,7 +16,7 @@
                         "Полный список изменений и функциональности от версии к версии есть здесь — <Link href='/changelog'>список изменений</Link>."
                     ],
                    "reverse" : true,
-                   "second_content_block" : "Support"
+                   "second_content_block" : "SupportOrAD"
                 }
             ]
         },
@@ -38,7 +38,7 @@
                         "A complete list of changes and functionality from version to version can be found here — <Link href='/changelog'>list of changes</Link>."
                     ],
                     "reverse" : true,
-                    "second_content_block" : "Support"
+                    "second_content_block" : "SupportOrAD"
                 }
             ]
         }
