@@ -3,12 +3,22 @@ import Script from 'next/script'
 function AD() {
     return (
         <>
-        <div id="yandex_rtb_R-A-2952455-2"></div>
-        <Script id="yandex_rtb_R-A-2952455-2" strategy="afterInteractive">
+        <Script id="yandex_rtb_R-A-2952455-5" strategy="afterInteractive">
                     {`window.yaContextCb.push(()=>{
                             Ya.Context.AdvManager.render({
-                                "blockId": "R-A-2952455-2",
-                                "renderTo": "yandex_rtb_R-A-2952455-2"
+                                "blockId": "R-A-2952455-5",
+                                "type": "floorAd",
+                                "platform": "touch"
+                            })
+                        });
+                    `}
+        </Script>
+        <Script id="yandex_rtb_R-A-2952455-6" strategy="afterInteractive">
+                    {`window.yaContextCb.push(()=>{
+                            Ya.Context.AdvManager.render({
+                                "blockId": "R-A-2952455-6",
+                                "type": "floorAd",
+                                "platform": "desktop"
                             })
                         });
                     `}

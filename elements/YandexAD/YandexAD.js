@@ -7,6 +7,7 @@ export default function YandexAD() {
                 </Script>
                 <Script 
                     src="https://yandex.ru/ads/system/context.js" 
+                    strategy="beforeInteractive"
                 />
             </>
 }
